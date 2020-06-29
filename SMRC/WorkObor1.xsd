@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WorkObor" targetNamespace="http://tempuri.org/WorkObor1.xsd" xmlns:mstns="http://tempuri.org/WorkObor1.xsd" xmlns="http://tempuri.org/WorkObor1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="smrConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="smrConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SMRC.Properties.Settings.GlobalReference.Default.smrConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="WorkOborTableAdapter" GeneratorDataComponentClassName="WorkOborTableAdapter" Name="WorkObor" UserDataComponentName="WorkOborTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="smrConnectionString (Settings)" DbObjectName="smr.dbo.WorkObor" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IdF2, NMObor, Price, object FROM dbo.WorkObor</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IdF2" DataSetColumn="IdF2" />
+              <Mapping SourceColumn="NMObor" DataSetColumn="NMObor" />
+              <Mapping SourceColumn="Price" DataSetColumn="Price" />
+              <Mapping SourceColumn="object" DataSetColumn="object" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WorkObor" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="WorkObor" msprop:Generator_UserDSName="WorkObor">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WorkObor" msprop:Generator_TableClassName="WorkOborDataTable" msprop:Generator_TableVarName="tableWorkObor" msprop:Generator_TablePropName="_WorkObor" msprop:Generator_RowDeletingName="WorkOborRowDeleting" msprop:Generator_RowChangingName="WorkOborRowChanging" msprop:Generator_RowEvHandlerName="WorkOborRowChangeEventHandler" msprop:Generator_RowDeletedName="WorkOborRowDeleted" msprop:Generator_UserTableName="WorkObor" msprop:Generator_RowChangedName="WorkOborRowChanged" msprop:Generator_RowEvArgName="WorkOborRowChangeEvent" msprop:Generator_RowClassName="WorkOborRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdF2" msprop:Generator_ColumnVarNameInTable="columnIdF2" msprop:Generator_ColumnPropNameInRow="IdF2" msprop:Generator_ColumnPropNameInTable="IdF2Column" msprop:Generator_UserColumnName="IdF2" type="xs:int" />
+              <xs:element name="NMObor" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNMObor" msprop:Generator_ColumnPropNameInRow="NMObor" msprop:Generator_ColumnPropNameInTable="NMOborColumn" msprop:Generator_UserColumnName="NMObor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="463" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_UserColumnName="Price" type="xs:decimal" />
+              <xs:element name="object" msprop:Generator_ColumnVarNameInTable="columnobject" msprop:Generator_ColumnPropNameInRow="_object" msprop:Generator_ColumnPropNameInTable="objectColumn" msprop:Generator_UserColumnName="object">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

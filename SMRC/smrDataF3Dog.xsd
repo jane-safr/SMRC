@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="smrDataF3Dog" targetNamespace="http://tempuri.org/smrDataF3Dog.xsd" xmlns:mstns="http://tempuri.org/smrDataF3Dog.xsd" xmlns="http://tempuri.org/smrDataF3Dog.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="smrConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="smrConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SMRC.Properties.Settings.GlobalReference.Default.smrConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_F3DogTableAdapter" GeneratorDataComponentClassName="v_F3DogTableAdapter" Name="v_F3Dog" UserDataComponentName="v_F3DogTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="smrConnectionString (Settings)" DbObjectName="smr.dbo.v_F3Dog" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IdF3, Id_us, IdDog, IdIstFin, Pred, KodUnic, RegNomer, Naim, WhoF3, ForF3, PeriodBeg, Sum91, SumTek, Prim, F3Predjav, OtprZak, DateOtprZak, PodpZak, DatePodpZak, IstFin, FromZak, FromIsp, PersZakName, PersIspName, Zak, TipVneshDog, Vnut, F3PredjavName, NamePartZak, NamePartIsp, ZakName, IspName, Date_1, RegNomerDog, PostZak, PostIsp, OkpoIsp, OkpoZak, TipGPDog, ObF3, Isp, PeriodEnd, Investr, IdEntpr, IdWhoF3, IdForF3, IdZak, IdIsp, IdF3Predjav, PeriodSost, Period, AdressZak, NotBaseOsn FROM dbo.v_F3Dog</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IdF3" DataSetColumn="IdF3" />
+              <Mapping SourceColumn="Id_us" DataSetColumn="Id_us" />
+              <Mapping SourceColumn="IdDog" DataSetColumn="IdDog" />
+              <Mapping SourceColumn="IdIstFin" DataSetColumn="IdIstFin" />
+              <Mapping SourceColumn="Pred" DataSetColumn="Pred" />
+              <Mapping SourceColumn="KodUnic" DataSetColumn="KodUnic" />
+              <Mapping SourceColumn="RegNomer" DataSetColumn="RegNomer" />
+              <Mapping SourceColumn="Naim" DataSetColumn="Naim" />
+              <Mapping SourceColumn="WhoF3" DataSetColumn="WhoF3" />
+              <Mapping SourceColumn="ForF3" DataSetColumn="ForF3" />
+              <Mapping SourceColumn="PeriodBeg" DataSetColumn="PeriodBeg" />
+              <Mapping SourceColumn="Sum91" DataSetColumn="Sum91" />
+              <Mapping SourceColumn="SumTek" DataSetColumn="SumTek" />
+              <Mapping SourceColumn="Prim" DataSetColumn="Prim" />
+              <Mapping SourceColumn="F3Predjav" DataSetColumn="F3Predjav" />
+              <Mapping SourceColumn="OtprZak" DataSetColumn="OtprZak" />
+              <Mapping SourceColumn="DateOtprZak" DataSetColumn="DateOtprZak" />
+              <Mapping SourceColumn="PodpZak" DataSetColumn="PodpZak" />
+              <Mapping SourceColumn="DatePodpZak" DataSetColumn="DatePodpZak" />
+              <Mapping SourceColumn="IstFin" DataSetColumn="IstFin" />
+              <Mapping SourceColumn="FromZak" DataSetColumn="FromZak" />
+              <Mapping SourceColumn="FromIsp" DataSetColumn="FromIsp" />
+              <Mapping SourceColumn="PersZakName" DataSetColumn="PersZakName" />
+              <Mapping SourceColumn="PersIspName" DataSetColumn="PersIspName" />
+              <Mapping SourceColumn="Zak" DataSetColumn="Zak" />
+              <Mapping SourceColumn="TipVneshDog" DataSetColumn="TipVneshDog" />
+              <Mapping SourceColumn="Vnut" DataSetColumn="Vnut" />
+              <Mapping SourceColumn="F3PredjavName" DataSetColumn="F3PredjavName" />
+              <Mapping SourceColumn="NamePartZak" DataSetColumn="NamePartZak" />
+              <Mapping SourceColumn="NamePartIsp" DataSetColumn="NamePartIsp" />
+              <Mapping SourceColumn="ZakName" DataSetColumn="ZakName" />
+              <Mapping SourceColumn="IspName" DataSetColumn="IspName" />
+              <Mapping SourceColumn="Date_1" DataSetColumn="Date_1" />
+              <Mapping SourceColumn="RegNomerDog" DataSetColumn="RegNomerDog" />
+              <Mapping SourceColumn="PostZak" DataSetColumn="PostZak" />
+              <Mapping SourceColumn="PostIsp" DataSetColumn="PostIsp" />
+              <Mapping SourceColumn="OkpoIsp" DataSetColumn="OkpoIsp" />
+              <Mapping SourceColumn="OkpoZak" DataSetColumn="OkpoZak" />
+              <Mapping SourceColumn="TipGPDog" DataSetColumn="TipGPDog" />
+              <Mapping SourceColumn="ObF3" DataSetColumn="ObF3" />
+              <Mapping SourceColumn="Isp" DataSetColumn="Isp" />
+              <Mapping SourceColumn="PeriodEnd" DataSetColumn="PeriodEnd" />
+              <Mapping SourceColumn="Investr" DataSetColumn="Investr" />
+              <Mapping SourceColumn="IdEntpr" DataSetColumn="IdEntpr" />
+              <Mapping SourceColumn="IdWhoF3" DataSetColumn="IdWhoF3" />
+              <Mapping SourceColumn="IdForF3" DataSetColumn="IdForF3" />
+              <Mapping SourceColumn="IdZak" DataSetColumn="IdZak" />
+              <Mapping SourceColumn="IdIsp" DataSetColumn="IdIsp" />
+              <Mapping SourceColumn="IdF3Predjav" DataSetColumn="IdF3Predjav" />
+              <Mapping SourceColumn="PeriodSost" DataSetColumn="PeriodSost" />
+              <Mapping SourceColumn="Period" DataSetColumn="Period" />
+              <Mapping SourceColumn="AdressZak" DataSetColumn="AdressZak" />
+              <Mapping SourceColumn="NotBaseOsn" DataSetColumn="NotBaseOsn" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="smrDataF3Dog" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="smrDataF3Dog" msprop:Generator_UserDSName="smrDataF3Dog">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_F3Dog" msprop:Generator_TableClassName="v_F3DogDataTable" msprop:Generator_TableVarName="tablev_F3Dog" msprop:Generator_TablePropName="v_F3Dog" msprop:Generator_RowDeletingName="v_F3DogRowDeleting" msprop:Generator_RowChangingName="v_F3DogRowChanging" msprop:Generator_RowEvHandlerName="v_F3DogRowChangeEventHandler" msprop:Generator_RowDeletedName="v_F3DogRowDeleted" msprop:Generator_UserTableName="v_F3Dog" msprop:Generator_RowChangedName="v_F3DogRowChanged" msprop:Generator_RowEvArgName="v_F3DogRowChangeEvent" msprop:Generator_RowClassName="v_F3DogRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdF3" msprop:Generator_ColumnVarNameInTable="columnIdF3" msprop:Generator_ColumnPropNameInRow="IdF3" msprop:Generator_ColumnPropNameInTable="IdF3Column" msprop:Generator_UserColumnName="IdF3" type="xs:int" />
+              <xs:element name="Id_us" msprop:Generator_ColumnVarNameInTable="columnId_us" msprop:Generator_ColumnPropNameInRow="Id_us" msprop:Generator_ColumnPropNameInTable="Id_usColumn" msprop:Generator_UserColumnName="Id_us" type="xs:int" />
+              <xs:element name="IdDog" msprop:Generator_ColumnVarNameInTable="columnIdDog" msprop:Generator_ColumnPropNameInRow="IdDog" msprop:Generator_ColumnPropNameInTable="IdDogColumn" msprop:Generator_UserColumnName="IdDog" type="xs:int" />
+              <xs:element name="IdIstFin" msprop:Generator_ColumnVarNameInTable="columnIdIstFin" msprop:Generator_ColumnPropNameInRow="IdIstFin" msprop:Generator_ColumnPropNameInTable="IdIstFinColumn" msprop:Generator_UserColumnName="IdIstFin" type="xs:int" />
+              <xs:element name="Pred" msprop:Generator_ColumnVarNameInTable="columnPred" msprop:Generator_ColumnPropNameInRow="Pred" msprop:Generator_ColumnPropNameInTable="PredColumn" msprop:Generator_UserColumnName="Pred">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KodUnic" msprop:Generator_ColumnVarNameInTable="columnKodUnic" msprop:Generator_ColumnPropNameInRow="KodUnic" msprop:Generator_ColumnPropNameInTable="KodUnicColumn" msprop:Generator_UserColumnName="KodUnic">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RegNomer" msprop:Generator_ColumnVarNameInTable="columnRegNomer" msprop:Generator_ColumnPropNameInRow="RegNomer" msprop:Generator_ColumnPropNameInTable="RegNomerColumn" msprop:Generator_UserColumnName="RegNomer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Naim" msprop:Generator_ColumnVarNameInTable="columnNaim" msprop:Generator_ColumnPropNameInRow="Naim" msprop:Generator_ColumnPropNameInTable="NaimColumn" msprop:Generator_UserColumnName="Naim">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WhoF3" msprop:Generator_ColumnVarNameInTable="columnWhoF3" msprop:Generator_ColumnPropNameInRow="WhoF3" msprop:Generator_ColumnPropNameInTable="WhoF3Column" msprop:Generator_UserColumnName="WhoF3">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForF3" msprop:Generator_ColumnVarNameInTable="columnForF3" msprop:Generator_ColumnPropNameInRow="ForF3" msprop:Generator_ColumnPropNameInTable="ForF3Column" msprop:Generator_UserColumnName="ForF3">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PeriodBeg" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPeriodBeg" msprop:Generator_ColumnPropNameInRow="PeriodBeg" msprop:Generator_ColumnPropNameInTable="PeriodBegColumn" msprop:Generator_UserColumnName="PeriodBeg" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Sum91" msprop:Generator_ColumnVarNameInTable="columnSum91" msprop:Generator_ColumnPropNameInRow="Sum91" msprop:Generator_ColumnPropNameInTable="Sum91Column" msprop:Generator_UserColumnName="Sum91" type="xs:float" />
+              <xs:element name="SumTek" msprop:Generator_ColumnVarNameInTable="columnSumTek" msprop:Generator_ColumnPropNameInRow="SumTek" msprop:Generator_ColumnPropNameInTable="SumTekColumn" msprop:Generator_UserColumnName="SumTek" type="xs:double" />
+              <xs:element name="Prim" msprop:Generator_ColumnVarNameInTable="columnPrim" msprop:Generator_ColumnPropNameInRow="Prim" msprop:Generator_ColumnPropNameInTable="PrimColumn" msprop:Generator_UserColumnName="Prim" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="F3Predjav" msprop:Generator_ColumnVarNameInTable="columnF3Predjav" msprop:Generator_ColumnPropNameInRow="F3Predjav" msprop:Generator_ColumnPropNameInTable="F3PredjavColumn" msprop:Generator_UserColumnName="F3Predjav">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OtprZak" msprop:Generator_ColumnVarNameInTable="columnOtprZak" msprop:Generator_ColumnPropNameInRow="OtprZak" msprop:Generator_ColumnPropNameInTable="OtprZakColumn" msprop:Generator_UserColumnName="OtprZak" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DateOtprZak" msprop:Generator_ColumnVarNameInTable="columnDateOtprZak" msprop:Generator_ColumnPropNameInRow="DateOtprZak" msprop:Generator_ColumnPropNameInTable="DateOtprZakColumn" msprop:Generator_UserColumnName="DateOtprZak" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PodpZak" msprop:Generator_ColumnVarNameInTable="columnPodpZak" msprop:Generator_ColumnPropNameInRow="PodpZak" msprop:Generator_ColumnPropNameInTable="PodpZakColumn" msprop:Generator_UserColumnName="PodpZak" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DatePodpZak" msprop:Generator_ColumnVarNameInTable="columnDatePodpZak" msprop:Generator_ColumnPropNameInRow="DatePodpZak" msprop:Generator_ColumnPropNameInTable="DatePodpZakColumn" msprop:Generator_UserColumnName="DatePodpZak" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IstFin" msprop:Generator_ColumnVarNameInTable="columnIstFin" msprop:Generator_ColumnPropNameInRow="IstFin" msprop:Generator_ColumnPropNameInTable="IstFinColumn" msprop:Generator_UserColumnName="IstFin" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FromZak" msprop:Generator_ColumnVarNameInTable="columnFromZak" msprop:Generator_ColumnPropNameInRow="FromZak" msprop:Generator_ColumnPropNameInTable="FromZakColumn" msprop:Generator_UserColumnName="FromZak" type="xs:int" minOccurs="0" />
+              <xs:element name="FromIsp" msprop:Generator_ColumnVarNameInTable="columnFromIsp" msprop:Generator_ColumnPropNameInRow="FromIsp" msprop:Generator_ColumnPropNameInTable="FromIspColumn" msprop:Generator_UserColumnName="FromIsp" type="xs:int" minOccurs="0" />
+              <xs:element name="PersZakName" msprop:Generator_ColumnVarNameInTable="columnPersZakName" msprop:Generator_ColumnPropNameInRow="PersZakName" msprop:Generator_ColumnPropNameInTable="PersZakNameColumn" msprop:Generator_UserColumnName="PersZakName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersIspName" msprop:Generator_ColumnVarNameInTable="columnPersIspName" msprop:Generator_ColumnPropNameInRow="PersIspName" msprop:Generator_ColumnPropNameInTable="PersIspNameColumn" msprop:Generator_UserColumnName="PersIspName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Zak" msprop:Generator_ColumnVarNameInTable="columnZak" msprop:Generator_ColumnPropNameInRow="Zak" msprop:Generator_ColumnPropNameInTable="ZakColumn" msprop:Generator_UserColumnName="Zak" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TipVneshDog" msprop:Generator_ColumnVarNameInTable="columnTipVneshDog" msprop:Generator_ColumnPropNameInRow="TipVneshDog" msprop:Generator_ColumnPropNameInTable="TipVneshDogColumn" msprop:Generator_UserColumnName="TipVneshDog" type="xs:short" minOccurs="0" />
+              <xs:element name="Vnut" msprop:Generator_ColumnVarNameInTable="columnVnut" msprop:Generator_ColumnPropNameInRow="Vnut" msprop:Generator_ColumnPropNameInTable="VnutColumn" msprop:Generator_UserColumnName="Vnut" type="xs:boolean" minOccurs="0" />
+              <xs:element name="F3PredjavName" msprop:Generator_ColumnVarNameInTable="columnF3PredjavName" msprop:Generator_ColumnPropNameInRow="F3PredjavName" msprop:Generator_ColumnPropNameInTable="F3PredjavNameColumn" msprop:Generator_UserColumnName="F3PredjavName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NamePartZak" msprop:Generator_ColumnVarNameInTable="columnNamePartZak" msprop:Generator_ColumnPropNameInRow="NamePartZak" msprop:Generator_ColumnPropNameInTable="NamePartZakColumn" msprop:Generator_UserColumnName="NamePartZak" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NamePartIsp" msprop:Generator_ColumnVarNameInTable="columnNamePartIsp" msprop:Generator_ColumnPropNameInRow="NamePartIsp" msprop:Generator_ColumnPropNameInTable="NamePartIspColumn" msprop:Generator_UserColumnName="NamePartIsp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ZakName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnZakName" msprop:Generator_ColumnPropNameInRow="ZakName" msprop:Generator_ColumnPropNameInTable="ZakNameColumn" msprop:Generator_UserColumnName="ZakName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="701" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IspName" msprop:Generator_ColumnVarNameInTable="columnIspName" msprop:Generator_ColumnPropNameInRow="IspName" msprop:Generator_ColumnPropNameInTable="IspNameColumn" msprop:Generator_UserColumnName="IspName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date_1" msprop:Generator_ColumnVarNameInTable="columnDate_1" msprop:Generator_ColumnPropNameInRow="Date_1" msprop:Generator_ColumnPropNameInTable="Date_1Column" msprop:Generator_UserColumnName="Date_1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RegNomerDog" msprop:Generator_ColumnVarNameInTable="columnRegNomerDog" msprop:Generator_ColumnPropNameInRow="RegNomerDog" msprop:Generator_ColumnPropNameInTable="RegNomerDogColumn" msprop:Generator_UserColumnName="RegNomerDog" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PostZak" msprop:Generator_ColumnVarNameInTable="columnPostZak" msprop:Generator_ColumnPropNameInRow="PostZak" msprop:Generator_ColumnPropNameInTable="PostZakColumn" msprop:Generator_UserColumnName="PostZak" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PostIsp" msprop:Generator_ColumnVarNameInTable="columnPostIsp" msprop:Generator_ColumnPropNameInRow="PostIsp" msprop:Generator_ColumnPropNameInTable="PostIspColumn" msprop:Generator_UserColumnName="PostIsp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OkpoIsp" msprop:Generator_ColumnVarNameInTable="columnOkpoIsp" msprop:Generator_ColumnPropNameInRow="OkpoIsp" msprop:Generator_ColumnPropNameInTable="OkpoIspColumn" msprop:Generator_UserColumnName="OkpoIsp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OkpoZak" msprop:Generator_ColumnVarNameInTable="columnOkpoZak" msprop:Generator_ColumnPropNameInRow="OkpoZak" msprop:Generator_ColumnPropNameInTable="OkpoZakColumn" msprop:Generator_UserColumnName="OkpoZak" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TipGPDog" msprop:Generator_ColumnVarNameInTable="columnTipGPDog" msprop:Generator_ColumnPropNameInRow="TipGPDog" msprop:Generator_ColumnPropNameInTable="TipGPDogColumn" msprop:Generator_UserColumnName="TipGPDog" type="xs:short" minOccurs="0" />
+              <xs:element name="ObF3" msprop:Generator_ColumnVarNameInTable="columnObF3" msprop:Generator_ColumnPropNameInRow="ObF3" msprop:Generator_ColumnPropNameInTable="ObF3Column" msprop:Generator_UserColumnName="ObF3" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Isp" msprop:Generator_ColumnVarNameInTable="columnIsp" msprop:Generator_ColumnPropNameInRow="Isp" msprop:Generator_ColumnPropNameInTable="IspColumn" msprop:Generator_UserColumnName="Isp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PeriodEnd" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPeriodEnd" msprop:Generator_ColumnPropNameInRow="PeriodEnd" msprop:Generator_ColumnPropNameInTable="PeriodEndColumn" msprop:Generator_UserColumnName="PeriodEnd" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Investr" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnInvestr" msprop:Generator_ColumnPropNameInRow="Investr" msprop:Generator_ColumnPropNameInTable="InvestrColumn" msprop:Generator_UserColumnName="Investr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdEntpr" msprop:Generator_ColumnVarNameInTable="columnIdEntpr" msprop:Generator_ColumnPropNameInRow="IdEntpr" msprop:Generator_ColumnPropNameInTable="IdEntprColumn" msprop:Generator_UserColumnName="IdEntpr" type="xs:int" />
+              <xs:element name="IdWhoF3" msprop:Generator_ColumnVarNameInTable="columnIdWhoF3" msprop:Generator_ColumnPropNameInRow="IdWhoF3" msprop:Generator_ColumnPropNameInTable="IdWhoF3Column" msprop:Generator_UserColumnName="IdWhoF3" type="xs:int" />
+              <xs:element name="IdForF3" msprop:Generator_ColumnVarNameInTable="columnIdForF3" msprop:Generator_ColumnPropNameInRow="IdForF3" msprop:Generator_ColumnPropNameInTable="IdForF3Column" msprop:Generator_UserColumnName="IdForF3" type="xs:int" />
+              <xs:element name="IdZak" msprop:Generator_ColumnVarNameInTable="columnIdZak" msprop:Generator_ColumnPropNameInRow="IdZak" msprop:Generator_ColumnPropNameInTable="IdZakColumn" msprop:Generator_UserColumnName="IdZak" type="xs:int" minOccurs="0" />
+              <xs:element name="IdIsp" msprop:Generator_ColumnVarNameInTable="columnIdIsp" msprop:Generator_ColumnPropNameInRow="IdIsp" msprop:Generator_ColumnPropNameInTable="IdIspColumn" msprop:Generator_UserColumnName="IdIsp" type="xs:int" minOccurs="0" />
+              <xs:element name="IdF3Predjav" msprop:Generator_ColumnVarNameInTable="columnIdF3Predjav" msprop:Generator_ColumnPropNameInRow="IdF3Predjav" msprop:Generator_ColumnPropNameInTable="IdF3PredjavColumn" msprop:Generator_UserColumnName="IdF3Predjav" type="xs:int" />
+              <xs:element name="PeriodSost" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPeriodSost" msprop:Generator_ColumnPropNameInRow="PeriodSost" msprop:Generator_ColumnPropNameInTable="PeriodSostColumn" msprop:Generator_UserColumnName="PeriodSost" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Period" msprop:Generator_ColumnVarNameInTable="columnPeriod" msprop:Generator_ColumnPropNameInRow="Period" msprop:Generator_ColumnPropNameInTable="PeriodColumn" msprop:Generator_UserColumnName="Period" type="xs:dateTime" />
+              <xs:element name="AdressZak" msprop:Generator_ColumnVarNameInTable="columnAdressZak" msprop:Generator_ColumnPropNameInRow="AdressZak" msprop:Generator_ColumnPropNameInTable="AdressZakColumn" msprop:Generator_UserColumnName="AdressZak" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NotBaseOsn" msprop:Generator_ColumnVarNameInTable="columnNotBaseOsn" msprop:Generator_ColumnPropNameInRow="NotBaseOsn" msprop:Generator_ColumnPropNameInTable="NotBaseOsnColumn" msprop:Generator_UserColumnName="NotBaseOsn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:v_F3Dog" />
+      <xs:field xpath="mstns:IdF3" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

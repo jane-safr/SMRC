@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="smrDataSetNZP" targetNamespace="http://tempuri.org/smrDataSetNZP.xsd" xmlns:mstns="http://tempuri.org/smrDataSetNZP.xsd" xmlns="http://tempuri.org/smrDataSetNZP.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="smrConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="smrConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SMRC.Properties.Settings.GlobalReference.Default.smrConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="WorkNZPTableAdapter" GeneratorDataComponentClassName="WorkNZPTableAdapter" Name="WorkNZP" UserDataComponentName="WorkNZPTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="smrConnectionString (Settings)" DbObjectName="smr.dbo.WorkNZP" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        shNMEntpr, Name, NomerSm, Vip91, VipTek, Summa, NMComplex, IdSm, Osn, NMSmeti, DogF2, nzpred91, nzpred, YearF2, Vip91d2, VipTekd2, YearZakr, nzpred91sng, nzpredsng, nztek91, nztek, KodStr, Codir4, 
+                         KodDog, Department, DateStartNZP, PrichinaNZP, Ispolnitel, SmetaD, StatusZak, idComplex, Prim, Nomer, Otv, ZimUdor91, OSR, PodpisanKS6, PrichinaNZPKS2, Naim, bl
+FROM            WorkNZP</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="shNMEntpr" DataSetColumn="shNMEntpr" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="NomerSm" DataSetColumn="NomerSm" />
+              <Mapping SourceColumn="Vip91" DataSetColumn="Vip91" />
+              <Mapping SourceColumn="VipTek" DataSetColumn="VipTek" />
+              <Mapping SourceColumn="Summa" DataSetColumn="Summa" />
+              <Mapping SourceColumn="NMComplex" DataSetColumn="NMComplex" />
+              <Mapping SourceColumn="IdSm" DataSetColumn="IdSm" />
+              <Mapping SourceColumn="Osn" DataSetColumn="Osn" />
+              <Mapping SourceColumn="NMSmeti" DataSetColumn="NMSmeti" />
+              <Mapping SourceColumn="DogF2" DataSetColumn="DogF2" />
+              <Mapping SourceColumn="nzpred91" DataSetColumn="nzpred91" />
+              <Mapping SourceColumn="nzpred" DataSetColumn="nzpred" />
+              <Mapping SourceColumn="Vip91d2" DataSetColumn="Vip91d2" />
+              <Mapping SourceColumn="VipTekd2" DataSetColumn="VipTekd2" />
+              <Mapping SourceColumn="YearZakr" DataSetColumn="YearZakr" />
+              <Mapping SourceColumn="nzpred91sng" DataSetColumn="nzpred91sng" />
+              <Mapping SourceColumn="nzpredsng" DataSetColumn="nzpredsng" />
+              <Mapping SourceColumn="nztek91" DataSetColumn="nztek91" />
+              <Mapping SourceColumn="nztek" DataSetColumn="nztek" />
+              <Mapping SourceColumn="KodStr" DataSetColumn="KodStr" />
+              <Mapping SourceColumn="Codir4" DataSetColumn="Codir4" />
+              <Mapping SourceColumn="KodDog" DataSetColumn="KodDog" />
+              <Mapping SourceColumn="DateStartNZP" DataSetColumn="DateStartNZP" />
+              <Mapping SourceColumn="PrichinaNZP" DataSetColumn="PrichinaNZP" />
+              <Mapping SourceColumn="Ispolnitel" DataSetColumn="Ispolnitel" />
+              <Mapping SourceColumn="SmetaD" DataSetColumn="SmetaD" />
+              <Mapping SourceColumn="StatusZak" DataSetColumn="StatusZak" />
+              <Mapping SourceColumn="idComplex" DataSetColumn="idComplex" />
+              <Mapping SourceColumn="Prim" DataSetColumn="Prim" />
+              <Mapping SourceColumn="Nomer" DataSetColumn="Nomer" />
+              <Mapping SourceColumn="Otv" DataSetColumn="Otv" />
+              <Mapping SourceColumn="ZimUdor91" DataSetColumn="ZimUdor91" />
+              <Mapping SourceColumn="OSR" DataSetColumn="OSR" />
+              <Mapping SourceColumn="YearF2" DataSetColumn="YearF2" />
+              <Mapping SourceColumn="Department" DataSetColumn="Department" />
+              <Mapping SourceColumn="PodpisanKS6" DataSetColumn="PodpisanKS6" />
+              <Mapping SourceColumn="PrichinaNZPKS2" DataSetColumn="PrichinaNZPKS2" />
+              <Mapping SourceColumn="Naim" DataSetColumn="Naim" />
+              <Mapping SourceColumn="bl" DataSetColumn="bl" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="smrDataSetNZP" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="smrDataSetNZP" msprop:Generator_UserDSName="smrDataSetNZP">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WorkNZP" msprop:Generator_TableClassName="WorkNZPDataTable" msprop:Generator_TableVarName="tableWorkNZP" msprop:Generator_RowChangedName="WorkNZPRowChanged" msprop:Generator_TablePropName="WorkNZP" msprop:Generator_RowDeletingName="WorkNZPRowDeleting" msprop:Generator_RowChangingName="WorkNZPRowChanging" msprop:Generator_RowEvHandlerName="WorkNZPRowChangeEventHandler" msprop:Generator_RowDeletedName="WorkNZPRowDeleted" msprop:Generator_RowClassName="WorkNZPRow" msprop:Generator_UserTableName="WorkNZP" msprop:Generator_RowEvArgName="WorkNZPRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="shNMEntpr" msprop:Generator_ColumnVarNameInTable="columnshNMEntpr" msprop:Generator_ColumnPropNameInRow="shNMEntpr" msprop:Generator_ColumnPropNameInTable="shNMEntprColumn" msprop:Generator_UserColumnName="shNMEntpr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NomerSm" msprop:Generator_ColumnVarNameInTable="columnNomerSm" msprop:Generator_ColumnPropNameInRow="NomerSm" msprop:Generator_ColumnPropNameInTable="NomerSmColumn" msprop:Generator_UserColumnName="NomerSm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="303" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vip91" msprop:Generator_ColumnVarNameInTable="columnVip91" msprop:Generator_ColumnPropNameInRow="Vip91" msprop:Generator_ColumnPropNameInTable="Vip91Column" msprop:Generator_UserColumnName="Vip91" type="xs:double" minOccurs="0" />
+              <xs:element name="VipTek" msprop:Generator_ColumnVarNameInTable="columnVipTek" msprop:Generator_ColumnPropNameInRow="VipTek" msprop:Generator_ColumnPropNameInTable="VipTekColumn" msprop:Generator_UserColumnName="VipTek" type="xs:double" minOccurs="0" />
+              <xs:element name="Summa" msprop:Generator_ColumnVarNameInTable="columnSumma" msprop:Generator_ColumnPropNameInRow="Summa" msprop:Generator_ColumnPropNameInTable="SummaColumn" msprop:Generator_UserColumnName="Summa" type="xs:double" minOccurs="0" />
+              <xs:element name="NMComplex" msprop:Generator_ColumnVarNameInTable="columnNMComplex" msprop:Generator_ColumnPropNameInRow="NMComplex" msprop:Generator_ColumnPropNameInTable="NMComplexColumn" msprop:Generator_UserColumnName="NMComplex">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="166" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdSm" msprop:Generator_ColumnVarNameInTable="columnIdSm" msprop:Generator_ColumnPropNameInRow="IdSm" msprop:Generator_ColumnPropNameInTable="IdSmColumn" msprop:Generator_UserColumnName="IdSm" type="xs:int" minOccurs="0" />
+              <xs:element name="Osn" msprop:Generator_ColumnVarNameInTable="columnOsn" msprop:Generator_ColumnPropNameInRow="Osn" msprop:Generator_ColumnPropNameInTable="OsnColumn" msprop:Generator_UserColumnName="Osn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NMSmeti" msprop:Generator_ColumnVarNameInTable="columnNMSmeti" msprop:Generator_ColumnPropNameInRow="NMSmeti" msprop:Generator_ColumnPropNameInTable="NMSmetiColumn" msprop:Generator_UserColumnName="NMSmeti" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DogF2" msprop:Generator_ColumnVarNameInTable="columnDogF2" msprop:Generator_ColumnPropNameInRow="DogF2" msprop:Generator_ColumnPropNameInTable="DogF2Column" msprop:Generator_UserColumnName="DogF2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nzpred91" msprop:Generator_ColumnVarNameInTable="columnnzpred91" msprop:Generator_ColumnPropNameInRow="nzpred91" msprop:Generator_ColumnPropNameInTable="nzpred91Column" msprop:Generator_UserColumnName="nzpred91" type="xs:double" minOccurs="0" />
+              <xs:element name="nzpred" msprop:Generator_ColumnVarNameInTable="columnnzpred" msprop:Generator_ColumnPropNameInRow="nzpred" msprop:Generator_ColumnPropNameInTable="nzpredColumn" msprop:Generator_UserColumnName="nzpred" type="xs:double" minOccurs="0" />
+              <xs:element name="Vip91d2" msprop:Generator_ColumnVarNameInTable="columnVip91d2" msprop:Generator_ColumnPropNameInRow="Vip91d2" msprop:Generator_ColumnPropNameInTable="Vip91d2Column" msprop:Generator_UserColumnName="Vip91d2" type="xs:double" minOccurs="0" />
+              <xs:element name="VipTekd2" msprop:Generator_ColumnVarNameInTable="columnVipTekd2" msprop:Generator_ColumnPropNameInRow="VipTekd2" msprop:Generator_ColumnPropNameInTable="VipTekd2Column" msprop:Generator_UserColumnName="VipTekd2" type="xs:double" minOccurs="0" />
+              <xs:element name="YearZakr" msprop:Generator_ColumnVarNameInTable="columnYearZakr" msprop:Generator_ColumnPropNameInRow="YearZakr" msprop:Generator_ColumnPropNameInTable="YearZakrColumn" msprop:Generator_UserColumnName="YearZakr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nzpred91sng" msprop:Generator_ColumnVarNameInTable="columnnzpred91sng" msprop:Generator_ColumnPropNameInRow="nzpred91sng" msprop:Generator_ColumnPropNameInTable="nzpred91sngColumn" msprop:Generator_UserColumnName="nzpred91sng" type="xs:double" minOccurs="0" />
+              <xs:element name="nzpredsng" msprop:Generator_ColumnVarNameInTable="columnnzpredsng" msprop:Generator_ColumnPropNameInRow="nzpredsng" msprop:Generator_ColumnPropNameInTable="nzpredsngColumn" msprop:Generator_UserColumnName="nzpredsng" type="xs:double" minOccurs="0" />
+              <xs:element name="nztek91" msprop:Generator_ColumnVarNameInTable="columnnztek91" msprop:Generator_ColumnPropNameInRow="nztek91" msprop:Generator_ColumnPropNameInTable="nztek91Column" msprop:Generator_UserColumnName="nztek91" type="xs:double" minOccurs="0" />
+              <xs:element name="nztek" msprop:Generator_ColumnVarNameInTable="columnnztek" msprop:Generator_ColumnPropNameInRow="nztek" msprop:Generator_ColumnPropNameInTable="nztekColumn" msprop:Generator_UserColumnName="nztek" type="xs:double" minOccurs="0" />
+              <xs:element name="KodStr" msprop:Generator_ColumnVarNameInTable="columnKodStr" msprop:Generator_ColumnPropNameInRow="KodStr" msprop:Generator_ColumnPropNameInTable="KodStrColumn" msprop:Generator_UserColumnName="KodStr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Codir4" msprop:Generator_ColumnVarNameInTable="columnCodir4" msprop:Generator_ColumnPropNameInRow="Codir4" msprop:Generator_ColumnPropNameInTable="Codir4Column" msprop:Generator_UserColumnName="Codir4">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KodDog" msprop:Generator_ColumnVarNameInTable="columnKodDog" msprop:Generator_ColumnPropNameInRow="KodDog" msprop:Generator_ColumnPropNameInTable="KodDogColumn" msprop:Generator_UserColumnName="KodDog" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DateStartNZP" msprop:Generator_ColumnVarNameInTable="columnDateStartNZP" msprop:Generator_ColumnPropNameInRow="DateStartNZP" msprop:Generator_ColumnPropNameInTable="DateStartNZPColumn" msprop:Generator_UserColumnName="DateStartNZP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PrichinaNZP" msprop:Generator_ColumnVarNameInTable="columnPrichinaNZP" msprop:Generator_ColumnPropNameInRow="PrichinaNZP" msprop:Generator_ColumnPropNameInTable="PrichinaNZPColumn" msprop:Generator_UserColumnName="PrichinaNZP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ispolnitel" msprop:Generator_ColumnVarNameInTable="columnIspolnitel" msprop:Generator_ColumnPropNameInRow="Ispolnitel" msprop:Generator_ColumnPropNameInTable="IspolnitelColumn" msprop:Generator_UserColumnName="Ispolnitel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="223" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SmetaD" msprop:Generator_ColumnVarNameInTable="columnSmetaD" msprop:Generator_ColumnPropNameInRow="SmetaD" msprop:Generator_ColumnPropNameInTable="SmetaDColumn" msprop:Generator_UserColumnName="SmetaD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StatusZak" msprop:Generator_ColumnVarNameInTable="columnStatusZak" msprop:Generator_ColumnPropNameInRow="StatusZak" msprop:Generator_ColumnPropNameInTable="StatusZakColumn" msprop:Generator_UserColumnName="StatusZak">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idComplex" msprop:Generator_ColumnVarNameInTable="columnidComplex" msprop:Generator_ColumnPropNameInRow="idComplex" msprop:Generator_ColumnPropNameInTable="idComplexColumn" msprop:Generator_UserColumnName="idComplex" type="xs:int" minOccurs="0" />
+              <xs:element name="Prim" msprop:Generator_ColumnVarNameInTable="columnPrim" msprop:Generator_ColumnPropNameInRow="Prim" msprop:Generator_ColumnPropNameInTable="PrimColumn" msprop:Generator_UserColumnName="Prim">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nomer" msprop:Generator_ColumnVarNameInTable="columnNomer" msprop:Generator_ColumnPropNameInRow="Nomer" msprop:Generator_ColumnPropNameInTable="NomerColumn" msprop:Generator_UserColumnName="Nomer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Otv" msprop:Generator_ColumnVarNameInTable="columnOtv" msprop:Generator_ColumnPropNameInRow="Otv" msprop:Generator_ColumnPropNameInTable="OtvColumn" msprop:Generator_UserColumnName="Otv">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ZimUdor91" msprop:Generator_ColumnVarNameInTable="columnZimUdor91" msprop:Generator_ColumnPropNameInRow="ZimUdor91" msprop:Generator_ColumnPropNameInTable="ZimUdor91Column" msprop:Generator_UserColumnName="ZimUdor91" type="xs:int" minOccurs="0" />
+              <xs:element name="OSR" msprop:Generator_ColumnVarNameInTable="columnOSR" msprop:Generator_ColumnPropNameInRow="OSR" msprop:Generator_ColumnPropNameInTable="OSRColumn" msprop:Generator_UserColumnName="OSR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="YearF2" msprop:Generator_ColumnVarNameInTable="columnYearF2" msprop:Generator_ColumnPropNameInRow="YearF2" msprop:Generator_ColumnPropNameInTable="YearF2Column" msprop:Generator_UserColumnName="YearF2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="31" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_UserColumnName="Department" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PodpisanKS6" msprop:Generator_ColumnVarNameInTable="columnPodpisanKS6" msprop:Generator_ColumnPropNameInRow="PodpisanKS6" msprop:Generator_ColumnPropNameInTable="PodpisanKS6Column" msprop:Generator_UserColumnName="PodpisanKS6" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PrichinaNZPKS2" msprop:Generator_ColumnVarNameInTable="columnPrichinaNZPKS2" msprop:Generator_ColumnPropNameInRow="PrichinaNZPKS2" msprop:Generator_ColumnPropNameInTable="PrichinaNZPKS2Column" msprop:Generator_UserColumnName="PrichinaNZPKS2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Naim" msprop:Generator_ColumnVarNameInTable="columnNaim" msprop:Generator_ColumnPropNameInRow="Naim" msprop:Generator_ColumnPropNameInTable="NaimColumn" msprop:Generator_UserColumnName="Naim" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bl" msprop:Generator_ColumnVarNameInTable="columnbl" msprop:Generator_ColumnPropNameInRow="bl" msprop:Generator_ColumnPropNameInTable="blColumn" msprop:Generator_UserColumnName="bl" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

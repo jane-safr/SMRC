@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SMRC">
+</Property><Property Name="Solution File" Value="C:\NetProject\SMRC\SMRC.sln">
+</Property><Property Name="User Options File" Value="C:\NetProject\SMRC\SMRC.suo">
+</Property><Property Name="Date" Value="18 ноября 2008 г.">
+</Property><Property Name="Time" Value="14:01">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="SMRC.sln" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC.sln">
+</Event><Event ErrorLevel="0" Project="" Source="SMRC.suo" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC.suo">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\SMRC.csproj" Description="Project file successfully backed up as C:\NetProject\SMRC\Backup\SMRC\SMRC.csproj">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\SMRC.csproj.user" Description="Project user file successfully backed up as C:\NetProject\SMRC\Backup\SMRC\SMRC.csproj.user">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Component1.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Component1.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Component1.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Component1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\Conn.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\Conn.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\Conn.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\Conn.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmAct.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmAct.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmAct.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmAct.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmActs.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmActs.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmActs.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmActs.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmActsZak.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmActsZak.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmActsZak.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmActsZak.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmDN.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmDN.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmDN.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmDN.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmDog.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmDog.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmDog.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmDog.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmF3.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmF3.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmF3.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmF3.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmForF3.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmForF3.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmForF3.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmForF3.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmList.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmList.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmList.designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmList.designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmLoad.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmLoad.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmLoad.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmLoad.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmReps.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmReps.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmReps.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmReps.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmSprDGV.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmSprDGV.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmSprDGV.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmSprDGV.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmSSRSm.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmSSRSm.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmSSRSm.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmSSRSm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmSSRSmet.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmSSRSmet.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmSSRSmet.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmSSRSmet.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmVibF3.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmVibF3.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmVibF3.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmVibF3.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmVibReestr.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmVibReestr.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmVibReestr.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmVibReestr.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmVibSmet.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmVibSmet.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmVibSmet.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmVibSmet.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\My.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\My.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Program.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Program.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Reports\ModOffice.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Reports\ModOffice.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Reports\Work.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Reports\Work.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSet11.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSet11.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSet3.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSet3.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSetObor.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSetObor.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSetProch.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSetProch.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSetSv.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSetSv.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\WorkSm.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\WorkSm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\WorkSvSub.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\WorkSvSub.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\WorkSvSub.Designer.cs" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\WorkSvSub.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Properties\Settings.settings" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Resources\add_small1.bmp" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Resources\add_small1.bmp">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Resources\sqltut.ico" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Resources\sqltut.ico">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\app.config" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\app.config">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\ClassDiagram1.cd" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\ClassDiagram1.cd">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Resources\sqltut1.ico" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Resources\sqltut1.ico">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Resources\CHANGEPG (1).ICO" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Resources\CHANGEPG (1).ICO">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Resources\EXCEL.ICO" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Resources\EXCEL.ICO">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Resources\ARW08LT.ICO" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Resources\ARW08LT.ICO">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Resources\ARW08RT.ICO" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Resources\ARW08RT.ICO">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Resources\CHECKMRK.ICO" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Resources\CHECKMRK.ICO">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSet11.xsc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSet11.xsc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSet11.xsd" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSet11.xsd">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSet11.xss" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSet11.xss">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSet3.xsc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSet3.xsc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSet3.xsd" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSet3.xsd">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSet3.xss" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSet3.xss">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSetObor.xsc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSetObor.xsc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSetObor.xsd" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSetObor.xsd">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSetObor.xss" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSetObor.xss">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSetProch.xsc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSetProch.xsc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSetProch.xsd" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSetProch.xsd">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSetProch.xss" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSetProch.xss">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSetSv.xsc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSetSv.xsc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSetSv.xsd" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSetSv.xsd">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\smrDataSetSv.xss" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\smrDataSetSv.xss">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\WorkSm.xsc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\WorkSm.xsc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\WorkSm.xsd" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\WorkSm.xsd">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\WorkSm.xss" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\WorkSm.xss">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\WorkSvSub.xsc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\WorkSvSub.xsc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\WorkSvSub.xsd" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\WorkSvSub.xsd">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\WorkSvSub.xss" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\WorkSvSub.xss">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Icon1.ico" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Icon1.ico">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Mn.ico" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Mn.ico">
+</Event><Event ErrorLevel="1" Project="SMRC" Source="..\..\cis\Reports\obor.rdlc" Description="Backed up project may not build.  Project contains linked file: C:\NetProject\SMRC\Backup\SMRC\Reports\obor.rdlc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="..\..\cis\Reports\obor.rdlc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Reports\obor.rdlc">
+</Event><Event ErrorLevel="1" Project="SMRC" Source="..\..\cis\Reports\rActDogovor.rdlc" Description="Backed up project may not build.  Project contains linked file: C:\NetProject\SMRC\Backup\SMRC\Reports\rActDogovor.rdlc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="..\..\cis\Reports\rActDogovor.rdlc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Reports\rActDogovor.rdlc">
+</Event><Event ErrorLevel="1" Project="SMRC" Source="..\..\cis\Reports\rActDogovorDavMat.rdlc" Description="Backed up project may not build.  Project contains linked file: C:\NetProject\SMRC\Backup\SMRC\Reports\rActDogovorDavMat.rdlc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="..\..\cis\Reports\rActDogovorDavMat.rdlc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Reports\rActDogovorDavMat.rdlc">
+</Event><Event ErrorLevel="1" Project="SMRC" Source="..\..\cis\Reports\rActDogovorProch.rdlc" Description="Backed up project may not build.  Project contains linked file: C:\NetProject\SMRC\Backup\SMRC\Reports\rActDogovorProch.rdlc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="..\..\cis\Reports\rActDogovorProch.rdlc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Reports\rActDogovorProch.rdlc">
+</Event><Event ErrorLevel="1" Project="SMRC" Source="..\..\cis\Reports\rActDogovorUch.rdlc" Description="Backed up project may not build.  Project contains linked file: C:\NetProject\SMRC\Backup\SMRC\Reports\rActDogovorUch.rdlc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="..\..\cis\Reports\rActDogovorUch.rdlc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Reports\rActDogovorUch.rdlc">
+</Event><Event ErrorLevel="1" Project="SMRC" Source="..\..\cis\Reports\rptOSR.rdlc" Description="Backed up project may not build.  Project contains linked file: C:\NetProject\SMRC\Backup\SMRC\Reports\rptOSR.rdlc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="..\..\cis\Reports\rptOSR.rdlc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Reports\rptOSR.rdlc">
+</Event><Event ErrorLevel="1" Project="SMRC" Source="..\..\cis\Reports\rptSSR.rdlc" Description="Backed up project may not build.  Project contains linked file: C:\NetProject\SMRC\Backup\SMRC\rptSSR.rdlc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="..\..\cis\Reports\rptSSR.rdlc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\rptSSR.rdlc">
+</Event><Event ErrorLevel="1" Project="SMRC" Source="..\..\cis\Reports\rShahSv.rdlc" Description="Backed up project may not build.  Project contains linked file: C:\NetProject\SMRC\Backup\SMRC\Reports\rShahSv.rdlc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="..\..\cis\Reports\rShahSv.rdlc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Reports\rShahSv.rdlc">
+</Event><Event ErrorLevel="1" Project="SMRC" Source="..\..\cis\Reports\rSvodnijProrab.rdlc" Description="Backed up project may not build.  Project contains linked file: C:\NetProject\SMRC\Backup\SMRC\Reports\rSvodnijProrab.rdlc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="..\..\cis\Reports\rSvodnijProrab.rdlc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Reports\rSvodnijProrab.rdlc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Component1.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Component1.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\Conn.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\Conn.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmAct.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmAct.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmActs.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmActs.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmActsZak.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmActsZak.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmDN.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmDN.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmDog.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmDog.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmF3.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmF3.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmForF3.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmForF3.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmList.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmList.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmLoad.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmLoad.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmReps.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmReps.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmSprDGV.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmSprDGV.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmSSRSm.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmSSRSm.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmSSRSmet.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmSSRSmet.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmVibF3.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmVibF3.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmVibReestr.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmVibReestr.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Forms\frmVibSmet.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Forms\frmVibSmet.resx">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\Properties\Resources.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Properties\Resources.resx">
+</Event><Event ErrorLevel="1" Project="SMRC" Source="..\..\cis\Reports\rSvodnij.rdlc" Description="Backed up project may not build.  Project contains linked file: C:\NetProject\SMRC\Backup\SMRC\Reports\rSvodnij.rdlc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="..\..\cis\Reports\rSvodnij.rdlc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Reports\rSvodnij.rdlc">
+</Event><Event ErrorLevel="1" Project="SMRC" Source="..\..\cis\Reports\rShahSvF2.rdlc" Description="Backed up project may not build.  Project contains linked file: C:\NetProject\SMRC\Backup\SMRC\Reports\rShahSvF2.rdlc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="..\..\cis\Reports\rShahSvF2.rdlc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Reports\rShahSvF2.rdlc">
+</Event><Event ErrorLevel="1" Project="SMRC" Source="..\..\cis\Reports\rSmetnoeRaz.rdlc" Description="Backed up project may not build.  Project contains linked file: C:\NetProject\SMRC\Backup\SMRC\Reports\rSmetnoeRaz.rdlc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="..\..\cis\Reports\rSmetnoeRaz.rdlc" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Reports\rSmetnoeRaz.rdlc">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\SMRC.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SMRC" Source="SMRC\SMRC.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MultiColumnCombo" Source="SMRC\Control\MultiColumnCombo.vbproj" Description="Project file successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Control\MultiColumnCombo.vbproj">
+</Event><Event ErrorLevel="0" Project="MultiColumnCombo" Source="SMRC\Control\MultiColumnCombo.vbproj.user" Description="Project user file successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Control\MultiColumnCombo.vbproj.user">
+</Event><Event ErrorLevel="0" Project="MultiColumnCombo" Source="SMRC\Control\AssemblyInfo.vb" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Control\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="MultiColumnCombo" Source="SMRC\Control\MultiColumnCombo.vb" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Control\MultiColumnCombo.vb">
+</Event><Event ErrorLevel="0" Project="MultiColumnCombo" Source="SMRC\Control\MultiColumnCombo.resx" Description="File successfully backed up as C:\NetProject\SMRC\Backup\SMRC\Control\MultiColumnCombo.resx">
+</Event><Event ErrorLevel="0" Project="MultiColumnCombo" Source="SMRC\Control\MultiColumnCombo.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MultiColumnCombo" Source="SMRC\Control\MultiColumnCombo.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SMRC.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SMRC.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SMRC" Source="SMRC\SMRC.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="MultiColumnCombo" Source="SMRC\Control\MultiColumnCombo.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

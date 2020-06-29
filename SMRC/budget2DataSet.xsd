@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="budget2DataSet" targetNamespace="http://tempuri.org/budget2DataSet.xsd" xmlns:mstns="http://tempuri.org/budget2DataSet.xsd" xmlns="http://tempuri.org/budget2DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="budget2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="budget2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SMRC.Properties.Settings.GlobalReference.Default.budget2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vMaxOborotTableAdapter" GeneratorDataComponentClassName="vMaxOborotTableAdapter" Name="vMaxOborot" UserDataComponentName="vMaxOborotTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="budget2ConnectionString (Settings)" DbObjectName="budget2.dbo.vMaxOborot" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Последняя выгрузка], Предприятие FROM dbo.vMaxOborot</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Последняя выгрузка" DataSetColumn="Последняя выгрузка" />
+              <Mapping SourceColumn="Предприятие" DataSetColumn="Предприятие" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="budget2DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="budget2DataSet" msprop:Generator_UserDSName="budget2DataSet" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vMaxOborot" msprop:Generator_UserTableName="vMaxOborot" msprop:Generator_RowDeletedName="vMaxOborotRowDeleted" msprop:Generator_TableClassName="vMaxOborotDataTable" msprop:Generator_RowChangedName="vMaxOborotRowChanged" msprop:Generator_RowClassName="vMaxOborotRow" msprop:Generator_RowChangingName="vMaxOborotRowChanging" msprop:Generator_RowEvArgName="vMaxOborotRowChangeEvent" msprop:Generator_RowEvHandlerName="vMaxOborotRowChangeEventHandler" msprop:Generator_TablePropName="vMaxOborot" msprop:Generator_TableVarName="tablevMaxOborot" msprop:Generator_RowDeletingName="vMaxOborotRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Последняя_x0020_выгрузка" msprop:Generator_UserColumnName="Последняя выгрузка" msprop:Generator_ColumnPropNameInRow="Последняя_выгрузка" msprop:Generator_ColumnVarNameInTable="columnПоследняя_выгрузка" msprop:Generator_ColumnPropNameInTable="Последняя_выгрузкаColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Предприятие" msprop:Generator_UserColumnName="Предприятие" msprop:Generator_ColumnPropNameInRow="Предприятие" msprop:Generator_ColumnVarNameInTable="columnПредприятие" msprop:Generator_ColumnPropNameInTable="ПредприятиеColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

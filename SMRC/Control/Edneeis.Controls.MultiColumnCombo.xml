@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>Edneeis.Controls.MultiColumnCombo</name>
+    <version>1.0.1623.39422</version>
+    <fullname>Edneeis.Controls.MultiColumnCombo, Version=1.0.1623.39422, Culture=neutral, PublicKeyToken=null</fullname>
+  </assembly>
+  <members>
+    <member name="T:Edneeis.Controls.MultiColumnComboBox">
+      <summary>
+ MultiColumnCombo is a subclass of the windows forms Combobox control.  This control adds the option of images in the drop down list, 
+ allows multiple columns to be in the list, allows a header to describe the columns in the list, and allows for databinding to the columns. 
+ </summary>
+ <remarks>
+ For updated versions of if you have any bug fixes go to http://www.edneeis.com.  Also special thanks to Loren Lowe (lorenmlowe@yahoo.com) 
+ for providing code and concept for the AutoSize feature of the columns. 
+ </remarks>
+ <history>
+ 	[ed]	6/11/2004	Created 
+ </history></member>
+    <member name="F:Edneeis.Controls.MultiColumnComboBox._performResize">
+      <summary>
+ Internal flag which causes the autosizing of columns to be performed, similiar to an IsDirty flag for resizing. 
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[ed]	6/11/2004	Created 
+ </history></member>
+    <member name="T:Edneeis.Controls.MultiColumnComboBox.Column">
+      <summary>
+ Column object used to setup columns within the MultiColumnComboBox. 
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[ed]	6/11/2004	Created 
+ </history></member>
+    <member name="T:Edneeis.Controls.MultiColumnComboBox.ColumnCollection">
+      <summary>
+ Strongly Typed Collection object for columns within the MultiColumnComboBox. 
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[ed]	6/11/2004	Created 
+ </history>
+ ----------------------------------------------------------------------------- 
+ 
+     <member name="T:Edneeis.Controls.MultiColumnComboBox.CountChangedEventArgs"><summary>
+ Event arguments for the CountChanged Event of the ColumnCollection object. 
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[ed]	6/11/2004	Created 
+ </history></member><member name="T:Edneeis.Controls.GenericList"><summary>
+ The GenericList is used in the example to show binding to a custom object.  This object is a simple set of text and value pairs. 
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[ed]	6/11/2004	Created 
+ </history></member></member>
+  </members>
+</doc>

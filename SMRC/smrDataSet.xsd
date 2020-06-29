@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="smrDataSet" targetNamespace="http://tempuri.org/smrDataSet.xsd" xmlns:mstns="http://tempuri.org/smrDataSet.xsd" xmlns="http://tempuri.org/smrDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="smrConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="smrConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SMRC.Properties.Settings.GlobalReference.Default.smrConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vSSRTableAdapter" GeneratorDataComponentClassName="vSSRTableAdapter" Name="vSSR" UserDataComponentName="vSSRTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="smrConnectionString (Settings)" DbObjectName="smr.dbo.vSSR" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT NMComplex, NMChapter, idOSR, OrderNom, OSR, NMOSR, Str, Mont, Obor, Proch, SumSt FROM dbo.vSSR</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NMComplex" DataSetColumn="NMComplex" />
+              <Mapping SourceColumn="NMChapter" DataSetColumn="NMChapter" />
+              <Mapping SourceColumn="idOSR" DataSetColumn="idOSR" />
+              <Mapping SourceColumn="OrderNom" DataSetColumn="OrderNom" />
+              <Mapping SourceColumn="OSR" DataSetColumn="OSR" />
+              <Mapping SourceColumn="NMOSR" DataSetColumn="NMOSR" />
+              <Mapping SourceColumn="Str" DataSetColumn="Str" />
+              <Mapping SourceColumn="Mont" DataSetColumn="Mont" />
+              <Mapping SourceColumn="Obor" DataSetColumn="Obor" />
+              <Mapping SourceColumn="Proch" DataSetColumn="Proch" />
+              <Mapping SourceColumn="SumSt" DataSetColumn="SumSt" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="smrDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="smrDataSet" msprop:Generator_DataSetName="smrDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vSSR" msprop:Generator_UserTableName="vSSR" msprop:Generator_RowDeletedName="vSSRRowDeleted" msprop:Generator_TableClassName="vSSRDataTable" msprop:Generator_RowChangedName="vSSRRowChanged" msprop:Generator_RowClassName="vSSRRow" msprop:Generator_RowChangingName="vSSRRowChanging" msprop:Generator_RowEvArgName="vSSRRowChangeEvent" msprop:Generator_RowEvHandlerName="vSSRRowChangeEventHandler" msprop:Generator_TablePropName="vSSR" msprop:Generator_TableVarName="tablevSSR" msprop:Generator_RowDeletingName="vSSRRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NMComplex" msprop:Generator_UserColumnName="NMComplex" msprop:Generator_ColumnPropNameInRow="NMComplex" msprop:Generator_ColumnVarNameInTable="columnNMComplex" msprop:Generator_ColumnPropNameInTable="NMComplexColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NMChapter" msprop:Generator_UserColumnName="NMChapter" msprop:Generator_ColumnPropNameInRow="NMChapter" msprop:Generator_ColumnVarNameInTable="columnNMChapter" msprop:Generator_ColumnPropNameInTable="NMChapterColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idOSR" msprop:Generator_UserColumnName="idOSR" msprop:Generator_ColumnPropNameInRow="idOSR" msprop:Generator_ColumnVarNameInTable="columnidOSR" msprop:Generator_ColumnPropNameInTable="idOSRColumn" type="xs:int" />
+              <xs:element name="OrderNom" msprop:Generator_UserColumnName="OrderNom" msprop:Generator_ColumnPropNameInRow="OrderNom" msprop:Generator_ColumnVarNameInTable="columnOrderNom" msprop:Generator_ColumnPropNameInTable="OrderNomColumn" type="xs:int" />
+              <xs:element name="OSR" msprop:Generator_UserColumnName="OSR" msprop:Generator_ColumnPropNameInRow="OSR" msprop:Generator_ColumnVarNameInTable="columnOSR" msprop:Generator_ColumnPropNameInTable="OSRColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NMOSR" msprop:Generator_UserColumnName="NMOSR" msprop:Generator_ColumnPropNameInRow="NMOSR" msprop:Generator_ColumnVarNameInTable="columnNMOSR" msprop:Generator_ColumnPropNameInTable="NMOSRColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Str" msprop:Generator_UserColumnName="Str" msprop:Generator_ColumnPropNameInRow="Str" msprop:Generator_ColumnVarNameInTable="columnStr" msprop:Generator_ColumnPropNameInTable="StrColumn" type="xs:double" />
+              <xs:element name="Mont" msprop:Generator_UserColumnName="Mont" msprop:Generator_ColumnPropNameInRow="Mont" msprop:Generator_ColumnVarNameInTable="columnMont" msprop:Generator_ColumnPropNameInTable="MontColumn" type="xs:double" />
+              <xs:element name="Obor" msprop:Generator_UserColumnName="Obor" msprop:Generator_ColumnPropNameInRow="Obor" msprop:Generator_ColumnVarNameInTable="columnObor" msprop:Generator_ColumnPropNameInTable="OborColumn" type="xs:double" />
+              <xs:element name="Proch" msprop:Generator_UserColumnName="Proch" msprop:Generator_ColumnPropNameInRow="Proch" msprop:Generator_ColumnVarNameInTable="columnProch" msprop:Generator_ColumnPropNameInTable="ProchColumn" type="xs:double" />
+              <xs:element name="SumSt" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SumSt" msprop:Generator_ColumnPropNameInRow="SumSt" msprop:Generator_ColumnVarNameInTable="columnSumSt" msprop:Generator_ColumnPropNameInTable="SumStColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vSSR" />
+      <xs:field xpath="mstns:idOSR" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

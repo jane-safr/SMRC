@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="smrDataSet" targetNamespace="http://tempuri.org/smrDataSet2.xsd" xmlns:mstns="http://tempuri.org/smrDataSet2.xsd" xmlns="http://tempuri.org/smrDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="smrConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="smrConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SMRC.Properties.Settings.GlobalReference.Default.smrConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vDogOpytTableAdapter" GeneratorDataComponentClassName="vDogOpytTableAdapter" Name="vDogOpyt" UserDataComponentName="vDogOpytTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="smrConnectionString (Settings)" DbObjectName="smr.dbo.vDogOpyt" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT RegNomer, shNMEntpr, Summa, PredmetDog, Adress, IdEntpr, Contact, NMPrProg FROM dbo.vDogOpyt</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RegNomer" DataSetColumn="RegNomer" />
+              <Mapping SourceColumn="shNMEntpr" DataSetColumn="shNMEntpr" />
+              <Mapping SourceColumn="Summa" DataSetColumn="Summa" />
+              <Mapping SourceColumn="PredmetDog" DataSetColumn="PredmetDog" />
+              <Mapping SourceColumn="Adress" DataSetColumn="Adress" />
+              <Mapping SourceColumn="IdEntpr" DataSetColumn="IdEntpr" />
+              <Mapping SourceColumn="Contact" DataSetColumn="Contact" />
+              <Mapping SourceColumn="NMPrProg" DataSetColumn="NMPrProg" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="smrDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="smrDataSet" msprop:Generator_UserDSName="smrDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vDogOpyt" msprop:Generator_TableClassName="vDogOpytDataTable" msprop:Generator_TableVarName="tablevDogOpyt" msprop:Generator_TablePropName="vDogOpyt" msprop:Generator_RowDeletingName="vDogOpytRowDeleting" msprop:Generator_RowChangingName="vDogOpytRowChanging" msprop:Generator_RowEvHandlerName="vDogOpytRowChangeEventHandler" msprop:Generator_RowDeletedName="vDogOpytRowDeleted" msprop:Generator_UserTableName="vDogOpyt" msprop:Generator_RowChangedName="vDogOpytRowChanged" msprop:Generator_RowEvArgName="vDogOpytRowChangeEvent" msprop:Generator_RowClassName="vDogOpytRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RegNomer" msprop:Generator_ColumnVarNameInTable="columnRegNomer" msprop:Generator_ColumnPropNameInRow="RegNomer" msprop:Generator_ColumnPropNameInTable="RegNomerColumn" msprop:Generator_UserColumnName="RegNomer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="shNMEntpr" msprop:Generator_ColumnVarNameInTable="columnshNMEntpr" msprop:Generator_ColumnPropNameInRow="shNMEntpr" msprop:Generator_ColumnPropNameInTable="shNMEntprColumn" msprop:Generator_UserColumnName="shNMEntpr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Summa" msprop:Generator_ColumnVarNameInTable="columnSumma" msprop:Generator_ColumnPropNameInRow="Summa" msprop:Generator_ColumnPropNameInTable="SummaColumn" msprop:Generator_UserColumnName="Summa" type="xs:double" minOccurs="0" />
+              <xs:element name="PredmetDog" msprop:Generator_ColumnVarNameInTable="columnPredmetDog" msprop:Generator_ColumnPropNameInRow="PredmetDog" msprop:Generator_ColumnPropNameInTable="PredmetDogColumn" msprop:Generator_UserColumnName="PredmetDog" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adress" msprop:Generator_ColumnVarNameInTable="columnAdress" msprop:Generator_ColumnPropNameInRow="Adress" msprop:Generator_ColumnPropNameInTable="AdressColumn" msprop:Generator_UserColumnName="Adress">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdEntpr" msprop:Generator_ColumnVarNameInTable="columnIdEntpr" msprop:Generator_ColumnPropNameInRow="IdEntpr" msprop:Generator_ColumnPropNameInTable="IdEntprColumn" msprop:Generator_UserColumnName="IdEntpr" type="xs:int" />
+              <xs:element name="Contact" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnContact" msprop:Generator_ColumnPropNameInRow="Contact" msprop:Generator_ColumnPropNameInTable="ContactColumn" msprop:Generator_UserColumnName="Contact" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NMPrProg" msprop:Generator_ColumnVarNameInTable="columnNMPrProg" msprop:Generator_ColumnPropNameInRow="NMPrProg" msprop:Generator_ColumnPropNameInTable="NMPrProgColumn" msprop:Generator_UserColumnName="NMPrProg">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vDogOpyt" />
+      <xs:field xpath="mstns:IdEntpr" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="smrDataSetPerech" targetNamespace="http://tempuri.org/smrDataSetPerech.xsd" xmlns:mstns="http://tempuri.org/smrDataSetPerech.xsd" xmlns="http://tempuri.org/smrDataSetPerech.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="smrConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="smrConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SMRC.Properties.Settings.GlobalReference.Default.smrConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vPerechTableAdapter" GeneratorDataComponentClassName="vPerechTableAdapter" Name="vPerech" UserDataComponentName="vPerechTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="smrConnectionString (Settings)" DbObjectName="smr.dbo.vPerech" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NDoc, Nomer, NMSmeti, Osn, Zak, GP, Object, KodZak, Исполнитель, NMComplex, NMChapter, KodOSR, OSR, NMOSR, PunktTiTulStr, RegNomer, IstFin, TypeWrk, Razr, Naim, Period, SumBazOr, Sum91Or, SumTekOr, SumMR, BazStObor, SumProchZ, F2GP, F2SP, IdSm, IdWhoF3 FROM dbo.vPerech</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NDoc" DataSetColumn="NDoc" />
+              <Mapping SourceColumn="Nomer" DataSetColumn="Nomer" />
+              <Mapping SourceColumn="NMSmeti" DataSetColumn="NMSmeti" />
+              <Mapping SourceColumn="Osn" DataSetColumn="Osn" />
+              <Mapping SourceColumn="Zak" DataSetColumn="Zak" />
+              <Mapping SourceColumn="GP" DataSetColumn="GP" />
+              <Mapping SourceColumn="Object" DataSetColumn="Object" />
+              <Mapping SourceColumn="KodZak" DataSetColumn="KodZak" />
+              <Mapping SourceColumn="Исполнитель" DataSetColumn="Исполнитель" />
+              <Mapping SourceColumn="NMComplex" DataSetColumn="NMComplex" />
+              <Mapping SourceColumn="NMChapter" DataSetColumn="NMChapter" />
+              <Mapping SourceColumn="KodOSR" DataSetColumn="KodOSR" />
+              <Mapping SourceColumn="OSR" DataSetColumn="OSR" />
+              <Mapping SourceColumn="NMOSR" DataSetColumn="NMOSR" />
+              <Mapping SourceColumn="PunktTiTulStr" DataSetColumn="PunktTiTulStr" />
+              <Mapping SourceColumn="RegNomer" DataSetColumn="RegNomer" />
+              <Mapping SourceColumn="IstFin" DataSetColumn="IstFin" />
+              <Mapping SourceColumn="TypeWrk" DataSetColumn="TypeWrk" />
+              <Mapping SourceColumn="Razr" DataSetColumn="Razr" />
+              <Mapping SourceColumn="Naim" DataSetColumn="Naim" />
+              <Mapping SourceColumn="Period" DataSetColumn="Period" />
+              <Mapping SourceColumn="SumBazOr" DataSetColumn="SumBazOr" />
+              <Mapping SourceColumn="Sum91Or" DataSetColumn="Sum91Or" />
+              <Mapping SourceColumn="SumTekOr" DataSetColumn="SumTekOr" />
+              <Mapping SourceColumn="SumMR" DataSetColumn="SumMR" />
+              <Mapping SourceColumn="BazStObor" DataSetColumn="BazStObor" />
+              <Mapping SourceColumn="SumProchZ" DataSetColumn="SumProchZ" />
+              <Mapping SourceColumn="F2GP" DataSetColumn="F2GP" />
+              <Mapping SourceColumn="F2SP" DataSetColumn="F2SP" />
+              <Mapping SourceColumn="IdSm" DataSetColumn="IdSm" />
+              <Mapping SourceColumn="IdWhoF3" DataSetColumn="IdWhoF3" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="smrDataSetPerech" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="smrDataSetPerech" msprop:Generator_UserDSName="smrDataSetPerech">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vPerech" msprop:Generator_TableClassName="vPerechDataTable" msprop:Generator_TableVarName="tablevPerech" msprop:Generator_TablePropName="vPerech" msprop:Generator_RowDeletingName="vPerechRowDeleting" msprop:Generator_RowChangingName="vPerechRowChanging" msprop:Generator_RowEvHandlerName="vPerechRowChangeEventHandler" msprop:Generator_RowDeletedName="vPerechRowDeleted" msprop:Generator_UserTableName="vPerech" msprop:Generator_RowChangedName="vPerechRowChanged" msprop:Generator_RowEvArgName="vPerechRowChangeEvent" msprop:Generator_RowClassName="vPerechRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NDoc" msprop:Generator_ColumnVarNameInTable="columnNDoc" msprop:Generator_ColumnPropNameInRow="NDoc" msprop:Generator_ColumnPropNameInTable="NDocColumn" msprop:Generator_UserColumnName="NDoc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nomer" msprop:Generator_ColumnVarNameInTable="columnNomer" msprop:Generator_ColumnPropNameInRow="Nomer" msprop:Generator_ColumnPropNameInTable="NomerColumn" msprop:Generator_UserColumnName="Nomer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NMSmeti" msprop:Generator_ColumnVarNameInTable="columnNMSmeti" msprop:Generator_ColumnPropNameInRow="NMSmeti" msprop:Generator_ColumnPropNameInTable="NMSmetiColumn" msprop:Generator_UserColumnName="NMSmeti">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Osn" msprop:Generator_ColumnVarNameInTable="columnOsn" msprop:Generator_ColumnPropNameInRow="Osn" msprop:Generator_ColumnPropNameInTable="OsnColumn" msprop:Generator_UserColumnName="Osn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Zak" msprop:Generator_ColumnVarNameInTable="columnZak" msprop:Generator_ColumnPropNameInRow="Zak" msprop:Generator_ColumnPropNameInTable="ZakColumn" msprop:Generator_UserColumnName="Zak" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GP" msprop:Generator_ColumnVarNameInTable="columnGP" msprop:Generator_ColumnPropNameInRow="GP" msprop:Generator_ColumnPropNameInTable="GPColumn" msprop:Generator_UserColumnName="GP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Object" msprop:Generator_ColumnVarNameInTable="columnObject" msprop:Generator_ColumnPropNameInRow="Object" msprop:Generator_ColumnPropNameInTable="ObjectColumn" msprop:Generator_UserColumnName="Object" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KodZak" msprop:Generator_ColumnVarNameInTable="columnKodZak" msprop:Generator_ColumnPropNameInRow="KodZak" msprop:Generator_ColumnPropNameInTable="KodZakColumn" msprop:Generator_UserColumnName="KodZak" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Исполнитель" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnИсполнитель" msprop:Generator_ColumnPropNameInRow="Исполнитель" msprop:Generator_ColumnPropNameInTable="ИсполнительColumn" msprop:Generator_UserColumnName="Исполнитель" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NMComplex" msprop:Generator_ColumnVarNameInTable="columnNMComplex" msprop:Generator_ColumnPropNameInRow="NMComplex" msprop:Generator_ColumnPropNameInTable="NMComplexColumn" msprop:Generator_UserColumnName="NMComplex" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NMChapter" msprop:Generator_ColumnVarNameInTable="columnNMChapter" msprop:Generator_ColumnPropNameInRow="NMChapter" msprop:Generator_ColumnPropNameInTable="NMChapterColumn" msprop:Generator_UserColumnName="NMChapter" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KodOSR" msprop:Generator_ColumnVarNameInTable="columnKodOSR" msprop:Generator_ColumnPropNameInRow="KodOSR" msprop:Generator_ColumnPropNameInTable="KodOSRColumn" msprop:Generator_UserColumnName="KodOSR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OSR" msprop:Generator_ColumnVarNameInTable="columnOSR" msprop:Generator_ColumnPropNameInRow="OSR" msprop:Generator_ColumnPropNameInTable="OSRColumn" msprop:Generator_UserColumnName="OSR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NMOSR" msprop:Generator_ColumnVarNameInTable="columnNMOSR" msprop:Generator_ColumnPropNameInRow="NMOSR" msprop:Generator_ColumnPropNameInTable="NMOSRColumn" msprop:Generator_UserColumnName="NMOSR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PunktTiTulStr" msprop:Generator_ColumnVarNameInTable="columnPunktTiTulStr" msprop:Generator_ColumnPropNameInRow="PunktTiTulStr" msprop:Generator_ColumnPropNameInTable="PunktTiTulStrColumn" msprop:Generator_UserColumnName="PunktTiTulStr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RegNomer" msprop:Generator_ColumnVarNameInTable="columnRegNomer" msprop:Generator_ColumnPropNameInRow="RegNomer" msprop:Generator_ColumnPropNameInTable="RegNomerColumn" msprop:Generator_UserColumnName="RegNomer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IstFin" msprop:Generator_ColumnVarNameInTable="columnIstFin" msprop:Generator_ColumnPropNameInRow="IstFin" msprop:Generator_ColumnPropNameInTable="IstFinColumn" msprop:Generator_UserColumnName="IstFin" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TypeWrk" msprop:Generator_ColumnVarNameInTable="columnTypeWrk" msprop:Generator_ColumnPropNameInRow="TypeWrk" msprop:Generator_ColumnPropNameInTable="TypeWrkColumn" msprop:Generator_UserColumnName="TypeWrk" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Razr" msprop:Generator_ColumnVarNameInTable="columnRazr" msprop:Generator_ColumnPropNameInRow="Razr" msprop:Generator_ColumnPropNameInTable="RazrColumn" msprop:Generator_UserColumnName="Razr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Naim" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNaim" msprop:Generator_ColumnPropNameInRow="Naim" msprop:Generator_ColumnPropNameInTable="NaimColumn" msprop:Generator_UserColumnName="Naim" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="613" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Period" msprop:Generator_ColumnVarNameInTable="columnPeriod" msprop:Generator_ColumnPropNameInRow="Period" msprop:Generator_ColumnPropNameInTable="PeriodColumn" msprop:Generator_UserColumnName="Period" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SumBazOr" msprop:Generator_ColumnVarNameInTable="columnSumBazOr" msprop:Generator_ColumnPropNameInRow="SumBazOr" msprop:Generator_ColumnPropNameInTable="SumBazOrColumn" msprop:Generator_UserColumnName="SumBazOr" type="xs:double" />
+              <xs:element name="Sum91Or" msprop:Generator_ColumnVarNameInTable="columnSum91Or" msprop:Generator_ColumnPropNameInRow="Sum91Or" msprop:Generator_ColumnPropNameInTable="Sum91OrColumn" msprop:Generator_UserColumnName="Sum91Or" type="xs:double" />
+              <xs:element name="SumTekOr" msprop:Generator_ColumnVarNameInTable="columnSumTekOr" msprop:Generator_ColumnPropNameInRow="SumTekOr" msprop:Generator_ColumnPropNameInTable="SumTekOrColumn" msprop:Generator_UserColumnName="SumTekOr" type="xs:double" />
+              <xs:element name="SumMR" msprop:Generator_ColumnVarNameInTable="columnSumMR" msprop:Generator_ColumnPropNameInRow="SumMR" msprop:Generator_ColumnPropNameInTable="SumMRColumn" msprop:Generator_UserColumnName="SumMR" type="xs:double" />
+              <xs:element name="BazStObor" msprop:Generator_ColumnVarNameInTable="columnBazStObor" msprop:Generator_ColumnPropNameInRow="BazStObor" msprop:Generator_ColumnPropNameInTable="BazStOborColumn" msprop:Generator_UserColumnName="BazStObor" type="xs:double" />
+              <xs:element name="SumProchZ" msprop:Generator_ColumnVarNameInTable="columnSumProchZ" msprop:Generator_ColumnPropNameInRow="SumProchZ" msprop:Generator_ColumnPropNameInTable="SumProchZColumn" msprop:Generator_UserColumnName="SumProchZ" type="xs:double" />
+              <xs:element name="F2GP" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnF2GP" msprop:Generator_ColumnPropNameInRow="F2GP" msprop:Generator_ColumnPropNameInTable="F2GPColumn" msprop:Generator_UserColumnName="F2GP" type="xs:double" minOccurs="0" />
+              <xs:element name="F2SP" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnF2SP" msprop:Generator_ColumnPropNameInRow="F2SP" msprop:Generator_ColumnPropNameInTable="F2SPColumn" msprop:Generator_UserColumnName="F2SP" type="xs:double" minOccurs="0" />
+              <xs:element name="IdSm" msprop:Generator_ColumnVarNameInTable="columnIdSm" msprop:Generator_ColumnPropNameInRow="IdSm" msprop:Generator_ColumnPropNameInTable="IdSmColumn" msprop:Generator_UserColumnName="IdSm" type="xs:int" />
+              <xs:element name="IdWhoF3" msprop:Generator_ColumnVarNameInTable="columnIdWhoF3" msprop:Generator_ColumnPropNameInRow="IdWhoF3" msprop:Generator_ColumnPropNameInTable="IdWhoF3Column" msprop:Generator_UserColumnName="IdWhoF3" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vPerech" />
+      <xs:field xpath="mstns:IdSm" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

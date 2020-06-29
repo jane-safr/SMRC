@@ -1,0 +1,1706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F0AF07D-0748-4078-B580-DCABE468FB25}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMRC</RootNamespace>
+    <AssemblyName>SMRC</AssemblyName>
+    <ApplicationIcon>Mn.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>D251B7E3E0ACB84ECB5ED9EDC0A20BC42F0BAF6E</ManifestCertificateThumbprint>
+    <ManifestKeyFile>SMRC_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignManifests>false</SignManifests>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\NetProject\SMRC\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>2.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SMRC.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UCFrmSm, Version=1.0.3453.24191, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\UCFrmSm\UCFrmSm\bin\Debug\UCFrmSm.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+      <HintPath>..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\WindowsFormsIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="WpfCHierar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WPF\WpfCHierar\WpfCHierar\bin\Debug\WpfCHierar.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component1.Designer.cs">
+      <DependentUpon>Component1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DSDogOpyt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSDogOpyt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsGpSp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGpSp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsOSRF3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOSRF3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSOstSm.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSOstSm.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsParent.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsParent.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSRepNZ1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRepNZ1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSWorkObor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSWorkObor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSWorkSvAllmy.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSWorkSvAllmy.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fmDostup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmDostup.Designer.cs">
+      <DependentUpon>fmDostup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Conn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Conn.Designer.cs">
+      <DependentUpon>Conn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmActsSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmActsSub.Designer.cs">
+      <DependentUpon>frmActsSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmActsFromSmeti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmActsFromSmeti.Designer.cs">
+      <DependentUpon>frmActsFromSmeti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDiagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDiagram.Designer.cs">
+      <DependentUpon>frmDiagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmForA0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmForA0.Designer.cs">
+      <DependentUpon>frmForA0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInvDog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInvDog.Designer.cs">
+      <DependentUpon>frmInvDog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLinkWRK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLinkWRK.Designer.cs">
+      <DependentUpon>frmLinkWRK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLSSmeti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLSSmeti.Designer.cs">
+      <DependentUpon>frmLSSmeti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOSR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOSR.Designer.cs">
+      <DependentUpon>frmOSR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReasons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReasons.Designer.cs">
+      <DependentUpon>frmReasons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRepF3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRepF3.Designer.cs">
+      <DependentUpon>frmRepF3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReps.Designer.cs">
+      <DependentUpon>frmReps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSogl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSogl.Designer.cs">
+      <DependentUpon>frmSogl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSprZapros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSprZapros.Designer.cs">
+      <DependentUpon>frmSprZapros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSvjaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSvjaz.Designer.cs">
+      <DependentUpon>frmSvjaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibGP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibGP.Designer.cs">
+      <DependentUpon>frmVibGP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibInv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibInv.Designer.cs">
+      <DependentUpon>frmVibInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibList.Designer.cs">
+      <DependentUpon>frmVibList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibPer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibPer.Designer.cs">
+      <DependentUpon>frmVibPer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibPred.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibPred.Designer.cs">
+      <DependentUpon>frmVibPred.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibRabPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibRabPeriod.Designer.cs">
+      <DependentUpon>frmVibRabPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTP.Designer.cs">
+      <DependentUpon>frmTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibD.Designer.cs">
+      <DependentUpon>frmVibD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibDate.Designer.cs">
+      <DependentUpon>frmVibDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibDates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibDates.Designer.cs">
+      <DependentUpon>frmVibDates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibPeriod.Designer.cs">
+      <DependentUpon>frmVibPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmColumns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmColumns.Designer.cs">
+      <DependentUpon>frmColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSm.Designer.cs">
+      <DependentUpon>frmSm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmA0LKV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmA0LKV.Designer.cs">
+      <DependentUpon>frmA0LKV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGrafikMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGrafikMatch.Designer.cs">
+      <DependentUpon>frmGrafikMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHierar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHierar.Designer.cs">
+      <DependentUpon>frmHierar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKP.Designer.cs">
+      <DependentUpon>frmKP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAct.Designer.cs">
+      <DependentUpon>frmAct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmActs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmActs.Designer.cs">
+      <DependentUpon>frmActs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmActsZak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmActsZak.Designer.cs">
+      <DependentUpon>frmActsZak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDN.Designer.cs">
+      <DependentUpon>frmDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDog.Designer.cs">
+      <DependentUpon>frmDog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmF3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmF3.Designer.cs">
+      <DependentUpon>frmF3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmForF3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmForF3.Designer.cs">
+      <DependentUpon>frmForF3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKP1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKP1.Designer.cs">
+      <DependentUpon>frmKP1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmList.designer.cs">
+      <DependentUpon>frmList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLoad.Designer.cs">
+      <DependentUpon>frmLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPerechSm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPerechSm.Designer.cs">
+      <DependentUpon>frmPerechSm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPlanGen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPlanGen.Designer.cs">
+      <DependentUpon>frmPlanGen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPlanSmA0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPlanSmA0.Designer.cs">
+      <DependentUpon>frmPlanSmA0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSootvA0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSootvA0.Designer.cs">
+      <DependentUpon>frmSootvA0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSootvPr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSootvPr.Designer.cs">
+      <DependentUpon>frmSootvPr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSprDGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSprDGV.Designer.cs">
+      <DependentUpon>frmSprDGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSSRSm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSSRSm.Designer.cs">
+      <DependentUpon>frmSSRSm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSSRSmet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSSRSmet.Designer.cs">
+      <DependentUpon>frmSSRSmet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStrucProg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmStrucProg.Designer.cs">
+      <DependentUpon>frmStrucProg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTask.Designer.cs">
+      <DependentUpon>frmTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTemPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTemPlan.Designer.cs">
+      <DependentUpon>frmTemPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTemPlans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTemPlans.Designer.cs">
+      <DependentUpon>frmTemPlans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTemPlanVibor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTemPlanVibor.Designer.cs">
+      <DependentUpon>frmTemPlanVibor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibComplex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibComplex.Designer.cs">
+      <DependentUpon>frmVibComplex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibF3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibF3.Designer.cs">
+      <DependentUpon>frmVibF3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibIspSm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibIspSm.Designer.cs">
+      <DependentUpon>frmVibIspSm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibReestr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibReestr.Designer.cs">
+      <DependentUpon>frmVibReestr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibSmet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibSmet.Designer.cs">
+      <DependentUpon>frmVibSmet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmScanSm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmScanSm.Designer.cs">
+      <DependentUpon>frmScanSm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibTest.Designer.cs">
+      <DependentUpon>frmVibTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVibTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVibTP.Designer.cs">
+      <DependentUpon>frmVibTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmWrk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmWrk.Designer.cs">
+      <DependentUpon>frmWrk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmZagruzka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmZagruzka.Designer.cs">
+      <DependentUpon>frmZagruzka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCapSm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCapSm.designer.cs">
+      <DependentUpon>frmCapSm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="My.cs" />
+    <Compile Include="MyGCO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyGCO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="..\..\..\cis\Reports\rActDogovor.rdlc">
+      <Link>Reports\rActDogovor.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rActDogovorDavMat.rdlc">
+      <Link>Reports\rActDogovorDavMat.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rF3.rdlc">
+      <Link>Reports\rF3.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rF3ATEI.rdlc">
+      <Link>Reports\rF3ATEI.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rNZPL2.rdlc">
+      <Link>Reports\rNZPL2.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rNZPL2kratko.rdlc">
+      <Link>Reports\rNZPL2kratko.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rOstatkiLimit.rdlc">
+      <SubType>Designer</SubType>
+      <Link>Reports\rOstatkiLimit.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rSmetnoeRazNew.rdlc">
+      <Link>Reports\rSmetnoeRazNew.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rSvodnijNew.rdlc">
+      <Link>Reports\rSvodnijNew.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rSvodnKS2KS3Short.rdlc">
+      <Link>Reports\rSvodnKS2KS3Short.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\R_BuhAllNew.rdlc">
+      <Link>Reports\R_BuhAllNew.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\R_BuhAllPodSub.rdlc">
+      <Link>Reports\R_BuhAllPodSub.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\R_ReestrSSR.rdlc">
+      <Link>Reports\R_ReestrSSR.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\R_ReestrUsKom.rdlc">
+      <Link>Reports\R_ReestrUsKom.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\ShahUpr.rdlc" />
+    <EmbeddedResource Include="..\..\..\cis\Reports\TmpReport.rdlc">
+      <Link>Reports\TmpReport.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C:\cis\Reports\obor.rdlc">
+      <Link>Reports\obor.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C:\cis\Reports\rActDogovorProch.rdlc">
+      <Link>Reports\rActDogovorProch.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C:\cis\Reports\rActDogovorUch.rdlc">
+      <Link>Reports\rActDogovorUch.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C:\cis\Reports\rOplNezav.rdlc">
+      <Link>Reports\rOplNezav.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C:\cis\Reports\rPlanSmA0.rdlc">
+      <Link>Reports\rPlanSmA0.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C:\cis\Reports\rptOSR.rdlc">
+      <Link>Reports\rptOSR.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C:\cis\Reports\rReportPoContram.rdlc">
+      <Link>Reports\rReportPoContram.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C:\cis\Reports\rShahSvF2.rdlc">
+      <Link>Reports\rShahSvF2.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C:\cis\Reports\rSvodnijKv.rdlc">
+      <Link>Reports\rSvodnijKv.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C:\cis\Reports\rSvodnijKvSample.rdlc">
+      <Link>Reports\rSvodnijKvSample.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Component1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmDostup.resx">
+      <DependentUpon>fmDostup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Conn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Conn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmActsFromSmeti.resx">
+      <DependentUpon>frmActsFromSmeti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmActsSub.resx">
+      <DependentUpon>frmActsSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmColumns.resx">
+      <DependentUpon>frmColumns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDiagram.resx">
+      <DependentUpon>frmDiagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmForA0.resx">
+      <DependentUpon>frmForA0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInvDog.resx">
+      <DependentUpon>frmInvDog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLinkWRK.resx">
+      <DependentUpon>frmLinkWRK.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLSSmeti.resx">
+      <DependentUpon>frmLSSmeti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOSR.resx">
+      <DependentUpon>frmOSR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReasons.resx">
+      <DependentUpon>frmReasons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRepF3.resx">
+      <DependentUpon>frmRepF3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReps.resx">
+      <DependentUpon>frmReps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSogl.resx">
+      <DependentUpon>frmSogl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSprZapros.resx">
+      <DependentUpon>frmSprZapros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSvjaz.resx">
+      <DependentUpon>frmSvjaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibGP.resx">
+      <DependentUpon>frmVibGP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibInv.resx">
+      <DependentUpon>frmVibInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibList.resx">
+      <DependentUpon>frmVibList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibPer.resx">
+      <DependentUpon>frmVibPer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibPred.resx">
+      <DependentUpon>frmVibPred.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibRabPeriod.resx">
+      <DependentUpon>frmVibRabPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTP.resx">
+      <DependentUpon>frmTP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibD.resx">
+      <DependentUpon>frmVibD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibDate.resx">
+      <DependentUpon>frmVibDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibDates.resx">
+      <DependentUpon>frmVibDates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibPeriod.resx">
+      <DependentUpon>frmVibPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSm.resx">
+      <DependentUpon>frmSm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmA0LKV.resx">
+      <DependentUpon>frmA0LKV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGrafikMatch.resx">
+      <DependentUpon>frmGrafikMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHierar.resx">
+      <DependentUpon>frmHierar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKP.resx">
+      <DependentUpon>frmKP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAct.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmActs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmActs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmActsZak.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmActsZak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmF3.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmF3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmForF3.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmForF3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKP1.resx">
+      <DependentUpon>frmKP1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmList.resx">
+      <DependentUpon>frmList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLoad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPerechSm.resx">
+      <DependentUpon>frmPerechSm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlanGen.resx">
+      <DependentUpon>frmPlanGen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlanSmA0.resx">
+      <DependentUpon>frmPlanSmA0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSootvA0.resx">
+      <DependentUpon>frmSootvA0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSootvPr.resx">
+      <DependentUpon>frmSootvPr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSprDGV.resx">
+      <DependentUpon>frmSprDGV.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSSRSm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSSRSm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSSRSmet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSSRSmet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmStrucProg.resx">
+      <DependentUpon>frmStrucProg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTask.resx">
+      <DependentUpon>frmTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTemPlan.resx">
+      <DependentUpon>frmTemPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTemPlans.resx">
+      <DependentUpon>frmTemPlans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTemPlanVibor.resx">
+      <DependentUpon>frmTemPlanVibor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibComplex.resx">
+      <DependentUpon>frmVibComplex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibF3.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmVibF3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibIspSm.resx">
+      <DependentUpon>frmVibIspSm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibReestr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmVibReestr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibSmet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmVibSmet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScanSm.resx">
+      <DependentUpon>frmScanSm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibTest.resx">
+      <DependentUpon>frmVibTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVibTP.resx">
+      <DependentUpon>frmVibTP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWrk.resx">
+      <DependentUpon>frmWrk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmZagruzka.resx">
+      <DependentUpon>frmZagruzka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCapSm.resx">
+      <DependentUpon>frmCapSm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\rActDogovorProch3.rdlc" />
+    <EmbeddedResource Include="..\..\..\cis\Reports\R_ReestrUs.rdlc">
+      <SubType>Designer</SubType>
+      <Link>Reports\R_ReestrUs.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rSvodnKS2KS3.rdlc">
+      <Link>Reports\rSvodnKS2KS3.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rNZP.rdlc">
+      <Link>Reports\rNZP.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rNZPPomes.rdlc">
+      <Link>Reports\rNZPPomes.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rSvodPoMes.rdlc">
+      <Link>Reports\rSvodPoMes.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rF3AEP.rdlc">
+      <Link>Reports\rF3AEP.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\OborForF3.rdlc">
+      <Link>Reports\OborForF3.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rL2Ob.rdlc">
+      <Link>Reports\rL2Ob.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\R_BuhAll.rdlc">
+      <Link>Reports\R_BuhAll.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rPerech.rdlc">
+      <Link>Reports\rPerech.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rShahKS2KS3.rdlc">
+      <Link>Reports\rShahKS2KS3.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rNezaversh.rdlc">
+      <Link>Reports\rNezaversh.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\RParent.rdlc">
+      <Link>Reports\RParent.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rOSRF3.rdlc">
+      <Link>Reports\rOSRF3.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rptStendComplex.rdlc">
+      <Link>Reports\rptStendComplex.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rOstSm.rdlc">
+      <Link>Reports\rOstSm.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rDogOpyt.rdlc">
+      <Link>Reports\rDogOpyt.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rSvodnPoDog.rdlc">
+      <Link>Reports\rSvodnPoDog.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rGpSp.rdlc">
+      <Link>Reports\rGpSp.rdlc</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rComplexOSR.rdlc">
+      <Link>Reports\rComplexOSR.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rRepNZ.rdlc">
+      <Link>Reports\rRepNZ.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rEmptyProject.rdlc">
+      <Link>Reports\rEmptyProject.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rOstatkiLimitSmSt.rdlc">
+      <Link>Reports\rOstatkiLimitSmSt.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rChain.rdlc">
+      <Link>Reports\rChain.rdlc</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\cis\Reports\rInvPrVip.rdlc">
+      <Link>Reports\rInvPrVip.rdlc</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RowMergeView.resx">
+      <DependentUpon>RowMergeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DSDogOpyt.xsc">
+      <DependentUpon>DSDogOpyt.xsd</DependentUpon>
+    </None>
+    <None Include="DSDogOpyt.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSDogOpyt.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSDogOpyt.xss">
+      <DependentUpon>DSDogOpyt.xsd</DependentUpon>
+    </None>
+    <None Include="dsGpSp.xsc">
+      <DependentUpon>dsGpSp.xsd</DependentUpon>
+    </None>
+    <None Include="dsGpSp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGpSp.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsGpSp.xss">
+      <DependentUpon>dsGpSp.xsd</DependentUpon>
+    </None>
+    <None Include="dsOSRF3.xsc">
+      <DependentUpon>dsOSRF3.xsd</DependentUpon>
+    </None>
+    <None Include="dsOSRF3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOSRF3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsOSRF3.xss">
+      <DependentUpon>dsOSRF3.xsd</DependentUpon>
+    </None>
+    <None Include="DSOstSm.xsc">
+      <DependentUpon>DSOstSm.xsd</DependentUpon>
+    </None>
+    <None Include="DSOstSm.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSOstSm.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSOstSm.xss">
+      <DependentUpon>DSOstSm.xsd</DependentUpon>
+    </None>
+    <None Include="dsParent.xsc">
+      <DependentUpon>dsParent.xsd</DependentUpon>
+    </None>
+    <None Include="dsParent.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsParent.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsParent.xss">
+      <DependentUpon>dsParent.xsd</DependentUpon>
+    </None>
+    <None Include="DSRepNZ1.xsc">
+      <DependentUpon>DSRepNZ1.xsd</DependentUpon>
+    </None>
+    <None Include="DSRepNZ1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRepNZ1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSRepNZ1.xss">
+      <DependentUpon>DSRepNZ1.xsd</DependentUpon>
+    </None>
+    <None Include="DSWorkObor.xsc">
+      <DependentUpon>DSWorkObor.xsd</DependentUpon>
+    </None>
+    <None Include="DSWorkObor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSWorkObor.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSWorkObor.xss">
+      <DependentUpon>DSWorkObor.xsd</DependentUpon>
+    </None>
+    <None Include="DSWorkSvAllmy.xsc">
+      <DependentUpon>DSWorkSvAllmy.xsd</DependentUpon>
+    </None>
+    <None Include="DSWorkSvAllmy.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSWorkSvAllmy.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSWorkSvAllmy.xss">
+      <DependentUpon>DSWorkSvAllmy.xsd</DependentUpon>
+    </None>
+    <None Include="MyGCO.xsc">
+      <DependentUpon>MyGCO.xsd</DependentUpon>
+    </None>
+    <None Include="MyGCO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyGCO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MyGCO.xss">
+      <DependentUpon>MyGCO.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\ModOffice.cs" />
+    <Compile Include="Reports\Work.cs" />
+    <Compile Include="RowMergeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RowMergeView.Designer.cs">
+      <DependentUpon>RowMergeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sChain.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sChain.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sInvPrVip.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sInvPrVip.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataF3AEP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataF3AEP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataF3Dog.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataF3Dog.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSetBuh.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataSetBuh.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSetKS2KS3.cs">
+      <DependentUpon>smrDataSetKS2KS3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSetKS2KS3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataSetKS2KS3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSetNZP.cs">
+      <DependentUpon>smrDataSetNZP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSetNZP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataSetNZP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSetNZPPoMes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataSetNZPPoMes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSetObor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataSetObor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSetPerech.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataSetPerech.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSetProch.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataSetProch.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSetSootv.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataSetSootv.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSetSv.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataSetSv.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDataSetSvodPoMes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDataSetSvodPoMes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrDSStendComplex.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrDSStendComplex.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="smrWorkShah.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>smrWorkShah.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SSvodnPoDog.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SSvodnPoDog.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vComplexOSR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vComplexOSR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vEmptyProject.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vEmptyProject.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vOplNezav.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vOplNezav.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkNezaverh.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkNezaverh.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkObor1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkObor1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkReestr.cs">
+      <DependentUpon>WorkReestr.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkReestr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkReestr.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkSm.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkSm.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkSvKv.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkSvKv.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkSvSub.cs">
+      <DependentUpon>WorkSvSub.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkSvSub.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkSvSub.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_small1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sqltut.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\sqltut1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon1.ico" />
+    <Content Include="Mn.ico" />
+    <Content Include="Reports\data.xml" />
+    <None Include="Resources\edit-clear.png" />
+    <None Include="Resources\Т2.PNG" />
+    <None Include="Resources\ARW08UP.ICO" />
+    <None Include="Resources\A0.bmp" />
+    <None Include="Resources\A0icon.bmp" />
+    <None Include="Resources\A0icon2.ico" />
+    <None Include="Resources\A0icon1.ico" />
+    <None Include="Resources\A0icon.ico" />
+    <None Include="Resources\RegCure.ico" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Resources\1254988850_stock_standard-filter.png" />
+    <None Include="Resources\filter1.ico" />
+    <None Include="Resources\filter.ico" />
+    <None Include="Resources\filter.gif" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\filter.jpg" />
+    <None Include="Resources\Calendar_scheduleHS.png" />
+    <None Include="Resources\CHANGEPG %281%29.ICO" />
+    <None Include="Resources\EXCEL.ICO" />
+    <None Include="Resources\ARW08LT.ICO" />
+    <None Include="Resources\ARW08RT.ICO" />
+    <None Include="Resources\CHECKMRK.ICO" />
+    <None Include="sChain.xsc">
+      <DependentUpon>sChain.xsd</DependentUpon>
+    </None>
+    <None Include="sChain.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sChain.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sChain.xss">
+      <DependentUpon>sChain.xsd</DependentUpon>
+    </None>
+    <None Include="sInvPrVip.xsc">
+      <DependentUpon>sInvPrVip.xsd</DependentUpon>
+    </None>
+    <None Include="sInvPrVip.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sInvPrVip.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sInvPrVip.xss">
+      <DependentUpon>sInvPrVip.xsd</DependentUpon>
+    </None>
+    <None Include="SMRC_TemporaryKey.pfx" />
+    <None Include="smrDataF3AEP.xsc">
+      <DependentUpon>smrDataF3AEP.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataF3AEP.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataF3AEP.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataF3AEP.xss">
+      <DependentUpon>smrDataF3AEP.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataF3Dog.xsc">
+      <DependentUpon>smrDataF3Dog.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataF3Dog.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataF3Dog.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataF3Dog.xss">
+      <DependentUpon>smrDataF3Dog.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSet1.xsc">
+      <DependentUpon>smrDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataSet1.xss">
+      <DependentUpon>smrDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSet11.xsc">
+      <DependentUpon>smrDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataSet11.xss">
+      <DependentUpon>smrDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSet2.xsc">
+      <DependentUpon>smrDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataSet2.xss">
+      <DependentUpon>smrDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetBuh.xsc">
+      <DependentUpon>smrDataSetBuh.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetBuh.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataSetBuh.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataSetBuh.xss">
+      <DependentUpon>smrDataSetBuh.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetKS2KS3.xsc">
+      <DependentUpon>smrDataSetKS2KS3.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetKS2KS3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataSetKS2KS3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataSetKS2KS3.xss">
+      <DependentUpon>smrDataSetKS2KS3.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetNZP.xsc">
+      <DependentUpon>smrDataSetNZP.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetNZP.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataSetNZP.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataSetNZP.xss">
+      <DependentUpon>smrDataSetNZP.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetNZPPoMes.xsc">
+      <DependentUpon>smrDataSetNZPPoMes.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetNZPPoMes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataSetNZPPoMes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataSetNZPPoMes.xss">
+      <DependentUpon>smrDataSetNZPPoMes.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetObor.xsc">
+      <DependentUpon>smrDataSetObor.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetObor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataSetObor.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataSetObor.xss">
+      <DependentUpon>smrDataSetObor.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetPerech.xsc">
+      <DependentUpon>smrDataSetPerech.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetPerech.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataSetPerech.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataSetPerech.xss">
+      <DependentUpon>smrDataSetPerech.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetProch.xsc">
+      <DependentUpon>smrDataSetProch.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetProch.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataSetProch.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataSetProch.xss">
+      <DependentUpon>smrDataSetProch.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetSootv.xsc">
+      <DependentUpon>smrDataSetSootv.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetSootv.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataSetSootv.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataSetSootv.xss">
+      <DependentUpon>smrDataSetSootv.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetSv.xsc">
+      <DependentUpon>smrDataSetSv.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetSv.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataSetSv.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataSetSv.xss">
+      <DependentUpon>smrDataSetSv.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetSvodPoMes.xsc">
+      <DependentUpon>smrDataSetSvodPoMes.xsd</DependentUpon>
+    </None>
+    <None Include="smrDataSetSvodPoMes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDataSetSvodPoMes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDataSetSvodPoMes.xss">
+      <DependentUpon>smrDataSetSvodPoMes.xsd</DependentUpon>
+    </None>
+    <None Include="smrDSStendComplex.xsc">
+      <DependentUpon>smrDSStendComplex.xsd</DependentUpon>
+    </None>
+    <None Include="smrDSStendComplex.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrDSStendComplex.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrDSStendComplex.xss">
+      <DependentUpon>smrDSStendComplex.xsd</DependentUpon>
+    </None>
+    <None Include="smrWorkShah.xsc">
+      <DependentUpon>smrWorkShah.xsd</DependentUpon>
+    </None>
+    <None Include="smrWorkShah.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>smrWorkShah.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="smrWorkShah.xss">
+      <DependentUpon>smrWorkShah.xsd</DependentUpon>
+    </None>
+    <None Include="SSvodnPoDog.xsc">
+      <DependentUpon>SSvodnPoDog.xsd</DependentUpon>
+    </None>
+    <None Include="SSvodnPoDog.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SSvodnPoDog.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SSvodnPoDog.xss">
+      <DependentUpon>SSvodnPoDog.xsd</DependentUpon>
+    </None>
+    <None Include="vComplexOSR.xsc">
+      <DependentUpon>vComplexOSR.xsd</DependentUpon>
+    </None>
+    <None Include="vComplexOSR.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vComplexOSR.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vComplexOSR.xss">
+      <DependentUpon>vComplexOSR.xsd</DependentUpon>
+    </None>
+    <None Include="vEmptyProject.xsc">
+      <DependentUpon>vEmptyProject.xsd</DependentUpon>
+    </None>
+    <None Include="vEmptyProject.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vEmptyProject.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vEmptyProject.xss">
+      <DependentUpon>vEmptyProject.xsd</DependentUpon>
+    </None>
+    <None Include="vOplNezav.xsc">
+      <DependentUpon>vOplNezav.xsd</DependentUpon>
+    </None>
+    <None Include="vOplNezav.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vOplNezav.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vOplNezav.xss">
+      <DependentUpon>vOplNezav.xsd</DependentUpon>
+    </None>
+    <None Include="WorkNezaverh.xsc">
+      <DependentUpon>WorkNezaverh.xsd</DependentUpon>
+    </None>
+    <None Include="WorkNezaverh.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkNezaverh.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkNezaverh.xss">
+      <DependentUpon>WorkNezaverh.xsd</DependentUpon>
+    </None>
+    <None Include="WorkObor1.xsc">
+      <DependentUpon>WorkObor1.xsd</DependentUpon>
+    </None>
+    <None Include="WorkObor1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkObor1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkObor1.xss">
+      <DependentUpon>WorkObor1.xsd</DependentUpon>
+    </None>
+    <None Include="WorkReestr.xsc">
+      <DependentUpon>WorkReestr.xsd</DependentUpon>
+    </None>
+    <None Include="WorkReestr.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkReestr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkReestr.xss">
+      <DependentUpon>WorkReestr.xsd</DependentUpon>
+    </None>
+    <None Include="WorkSm.xsc">
+      <DependentUpon>WorkSm.xsd</DependentUpon>
+    </None>
+    <None Include="WorkSm.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkSm.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkSm.xss">
+      <DependentUpon>WorkSm.xsd</DependentUpon>
+    </None>
+    <None Include="WorkSvKv.xsc">
+      <DependentUpon>WorkSvKv.xsd</DependentUpon>
+    </None>
+    <None Include="WorkSvKv.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkSvKv.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkSvKv.xss">
+      <DependentUpon>WorkSvKv.xsd</DependentUpon>
+    </None>
+    <None Include="WorkSvSub.xsc">
+      <DependentUpon>WorkSvSub.xsd</DependentUpon>
+    </None>
+    <None Include="WorkSvSub.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkSvSub.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkSvSub.xss">
+      <DependentUpon>WorkSvSub.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\UCFilterBezCr\UCFilter\UCFilter.csproj">
+      <Project>{ea19ad5c-0d36-499e-a675-503983d42eea}</Project>
+      <Name>UCFilter</Name>
+    </ProjectReference>
+    <ProjectReference Include="Control\MultiColumnCombo.vbproj">
+      <Project>{7FAE55CF-25DB-44FA-97DB-8AEB543C4DBF}</Project>
+      <Name>MultiColumnCombo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Control\" />
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

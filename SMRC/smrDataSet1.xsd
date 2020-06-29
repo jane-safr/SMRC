@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="smrDataSetPlanSmA0" targetNamespace="http://tempuri.org/smrDataSet1.xsd" xmlns:mstns="http://tempuri.org/smrDataSet1.xsd" xmlns="http://tempuri.org/smrDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="smrConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="smrConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SMRC.Properties.Settings.GlobalReference.Default.smrConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vPlanSmA0RepTableAdapter" GeneratorDataComponentClassName="vPlanSmA0RepTableAdapter" Name="vPlanSmA0Rep" UserDataComponentName="vPlanSmA0RepTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="smrConnectionString (Settings)" DbObjectName="smr.dbo.vPlanSmA0Rep" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ShifrInv, OSR, NomerSm, Shifr, ZapPoz, BusSm, F2SMR, shNMEntpr, FIO, CntA0, BusOpIDf2, Period, Nomer1S, NotZap FROM vPlanSmA0Rep</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ShifrInv" DataSetColumn="ShifrInv" />
+              <Mapping SourceColumn="OSR" DataSetColumn="OSR" />
+              <Mapping SourceColumn="NomerSm" DataSetColumn="NomerSm" />
+              <Mapping SourceColumn="Shifr" DataSetColumn="Shifr" />
+              <Mapping SourceColumn="ZapPoz" DataSetColumn="ZapPoz" />
+              <Mapping SourceColumn="BusSm" DataSetColumn="BusSm" />
+              <Mapping SourceColumn="F2SMR" DataSetColumn="F2SMR" />
+              <Mapping SourceColumn="shNMEntpr" DataSetColumn="shNMEntpr" />
+              <Mapping SourceColumn="FIO" DataSetColumn="FIO" />
+              <Mapping SourceColumn="CntA0" DataSetColumn="CntA0" />
+              <Mapping SourceColumn="BusOpIDf2" DataSetColumn="BusOpIDf2" />
+              <Mapping SourceColumn="Period" DataSetColumn="Period" />
+              <Mapping SourceColumn="Nomer1S" DataSetColumn="Nomer1S" />
+              <Mapping SourceColumn="NotZap" DataSetColumn="NotZap" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="smrDataSetPlanSmA0" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="smrDataSetPlanSmA0" msprop:Generator_DataSetName="smrDataSetPlanSmA0" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vPlanSmA0Rep" msprop:Generator_UserTableName="vPlanSmA0Rep" msprop:Generator_RowDeletedName="vPlanSmA0RepRowDeleted" msprop:Generator_RowChangedName="vPlanSmA0RepRowChanged" msprop:Generator_RowClassName="vPlanSmA0RepRow" msprop:Generator_RowChangingName="vPlanSmA0RepRowChanging" msprop:Generator_RowEvArgName="vPlanSmA0RepRowChangeEvent" msprop:Generator_RowEvHandlerName="vPlanSmA0RepRowChangeEventHandler" msprop:Generator_TableClassName="vPlanSmA0RepDataTable" msprop:Generator_TableVarName="tablevPlanSmA0Rep" msprop:Generator_RowDeletingName="vPlanSmA0RepRowDeleting" msprop:Generator_TablePropName="vPlanSmA0Rep">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ShifrInv" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ShifrInv" msprop:Generator_ColumnPropNameInRow="ShifrInv" msprop:Generator_ColumnVarNameInTable="columnShifrInv" msprop:Generator_ColumnPropNameInTable="ShifrInvColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OSR" msprop:Generator_UserColumnName="OSR" msprop:Generator_ColumnPropNameInRow="OSR" msprop:Generator_ColumnVarNameInTable="columnOSR" msprop:Generator_ColumnPropNameInTable="OSRColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NomerSm" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NomerSm" msprop:Generator_ColumnPropNameInRow="NomerSm" msprop:Generator_ColumnVarNameInTable="columnNomerSm" msprop:Generator_ColumnPropNameInTable="NomerSmColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Shifr" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Shifr" msprop:Generator_ColumnPropNameInRow="Shifr" msprop:Generator_ColumnVarNameInTable="columnShifr" msprop:Generator_ColumnPropNameInTable="ShifrColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ZapPoz" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ZapPoz" msprop:Generator_ColumnPropNameInRow="ZapPoz" msprop:Generator_ColumnVarNameInTable="columnZapPoz" msprop:Generator_ColumnPropNameInTable="ZapPozColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="BusSm" msdata:ReadOnly="true" msprop:Generator_UserColumnName="BusSm" msprop:Generator_ColumnPropNameInRow="BusSm" msprop:Generator_ColumnVarNameInTable="columnBusSm" msprop:Generator_ColumnPropNameInTable="BusSmColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="F2SMR" msprop:Generator_UserColumnName="F2SMR" msprop:Generator_ColumnPropNameInRow="F2SMR" msprop:Generator_ColumnVarNameInTable="columnF2SMR" msprop:Generator_ColumnPropNameInTable="F2SMRColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="shNMEntpr" msprop:Generator_UserColumnName="shNMEntpr" msprop:Generator_ColumnPropNameInRow="shNMEntpr" msprop:Generator_ColumnVarNameInTable="columnshNMEntpr" msprop:Generator_ColumnPropNameInTable="shNMEntprColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FIO" msprop:Generator_UserColumnName="FIO" msprop:Generator_ColumnPropNameInRow="FIO" msprop:Generator_ColumnVarNameInTable="columnFIO" msprop:Generator_ColumnPropNameInTable="FIOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CntA0" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CntA0" msprop:Generator_ColumnPropNameInRow="CntA0" msprop:Generator_ColumnVarNameInTable="columnCntA0" msprop:Generator_ColumnPropNameInTable="CntA0Column" type="xs:int" minOccurs="0" />
+              <xs:element name="BusOpIDf2" msdata:ReadOnly="true" msprop:Generator_UserColumnName="BusOpIDf2" msprop:Generator_ColumnPropNameInRow="BusOpIDf2" msprop:Generator_ColumnVarNameInTable="columnBusOpIDf2" msprop:Generator_ColumnPropNameInTable="BusOpIDf2Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Period" msprop:Generator_UserColumnName="Period" msprop:Generator_ColumnPropNameInRow="Period" msprop:Generator_ColumnVarNameInTable="columnPeriod" msprop:Generator_ColumnPropNameInTable="PeriodColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Nomer1S" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Nomer1S" msprop:Generator_ColumnPropNameInRow="Nomer1S" msprop:Generator_ColumnVarNameInTable="columnNomer1S" msprop:Generator_ColumnPropNameInTable="Nomer1SColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NotZap" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NotZap" msprop:Generator_ColumnPropNameInRow="NotZap" msprop:Generator_ColumnVarNameInTable="columnNotZap" msprop:Generator_ColumnPropNameInTable="NotZapColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

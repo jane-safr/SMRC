@@ -1,0 +1,14 @@
+C:\Documents and Settings\jane\Desktop\SMRC\SMRC\SMRC\Control\bin\Edneeis.Controls.MultiColumnCombo.dll
+C:\Documents and Settings\jane\Desktop\SMRC\SMRC\SMRC\Control\bin\Edneeis.Controls.MultiColumnCombo.xml
+C:\Documents and Settings\jane\Desktop\SMRC\SMRC\SMRC\Control\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\jane\Desktop\SMRC\SMRC\SMRC\Control\obj\Debug\Edneeis.Controls.MultiColumnComboBox.resources
+C:\Documents and Settings\jane\Desktop\SMRC\SMRC\SMRC\Control\obj\Debug\MultiColumnCombo.vbproj.GenerateResource.Cache
+C:\Documents and Settings\jane\Desktop\SMRC\SMRC\SMRC\Control\obj\Debug\Edneeis.Controls.MultiColumnCombo.dll
+C:\Documents and Settings\jane\Desktop\SMRC\SMRC\SMRC\Control\obj\Debug\Edneeis.Controls.MultiColumnCombo.xml
+C:\Documents and Settings\jane\Desktop\SMRC\SMRC\SMRC\Control\obj\Debug\Edneeis.Controls.MultiColumnCombo.pdb
+C:\Documents and Settings\jane\Desktop\SMRC\SMRC\SMRC\Control\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\jane\Desktop\SMRC\SMRC\SMRC\Control\obj\Release\Edneeis.Controls.MultiColumnComboBox.resources
+C:\Documents and Settings\jane\Desktop\SMRC\SMRC\SMRC\Control\obj\Release\MultiColumnCombo.vbproj.GenerateResource.Cache
+C:\Documents and Settings\jane\Desktop\SMRC\SMRC\SMRC\Control\obj\Release\Edneeis.Controls.MultiColumnCombo.dll
+C:\Documents and Settings\jane\Desktop\SMRC\SMRC\SMRC\Control\obj\Release\Edneeis.Controls.MultiColumnCombo.xml
+C:\Documents and Settings\jane\Desktop\SMRC\SMRC\SMRC\Control\bin\Edneeis.Controls.MultiColumnCombo.pdb

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="vComplexOSR" targetNamespace="http://tempuri.org/vComplexOSR.xsd" xmlns:mstns="http://tempuri.org/vComplexOSR.xsd" xmlns="http://tempuri.org/vComplexOSR.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="smrConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="smrConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SMRC.Properties.Settings.GlobalReference.Default.smrConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vComplexOSRTableAdapter" GeneratorDataComponentClassName="vComplexOSRTableAdapter" Name="vComplexOSR" UserDataComponentName="vComplexOSRTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="smrConnectionString (Settings)" DbObjectName="smr.dbo.vComplexOSR" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT idComplex, NMComplex, idChapter, NMChapter, idComplexChapter, KodOSR, OSR, NMOSR, OrderNom, idOSR, Shifr, St91, St91SMR, idPlanProj, NMComplex1 FROM dbo.vComplexOSR</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idComplex" DataSetColumn="idComplex" />
+              <Mapping SourceColumn="NMComplex" DataSetColumn="NMComplex" />
+              <Mapping SourceColumn="idChapter" DataSetColumn="idChapter" />
+              <Mapping SourceColumn="NMChapter" DataSetColumn="NMChapter" />
+              <Mapping SourceColumn="idComplexChapter" DataSetColumn="idComplexChapter" />
+              <Mapping SourceColumn="KodOSR" DataSetColumn="KodOSR" />
+              <Mapping SourceColumn="OSR" DataSetColumn="OSR" />
+              <Mapping SourceColumn="NMOSR" DataSetColumn="NMOSR" />
+              <Mapping SourceColumn="OrderNom" DataSetColumn="OrderNom" />
+              <Mapping SourceColumn="idOSR" DataSetColumn="idOSR" />
+              <Mapping SourceColumn="Shifr" DataSetColumn="Shifr" />
+              <Mapping SourceColumn="St91" DataSetColumn="St91" />
+              <Mapping SourceColumn="St91SMR" DataSetColumn="St91SMR" />
+              <Mapping SourceColumn="idPlanProj" DataSetColumn="idPlanProj" />
+              <Mapping SourceColumn="NMComplex1" DataSetColumn="NMComplex1" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="vComplexOSR" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="vComplexOSR" msprop:Generator_UserDSName="vComplexOSR">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vComplexOSR" msprop:Generator_TableClassName="vComplexOSRDataTable" msprop:Generator_TableVarName="tablevComplexOSR" msprop:Generator_TablePropName="_vComplexOSR" msprop:Generator_RowDeletingName="vComplexOSRRowDeleting" msprop:Generator_RowChangingName="vComplexOSRRowChanging" msprop:Generator_RowEvHandlerName="vComplexOSRRowChangeEventHandler" msprop:Generator_RowDeletedName="vComplexOSRRowDeleted" msprop:Generator_UserTableName="vComplexOSR" msprop:Generator_RowChangedName="vComplexOSRRowChanged" msprop:Generator_RowEvArgName="vComplexOSRRowChangeEvent" msprop:Generator_RowClassName="vComplexOSRRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idComplex" msprop:Generator_ColumnVarNameInTable="columnidComplex" msprop:Generator_ColumnPropNameInRow="idComplex" msprop:Generator_ColumnPropNameInTable="idComplexColumn" msprop:Generator_UserColumnName="idComplex" type="xs:int" />
+              <xs:element name="NMComplex" msprop:Generator_ColumnVarNameInTable="columnNMComplex" msprop:Generator_ColumnPropNameInRow="NMComplex" msprop:Generator_ColumnPropNameInTable="NMComplexColumn" msprop:Generator_UserColumnName="NMComplex">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idChapter" msprop:Generator_ColumnVarNameInTable="columnidChapter" msprop:Generator_ColumnPropNameInRow="idChapter" msprop:Generator_ColumnPropNameInTable="idChapterColumn" msprop:Generator_UserColumnName="idChapter" type="xs:int" />
+              <xs:element name="NMChapter" msprop:Generator_ColumnVarNameInTable="columnNMChapter" msprop:Generator_ColumnPropNameInRow="NMChapter" msprop:Generator_ColumnPropNameInTable="NMChapterColumn" msprop:Generator_UserColumnName="NMChapter">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idComplexChapter" msprop:Generator_ColumnVarNameInTable="columnidComplexChapter" msprop:Generator_ColumnPropNameInRow="idComplexChapter" msprop:Generator_ColumnPropNameInTable="idComplexChapterColumn" msprop:Generator_UserColumnName="idComplexChapter" type="xs:int" />
+              <xs:element name="KodOSR" msprop:Generator_ColumnVarNameInTable="columnKodOSR" msprop:Generator_ColumnPropNameInRow="KodOSR" msprop:Generator_ColumnPropNameInTable="KodOSRColumn" msprop:Generator_UserColumnName="KodOSR">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OSR" msprop:Generator_ColumnVarNameInTable="columnOSR" msprop:Generator_ColumnPropNameInRow="OSR" msprop:Generator_ColumnPropNameInTable="OSRColumn" msprop:Generator_UserColumnName="OSR">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NMOSR" msprop:Generator_ColumnVarNameInTable="columnNMOSR" msprop:Generator_ColumnPropNameInRow="NMOSR" msprop:Generator_ColumnPropNameInTable="NMOSRColumn" msprop:Generator_UserColumnName="NMOSR">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrderNom" msprop:Generator_ColumnVarNameInTable="columnOrderNom" msprop:Generator_ColumnPropNameInRow="OrderNom" msprop:Generator_ColumnPropNameInTable="OrderNomColumn" msprop:Generator_UserColumnName="OrderNom" type="xs:int" />
+              <xs:element name="idOSR" msprop:Generator_ColumnVarNameInTable="columnidOSR" msprop:Generator_ColumnPropNameInRow="idOSR" msprop:Generator_ColumnPropNameInTable="idOSRColumn" msprop:Generator_UserColumnName="idOSR" type="xs:int" />
+              <xs:element name="Shifr" msprop:Generator_ColumnVarNameInTable="columnShifr" msprop:Generator_ColumnPropNameInRow="Shifr" msprop:Generator_ColumnPropNameInTable="ShifrColumn" msprop:Generator_UserColumnName="Shifr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="St91" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSt91" msprop:Generator_ColumnPropNameInRow="St91" msprop:Generator_ColumnPropNameInTable="St91Column" msprop:Generator_UserColumnName="St91" type="xs:double" minOccurs="0" />
+              <xs:element name="St91SMR" msprop:Generator_ColumnVarNameInTable="columnSt91SMR" msprop:Generator_ColumnPropNameInRow="St91SMR" msprop:Generator_ColumnPropNameInTable="St91SMRColumn" msprop:Generator_UserColumnName="St91SMR" type="xs:double" />
+              <xs:element name="idPlanProj" msprop:Generator_ColumnVarNameInTable="columnidPlanProj" msprop:Generator_ColumnPropNameInRow="idPlanProj" msprop:Generator_ColumnPropNameInTable="idPlanProjColumn" msprop:Generator_UserColumnName="idPlanProj" type="xs:int" />
+              <xs:element name="NMComplex1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNMComplex1" msprop:Generator_ColumnPropNameInRow="NMComplex1" msprop:Generator_ColumnPropNameInTable="NMComplex1Column" msprop:Generator_UserColumnName="NMComplex1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="516" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vComplexOSR" />
+      <xs:field xpath="mstns:idComplex" />
+      <xs:field xpath="mstns:idChapter" />
+      <xs:field xpath="mstns:idComplexChapter" />
+      <xs:field xpath="mstns:idOSR" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

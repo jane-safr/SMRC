@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsParent" targetNamespace="http://tempuri.org/dsParent.xsd" xmlns:mstns="http://tempuri.org/dsParent.xsd" xmlns="http://tempuri.org/dsParent.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="smrConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="smrConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SMRC.Properties.Settings.GlobalReference.Default.smrConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vF2ParentChildTableAdapter" GeneratorDataComponentClassName="vF2ParentChildTableAdapter" Name="vF2ParentChild" UserDataComponentName="vF2ParentChildTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="smrConnectionString (Settings)" DbObjectName="smr.dbo.vF2ParentChild" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IdF2, KodUnicParent, VipTekParent, KodUnicChild, VipTekChild, SumChild, shNmEntpr, Period, ost, NomerSm, ShifrOld, RegNomer, NomerSmChild, NZ, SumChildZam, NMShifrOld, SnjatieSKon, IdPred, NMShifr, Shifr, IdSmParent, IdF2Child FROM dbo.vF2ParentChild</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IdF2" DataSetColumn="IdF2" />
+              <Mapping SourceColumn="KodUnicParent" DataSetColumn="KodUnicParent" />
+              <Mapping SourceColumn="VipTekParent" DataSetColumn="VipTekParent" />
+              <Mapping SourceColumn="KodUnicChild" DataSetColumn="KodUnicChild" />
+              <Mapping SourceColumn="VipTekChild" DataSetColumn="VipTekChild" />
+              <Mapping SourceColumn="SumChild" DataSetColumn="SumChild" />
+              <Mapping SourceColumn="shNmEntpr" DataSetColumn="shNmEntpr" />
+              <Mapping SourceColumn="Period" DataSetColumn="Period" />
+              <Mapping SourceColumn="ost" DataSetColumn="ost" />
+              <Mapping SourceColumn="NomerSm" DataSetColumn="NomerSm" />
+              <Mapping SourceColumn="ShifrOld" DataSetColumn="ShifrOld" />
+              <Mapping SourceColumn="RegNomer" DataSetColumn="RegNomer" />
+              <Mapping SourceColumn="NomerSmChild" DataSetColumn="NomerSmChild" />
+              <Mapping SourceColumn="NZ" DataSetColumn="NZ" />
+              <Mapping SourceColumn="SumChildZam" DataSetColumn="SumChildZam" />
+              <Mapping SourceColumn="NMShifrOld" DataSetColumn="NMShifrOld" />
+              <Mapping SourceColumn="SnjatieSKon" DataSetColumn="SnjatieSKon" />
+              <Mapping SourceColumn="IdPred" DataSetColumn="IdPred" />
+              <Mapping SourceColumn="NMShifr" DataSetColumn="NMShifr" />
+              <Mapping SourceColumn="Shifr" DataSetColumn="Shifr" />
+              <Mapping SourceColumn="IdSmParent" DataSetColumn="IdSmParent" />
+              <Mapping SourceColumn="IdF2Child" DataSetColumn="IdF2Child" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsParent" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsParent" msprop:Generator_UserDSName="dsParent">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vF2ParentChild" msprop:Generator_TableClassName="vF2ParentChildDataTable" msprop:Generator_TableVarName="tablevF2ParentChild" msprop:Generator_TablePropName="vF2ParentChild" msprop:Generator_RowDeletingName="vF2ParentChildRowDeleting" msprop:Generator_RowChangingName="vF2ParentChildRowChanging" msprop:Generator_RowEvHandlerName="vF2ParentChildRowChangeEventHandler" msprop:Generator_RowDeletedName="vF2ParentChildRowDeleted" msprop:Generator_UserTableName="vF2ParentChild" msprop:Generator_RowChangedName="vF2ParentChildRowChanged" msprop:Generator_RowEvArgName="vF2ParentChildRowChangeEvent" msprop:Generator_RowClassName="vF2ParentChildRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdF2" msprop:Generator_ColumnVarNameInTable="columnIdF2" msprop:Generator_ColumnPropNameInRow="IdF2" msprop:Generator_ColumnPropNameInTable="IdF2Column" msprop:Generator_UserColumnName="IdF2" type="xs:int" />
+              <xs:element name="KodUnicParent" msprop:Generator_ColumnVarNameInTable="columnKodUnicParent" msprop:Generator_ColumnPropNameInRow="KodUnicParent" msprop:Generator_ColumnPropNameInTable="KodUnicParentColumn" msprop:Generator_UserColumnName="KodUnicParent">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VipTekParent" msprop:Generator_ColumnVarNameInTable="columnVipTekParent" msprop:Generator_ColumnPropNameInRow="VipTekParent" msprop:Generator_ColumnPropNameInTable="VipTekParentColumn" msprop:Generator_UserColumnName="VipTekParent" type="xs:double" />
+              <xs:element name="KodUnicChild" msprop:Generator_ColumnVarNameInTable="columnKodUnicChild" msprop:Generator_ColumnPropNameInRow="KodUnicChild" msprop:Generator_ColumnPropNameInTable="KodUnicChildColumn" msprop:Generator_UserColumnName="KodUnicChild" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VipTekChild" msprop:Generator_ColumnVarNameInTable="columnVipTekChild" msprop:Generator_ColumnPropNameInRow="VipTekChild" msprop:Generator_ColumnPropNameInTable="VipTekChildColumn" msprop:Generator_UserColumnName="VipTekChild" type="xs:double" minOccurs="0" />
+              <xs:element name="SumChild" msprop:Generator_ColumnVarNameInTable="columnSumChild" msprop:Generator_ColumnPropNameInRow="SumChild" msprop:Generator_ColumnPropNameInTable="SumChildColumn" msprop:Generator_UserColumnName="SumChild" type="xs:double" minOccurs="0" />
+              <xs:element name="shNmEntpr" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnshNmEntpr" msprop:Generator_ColumnPropNameInRow="shNmEntpr" msprop:Generator_ColumnPropNameInTable="shNmEntprColumn" msprop:Generator_UserColumnName="shNmEntpr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Period" msprop:Generator_ColumnVarNameInTable="columnPeriod" msprop:Generator_ColumnPropNameInRow="Period" msprop:Generator_ColumnPropNameInTable="PeriodColumn" msprop:Generator_UserColumnName="Period" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ost" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnost" msprop:Generator_ColumnPropNameInRow="ost" msprop:Generator_ColumnPropNameInTable="ostColumn" msprop:Generator_UserColumnName="ost" type="xs:double" minOccurs="0" />
+              <xs:element name="NomerSm" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNomerSm" msprop:Generator_ColumnPropNameInRow="NomerSm" msprop:Generator_ColumnPropNameInTable="NomerSmColumn" msprop:Generator_UserColumnName="NomerSm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="303" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShifrOld" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnShifrOld" msprop:Generator_ColumnPropNameInRow="ShifrOld" msprop:Generator_ColumnPropNameInTable="ShifrOldColumn" msprop:Generator_UserColumnName="ShifrOld" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RegNomer" msprop:Generator_ColumnVarNameInTable="columnRegNomer" msprop:Generator_ColumnPropNameInRow="RegNomer" msprop:Generator_ColumnPropNameInTable="RegNomerColumn" msprop:Generator_UserColumnName="RegNomer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NomerSmChild" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNomerSmChild" msprop:Generator_ColumnPropNameInRow="NomerSmChild" msprop:Generator_ColumnPropNameInTable="NomerSmChildColumn" msprop:Generator_UserColumnName="NomerSmChild" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="303" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NZ" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNZ" msprop:Generator_ColumnPropNameInRow="NZ" msprop:Generator_ColumnPropNameInTable="NZColumn" msprop:Generator_UserColumnName="NZ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="233" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SumChildZam" msprop:Generator_ColumnVarNameInTable="columnSumChildZam" msprop:Generator_ColumnPropNameInRow="SumChildZam" msprop:Generator_ColumnPropNameInTable="SumChildZamColumn" msprop:Generator_UserColumnName="SumChildZam" type="xs:double" minOccurs="0" />
+              <xs:element name="NMShifrOld" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNMShifrOld" msprop:Generator_ColumnPropNameInRow="NMShifrOld" msprop:Generator_ColumnPropNameInTable="NMShifrOldColumn" msprop:Generator_UserColumnName="NMShifrOld" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="516" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SnjatieSKon" msprop:Generator_ColumnVarNameInTable="columnSnjatieSKon" msprop:Generator_ColumnPropNameInRow="SnjatieSKon" msprop:Generator_ColumnPropNameInTable="SnjatieSKonColumn" msprop:Generator_UserColumnName="SnjatieSKon" type="xs:boolean" />
+              <xs:element name="IdPred" msprop:Generator_ColumnVarNameInTable="columnIdPred" msprop:Generator_ColumnPropNameInRow="IdPred" msprop:Generator_ColumnPropNameInTable="IdPredColumn" msprop:Generator_UserColumnName="IdPred" type="xs:int" />
+              <xs:element name="NMShifr" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNMShifr" msprop:Generator_ColumnPropNameInRow="NMShifr" msprop:Generator_ColumnPropNameInTable="NMShifrColumn" msprop:Generator_UserColumnName="NMShifr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="272" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Shifr" msprop:Generator_ColumnVarNameInTable="columnShifr" msprop:Generator_ColumnPropNameInRow="Shifr" msprop:Generator_ColumnPropNameInTable="ShifrColumn" msprop:Generator_UserColumnName="Shifr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdSmParent" msprop:Generator_ColumnVarNameInTable="columnIdSmParent" msprop:Generator_ColumnPropNameInRow="IdSmParent" msprop:Generator_ColumnPropNameInTable="IdSmParentColumn" msprop:Generator_UserColumnName="IdSmParent" type="xs:int" />
+              <xs:element name="IdF2Child" msprop:Generator_ColumnVarNameInTable="columnIdF2Child" msprop:Generator_ColumnPropNameInRow="IdF2Child" msprop:Generator_ColumnPropNameInTable="IdF2ChildColumn" msprop:Generator_UserColumnName="IdF2Child" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:vF2ParentChild" />
+      <xs:field xpath="mstns:IdF2" />
+      <xs:field xpath="mstns:IdSmParent" />
+      <xs:field xpath="mstns:IdF2Child" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

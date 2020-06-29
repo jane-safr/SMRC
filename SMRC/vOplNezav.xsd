@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="vOplNezav" targetNamespace="http://tempuri.org/vOplNezav.xsd" xmlns:mstns="http://tempuri.org/vOplNezav.xsd" xmlns="http://tempuri.org/vOplNezav.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="smrConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="smrConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SMRC.Properties.Settings.GlobalReference.Default.smrConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vOplNezavTableAdapter" GeneratorDataComponentClassName="vOplNezavTableAdapter" Name="vOplNezav" UserDataComponentName="vOplNezavTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="smrConnectionString (Settings)" DbObjectName="smr.dbo.vOplNezav" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Shifr, NMComplex, shNMEntpr, NomerSm, KodUnicPar, PeriodPar, VipTekPar, KodUnicCh, PeriodCh, VipTekCh, NMSmeti FROM vOplNezav</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Shifr" DataSetColumn="Shifr" />
+              <Mapping SourceColumn="NMComplex" DataSetColumn="NMComplex" />
+              <Mapping SourceColumn="shNMEntpr" DataSetColumn="shNMEntpr" />
+              <Mapping SourceColumn="NomerSm" DataSetColumn="NomerSm" />
+              <Mapping SourceColumn="KodUnicPar" DataSetColumn="KodUnicPar" />
+              <Mapping SourceColumn="PeriodPar" DataSetColumn="PeriodPar" />
+              <Mapping SourceColumn="VipTekPar" DataSetColumn="VipTekPar" />
+              <Mapping SourceColumn="KodUnicCh" DataSetColumn="KodUnicCh" />
+              <Mapping SourceColumn="PeriodCh" DataSetColumn="PeriodCh" />
+              <Mapping SourceColumn="VipTekCh" DataSetColumn="VipTekCh" />
+              <Mapping SourceColumn="NMSmeti" DataSetColumn="NMSmeti" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="vOplNezav" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="vOplNezav" msprop:Generator_DataSetName="vOplNezav" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vOplNezav" msprop:Generator_UserTableName="vOplNezav" msprop:Generator_RowDeletedName="vOplNezavRowDeleted" msprop:Generator_TableClassName="vOplNezavDataTable" msprop:Generator_RowChangedName="vOplNezavRowChanged" msprop:Generator_RowClassName="vOplNezavRow" msprop:Generator_RowChangingName="vOplNezavRowChanging" msprop:Generator_RowEvArgName="vOplNezavRowChangeEvent" msprop:Generator_RowEvHandlerName="vOplNezavRowChangeEventHandler" msprop:Generator_TablePropName="_vOplNezav" msprop:Generator_TableVarName="tablevOplNezav" msprop:Generator_RowDeletingName="vOplNezavRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Shifr" msprop:Generator_UserColumnName="Shifr" msprop:Generator_ColumnPropNameInRow="Shifr" msprop:Generator_ColumnVarNameInTable="columnShifr" msprop:Generator_ColumnPropNameInTable="ShifrColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NMComplex" msprop:Generator_UserColumnName="NMComplex" msprop:Generator_ColumnPropNameInRow="NMComplex" msprop:Generator_ColumnVarNameInTable="columnNMComplex" msprop:Generator_ColumnPropNameInTable="NMComplexColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="shNMEntpr" msdata:ReadOnly="true" msprop:Generator_UserColumnName="shNMEntpr" msprop:Generator_ColumnPropNameInRow="shNMEntpr" msprop:Generator_ColumnVarNameInTable="columnshNMEntpr" msprop:Generator_ColumnPropNameInTable="shNMEntprColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NomerSm" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NomerSm" msprop:Generator_ColumnPropNameInRow="NomerSm" msprop:Generator_ColumnVarNameInTable="columnNomerSm" msprop:Generator_ColumnPropNameInTable="NomerSmColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="303" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KodUnicPar" msprop:Generator_UserColumnName="KodUnicPar" msprop:Generator_ColumnPropNameInRow="KodUnicPar" msprop:Generator_ColumnVarNameInTable="columnKodUnicPar" msprop:Generator_ColumnPropNameInTable="KodUnicParColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PeriodPar" msprop:Generator_UserColumnName="PeriodPar" msprop:Generator_ColumnPropNameInRow="PeriodPar" msprop:Generator_ColumnVarNameInTable="columnPeriodPar" msprop:Generator_ColumnPropNameInTable="PeriodParColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VipTekPar" msdata:ReadOnly="true" msprop:Generator_UserColumnName="VipTekPar" msprop:Generator_ColumnPropNameInRow="VipTekPar" msprop:Generator_ColumnVarNameInTable="columnVipTekPar" msprop:Generator_ColumnPropNameInTable="VipTekParColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="KodUnicCh" msprop:Generator_UserColumnName="KodUnicCh" msprop:Generator_ColumnPropNameInRow="KodUnicCh" msprop:Generator_ColumnVarNameInTable="columnKodUnicCh" msprop:Generator_ColumnPropNameInTable="KodUnicChColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PeriodCh" msprop:Generator_UserColumnName="PeriodCh" msprop:Generator_ColumnPropNameInRow="PeriodCh" msprop:Generator_ColumnVarNameInTable="columnPeriodCh" msprop:Generator_ColumnPropNameInTable="PeriodChColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VipTekCh" msdata:ReadOnly="true" msprop:Generator_UserColumnName="VipTekCh" msprop:Generator_ColumnPropNameInRow="VipTekCh" msprop:Generator_ColumnVarNameInTable="columnVipTekCh" msprop:Generator_ColumnPropNameInTable="VipTekChColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="NMSmeti" msprop:Generator_UserColumnName="NMSmeti" msprop:Generator_ColumnPropNameInRow="NMSmeti" msprop:Generator_ColumnVarNameInTable="columnNMSmeti" msprop:Generator_ColumnPropNameInTable="NMSmetiColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
