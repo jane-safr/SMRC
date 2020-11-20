@@ -297,6 +297,8 @@ namespace SMRC {
             
             private global::System.Data.DataColumn columnbl;
             
+            private global::System.Data.DataColumn columnSub;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public WorkSootvDataTable() {
@@ -404,6 +406,14 @@ namespace SMRC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SubColumn {
+                get {
+                    return this.columnSub;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -439,7 +449,7 @@ namespace SMRC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public WorkSootvRow AddWorkSootvRow(string WhoFor, double SummaF3, string shNMEntpr, string Naim1, System.DateTime PerF2, string Shifr, string PO, string ShifrInvPr, string bl) {
+            public WorkSootvRow AddWorkSootvRow(string WhoFor, double SummaF3, string shNMEntpr, string Naim1, System.DateTime PerF2, string Shifr, string PO, string ShifrInvPr, string bl, string Sub) {
                 WorkSootvRow rowWorkSootvRow = ((WorkSootvRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         WhoFor,
@@ -450,7 +460,8 @@ namespace SMRC {
                         Shifr,
                         PO,
                         ShifrInvPr,
-                        bl};
+                        bl,
+                        Sub};
                 rowWorkSootvRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowWorkSootvRow);
                 return rowWorkSootvRow;
@@ -482,6 +493,7 @@ namespace SMRC {
                 this.columnPO = base.Columns["PO"];
                 this.columnShifrInvPr = base.Columns["ShifrInvPr"];
                 this.columnbl = base.Columns["bl"];
+                this.columnSub = base.Columns["Sub"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -505,6 +517,8 @@ namespace SMRC {
                 base.Columns.Add(this.columnShifrInvPr);
                 this.columnbl = new global::System.Data.DataColumn("bl", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnbl);
+                this.columnSub = new global::System.Data.DataColumn("Sub", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSub);
                 this.columnWhoFor.MaxLength = 305;
                 this.columnshNMEntpr.AllowDBNull = false;
                 this.columnshNMEntpr.MaxLength = 100;
@@ -516,6 +530,7 @@ namespace SMRC {
                 this.columnShifrInvPr.MaxLength = 166;
                 this.columnbl.AllowDBNull = false;
                 this.columnbl.MaxLength = 250;
+                this.columnSub.MaxLength = 250;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -782,6 +797,22 @@ namespace SMRC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Sub {
+                get {
+                    try {
+                        return ((string)(this[this.tableWorkSootv.SubColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Sub\' in table \'WorkSootv\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableWorkSootv.SubColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsWhoForNull() {
                 return this.IsNull(this.tableWorkSootv.WhoForColumn);
             }
@@ -838,6 +869,18 @@ namespace SMRC {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetShifrInvPrNull() {
                 this[this.tableWorkSootv.ShifrInvPrColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSubNull() {
+                return this.IsNull(this.tableWorkSootv.SubColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSubNull() {
+                this[this.tableWorkSootv.SubColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1009,12 +1052,13 @@ namespace SMRC.smrDataSetSootvTableAdapters {
             tableMapping.ColumnMappings.Add("PO", "PO");
             tableMapping.ColumnMappings.Add("ShifrInvPr", "ShifrInvPr");
             tableMapping.ColumnMappings.Add("bl", "bl");
+            tableMapping.ColumnMappings.Add("Sub", "Sub");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [WorkSootv] ([ShifrInvPr], [shNMEntpr], [Naim1], [PerF2], [Shifr], [S" +
-                "ummaF3], [PO], [WhoFor], [bl]) VALUES (@ShifrInvPr, @shNMEntpr, @Naim1, @PerF2, " +
-                "@Shifr, @SummaF3, @PO, @WhoFor, @bl)";
+                "ummaF3], [PO], [WhoFor], [bl], [Sub]) VALUES (@ShifrInvPr, @shNMEntpr, @Naim1, @" +
+                "PerF2, @Shifr, @SummaF3, @PO, @WhoFor, @bl, @Sub)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShifrInvPr", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ShifrInvPr", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@shNMEntpr", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "shNMEntpr", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1025,6 +1069,7 @@ namespace SMRC.smrDataSetSootvTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@WhoFor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "WhoFor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@bl", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "bl", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sub", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sub", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

@@ -13,7 +13,7 @@
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        shNMEntpr, Name, NomerSm, Vip91, VipTek, Summa, NMComplex, IdSm, Osn, NMSmeti, DogF2, nzpred91, nzpred, YearF2, Vip91d2, VipTekd2, YearZakr, nzpred91sng, nzpredsng, nztek91, nztek, KodStr, Codir4, 
-                         KodDog, Department, DateStartNZP, PrichinaNZP, Ispolnitel, SmetaD, StatusZak, idComplex, Prim, Nomer, Otv, ZimUdor91, OSR, PodpisanKS6, PrichinaNZPKS2, Naim, bl
+                         KodDog, Department, DateStartNZP, PrichinaNZP, Ispolnitel, SmetaD, StatusZak, idComplex, Prim, Nomer, Otv, ZimUdor91, OSR, PodpisanKS6, PrichinaNZPKS2, Naim, bl, SummaZak
 FROM            WorkNZP</CommandText>
                     <Parameters />
                   </DbCommand>
@@ -61,6 +61,7 @@ FROM            WorkNZP</CommandText>
               <Mapping SourceColumn="PrichinaNZPKS2" DataSetColumn="PrichinaNZPKS2" />
               <Mapping SourceColumn="Naim" DataSetColumn="Naim" />
               <Mapping SourceColumn="bl" DataSetColumn="bl" />
+              <Mapping SourceColumn="SummaZak" DataSetColumn="SummaZak" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -72,7 +73,7 @@ FROM            WorkNZP</CommandText>
   <xs:element name="smrDataSetNZP" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="smrDataSetNZP" msprop:Generator_UserDSName="smrDataSetNZP">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="WorkNZP" msprop:Generator_TableClassName="WorkNZPDataTable" msprop:Generator_TableVarName="tableWorkNZP" msprop:Generator_RowChangedName="WorkNZPRowChanged" msprop:Generator_TablePropName="WorkNZP" msprop:Generator_RowDeletingName="WorkNZPRowDeleting" msprop:Generator_RowChangingName="WorkNZPRowChanging" msprop:Generator_RowEvHandlerName="WorkNZPRowChangeEventHandler" msprop:Generator_RowDeletedName="WorkNZPRowDeleted" msprop:Generator_RowClassName="WorkNZPRow" msprop:Generator_UserTableName="WorkNZP" msprop:Generator_RowEvArgName="WorkNZPRowChangeEvent">
+        <xs:element name="WorkNZP" msprop:Generator_TableClassName="WorkNZPDataTable" msprop:Generator_TableVarName="tableWorkNZP" msprop:Generator_TablePropName="WorkNZP" msprop:Generator_RowDeletingName="WorkNZPRowDeleting" msprop:Generator_RowChangingName="WorkNZPRowChanging" msprop:Generator_RowEvHandlerName="WorkNZPRowChangeEventHandler" msprop:Generator_RowDeletedName="WorkNZPRowDeleted" msprop:Generator_UserTableName="WorkNZP" msprop:Generator_RowChangedName="WorkNZPRowChanged" msprop:Generator_RowEvArgName="WorkNZPRowChangeEvent" msprop:Generator_RowClassName="WorkNZPRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="shNMEntpr" msprop:Generator_ColumnVarNameInTable="columnshNMEntpr" msprop:Generator_ColumnPropNameInRow="shNMEntpr" msprop:Generator_ColumnPropNameInTable="shNMEntprColumn" msprop:Generator_UserColumnName="shNMEntpr" minOccurs="0">
@@ -271,6 +272,7 @@ FROM            WorkNZP</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="SummaZak" msprop:Generator_ColumnVarNameInTable="columnSummaZak" msprop:Generator_ColumnPropNameInRow="SummaZak" msprop:Generator_ColumnPropNameInTable="SummaZakColumn" msprop:Generator_UserColumnName="SummaZak" type="xs:double" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

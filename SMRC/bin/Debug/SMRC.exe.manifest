@@ -42,11 +42,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Edneeis.Controls.MultiColumnCombo.dll" size="22528">
       <assemblyIdentity name="Edneeis.Controls.MultiColumnCombo" version="1.1.0.13" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -54,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>TNFsn6IvLOkt7WkyaY40bwSf/9XFg82FTEtmIezByPw=</dsig:DigestValue>
+        <dsig:DigestValue>lUc8lBss1K2Vp+cW7SdDQzrm+DnJ3Ri5O+2JC3Y5dbg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -91,6 +86,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>6eobgv17x2bHIxgfHNAdm6fcl1TTTDpeTLEmAdBZsfw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.ProcessingObjectModel.dll" size="115904">
+      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>LpolCbXnnGiux4/oTflcUrotVjWbHiSSBHm9FDQQ4qU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -239,50 +246,50 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SMRC.exe" size="13585920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SMRC.exe" size="14045696">
       <assemblyIdentity name="SMRC" version="2.0.0.5" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oGC8GQsvl9bhRWmZeKLbFlprhfrjfRkV6nqy31KrIpU=</dsig:DigestValue>
+        <dsig:DigestValue>nmOHSqqrupvCHdAw7AVLVlyCMIWSAxY6rnzsJhucAKs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UCFilter.dll" size="37376">
-      <assemblyIdentity name="UCFilter" version="1.0.7363.22335" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UCFilter.dll" size="36864">
+      <assemblyIdentity name="UCFilter" version="1.0.7622.29587" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>h8GR2Vn/OizyRlDTr0/K+bhWOQCR3cRMiFTAe2LKoQk=</dsig:DigestValue>
+        <dsig:DigestValue>KLzNMy4Ydw/T6n54oO3WZ5w0ahuTIvzC++ifr6+Fi7U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\UCFilter.resources.dll" size="6144">
-      <assemblyIdentity name="UCFilter.resources" version="1.0.7363.22335" language="ru" processorArchitecture="msil" />
+      <assemblyIdentity name="UCFilter.resources" version="1.0.7622.29587" language="ru" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>O62ssao+TgDHx2YACYWDglTKy1GaXJorJWCcuWehRzs=</dsig:DigestValue>
+        <dsig:DigestValue>4zRLDY5b7Qx8cZdEw2vwKcQQfJ/5aA4REzTvzPD2qPs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sma-NO\UCFilter.resources.dll" size="6656">
-      <assemblyIdentity name="UCFilter.resources" version="1.0.7363.22335" language="sma-NO" processorArchitecture="msil" />
+      <assemblyIdentity name="UCFilter.resources" version="1.0.7622.29587" language="sma-NO" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>W2Np+4k+94OJVVUIZ5gWt8JkB3mr5VQi/XW9a30V3pA=</dsig:DigestValue>
+        <dsig:DigestValue>rg/+HRNwYWQexG9nFdVtoJMKNXBmIdrK3TycmTFgLnA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -306,7 +313,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FR1PkUFJB+TFVB8rhWR9Y0WpxqcNOmDwyPBqPI4yBxM=</dsig:DigestValue>
+        <dsig:DigestValue>Sv7tSnrRyVbRF0BHMQfrBAvOTEX5Wl6NIuxIi14ccPI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

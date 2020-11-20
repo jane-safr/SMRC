@@ -58,15 +58,15 @@ namespace SMRC.Forms
             {
                 case 180:
                 case 195:
-                    if (chPoMes.Checked)
-                    {
-                        my.Szap = "exec SSvodnPoMes '" + d1.SelectedValue + "','" + d2.SelectedValue + "'," + IdEnt.SelectedValue + "," + idComplex.SelectedValue + "," + (chOldCodir.Checked ? 1 : 0);
-                        //return;
-                    }
-                    else
-                    {
-                        my.Szap = "exec SSvodn '" + d1.SelectedValue + "','" + d2.SelectedValue + "'," + IdEnt.SelectedValue + ",1," + idComplex.SelectedValue + "," + (chOldCodir.Checked ? 1 : 0) + "," + (chSub.Checked ? 1 : 0);
-                    }
+                    //if (chPoMes.Checked)
+                    //{
+                    //    my.Szap = "exec SSvodnPoMes '" + d1.SelectedValue + "','" + d2.SelectedValue + "'," + IdEnt.SelectedValue + "," + idComplex.SelectedValue + "," + (chOldCodir.Checked ? 1 : 0);
+                    //    //return;
+                    //}
+                    //else
+                    //{
+                        my.Szap = "exec SSvodn '" + d1.SelectedValue + "','" + d2.SelectedValue + "'," + IdEnt.SelectedValue + ",1," + idComplex.SelectedValue + "," + (chOldCodir.Checked ? 1 : 0) + "," + (chSub.Checked || chPoMes.Checked ? 1 : 0);
+                    //}
                     if (chSNds.Checked) fr.nds = 1.20; else fr.nds = 1;
                     break;
                 case 191:

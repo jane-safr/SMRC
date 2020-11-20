@@ -47,6 +47,12 @@ namespace SMRC
                 my.sconnjane = "Initial Catalog=test;User ID=prog;Password=prog;Data Source=SQL_JANE\\JANE1;Connect Timeout=30000000;"; // +my.Szap + ";";
                 my.cnjane = new SqlConnection(my.sconnjane);
                 my.cnjane.ConnectionString = my.sconnjane;
+
+                my.sconnReadOnly = "Initial Catalog=smr;User ID=prog;Password=prog;Data Source=SQL-A0;Connect Timeout=30000000;ApplicationIntent=ReadOnly;"; // +my.Szap + ";";
+                my.cnReadOnly = new SqlConnection(my.sconnReadOnly);
+                my.cnReadOnly.ConnectionString = my.sconnReadOnly;
+
+                
             }
                         //my.Login = "a.vahmyanin";
         my.cn.Open();

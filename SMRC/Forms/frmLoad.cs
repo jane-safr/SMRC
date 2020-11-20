@@ -555,28 +555,28 @@ private void HelpMenu_Click(object sender, System.EventArgs e)
                     my.Nbut = (int)item.Tag;
                     //my.Nbut = 8;
                     bool withup = true;
-                    if (my.Nbut == 8) { withup = false; }
+                    if (my.Nbut == 8 || my.Nbut == 721 || my.Nbut == 724) { withup = false; }
                     //if (my.Nbut == 704) { if (my.UserInGroup(my.Id_us,234)) ; }
                     if (!my.isFormInMdi("frmSprDGV", my.Nbut, this))
                     {
                         my.showSprDGV(my.Nbut, withup, true);
                     }
                     break;
-                        case "frmReasons":
-                            my.Szap = "";
-                            my.Nbut = (int)item.Tag;
-                            //my.Nbut = 8;
-                            withup = true;
-                            //if (my.Nbut == 704) { if (my.UserInGroup(my.Id_us,234)) ; }
-                            if (!my.isFormInMdi("frmReasons", my.Nbut, this))
-                            {
-                                frmReasons fr = new frmReasons();
-                                fr.Tag = (int)0;
-                                fr.MdiParent = my.MDIForm;
-                                fr.Dock = DockStyle.Fill;
-                                fr.Show();
-                            }
-                            break;
+                case "frmReasons":
+                    my.Szap = "";
+                    my.Nbut = (int)item.Tag;
+                    //my.Nbut = 8;
+                    withup = true;
+                    //if (my.Nbut == 704) { if (my.UserInGroup(my.Id_us,234)) ; }
+                    if (!my.isFormInMdi("frmReasons", my.Nbut, this))
+                    {
+                        frmReasons fr = new frmReasons();
+                        fr.Tag = (int)0;
+                        fr.MdiParent = my.MDIForm;
+                        fr.Dock = DockStyle.Fill;
+                        fr.Show();
+                    }
+                    break;
                         case "PreviewAkt":
                     if (!my.isFormInMdi("frmActs", my.Nbut, this))
                     {

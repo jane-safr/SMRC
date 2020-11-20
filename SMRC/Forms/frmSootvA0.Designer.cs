@@ -209,8 +209,8 @@
             // 
             // idComplex1
             // 
-            this.idComplex1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.idComplex1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.idComplex1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.idComplex1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.idComplex1.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -244,8 +244,8 @@
             // 
             // idOsr
             // 
-            this.idOsr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.idOsr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.idOsr.BackColor = System.Drawing.Color.WhiteSmoke;
             this.idOsr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.idOsr.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -331,9 +331,9 @@
             // 
             // DgvSmA0
             // 
-            this.DgvSmA0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.DgvSmA0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DgvSmA0.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvSmA0.Location = new System.Drawing.Point(406, 116);
             this.DgvSmA0.Name = "DgvSmA0";
@@ -342,8 +342,8 @@
             // 
             // DgvSmSMR
             // 
-            this.DgvSmSMR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.DgvSmSMR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.DgvSmSMR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvSmSMR.Location = new System.Drawing.Point(4, 116);
             this.DgvSmSMR.Name = "DgvSmSMR";
@@ -352,8 +352,8 @@
             // 
             // DgvSm
             // 
-            this.DgvSm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.DgvSm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DgvSm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvSm.Location = new System.Drawing.Point(4, 422);
             this.DgvSm.Name = "DgvSm";
@@ -405,8 +405,8 @@
             // 
             // idComplex
             // 
-            this.idComplex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.idComplex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.idComplex.BackColor = System.Drawing.Color.WhiteSmoke;
             this.idComplex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.idComplex.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -492,9 +492,9 @@
             // 
             // DgvOSRA0
             // 
-            this.DgvOSRA0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.DgvOSRA0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DgvOSRA0.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvOSRA0.Location = new System.Drawing.Point(406, 83);
             this.DgvOSRA0.Name = "DgvOSRA0";
@@ -503,8 +503,8 @@
             // 
             // DgvOSRSMR
             // 
-            this.DgvOSRSMR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.DgvOSRSMR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.DgvOSRSMR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvOSRSMR.Location = new System.Drawing.Point(4, 83);
             this.DgvOSRSMR.Name = "DgvOSRSMR";
@@ -513,8 +513,8 @@
             // 
             // DgvOSR
             // 
-            this.DgvOSR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.DgvOSR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DgvOSR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvOSR.Location = new System.Drawing.Point(4, 393);
             this.DgvOSR.Name = "DgvOSR";
@@ -639,9 +639,9 @@
             // 
             // DgvProjA0
             // 
-            this.DgvProjA0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.DgvProjA0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DgvProjA0.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvProjA0.Location = new System.Drawing.Point(405, 53);
             this.DgvProjA0.Name = "DgvProjA0";
@@ -650,8 +650,8 @@
             // 
             // DgvProjSMR
             // 
-            this.DgvProjSMR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.DgvProjSMR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.DgvProjSMR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvProjSMR.Location = new System.Drawing.Point(3, 53);
             this.DgvProjSMR.Name = "DgvProjSMR";
@@ -660,8 +660,8 @@
             // 
             // DgvProj
             // 
-            this.DgvProj.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.DgvProj.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DgvProj.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvProj.Location = new System.Drawing.Point(3, 389);
             this.DgvProj.Name = "DgvProj";
@@ -759,7 +759,7 @@
             this.label11.Size = new System.Drawing.Size(751, 54);
             this.label11.TabIndex = 30;
             this.label11.Text = "Если встречаются дубли смет в программе А0, это влечет за собой не точные результ" +
-                "аты при связывании с программой \"Учет СМР\"";
+    "аты при связывании с программой \"Учет СМР\"";
             // 
             // label5
             // 
@@ -770,13 +770,13 @@
             this.label5.Size = new System.Drawing.Size(751, 18);
             this.label5.TabIndex = 27;
             this.label5.Text = "По связанным проектам/ОСР не должно быть смет с одинаковыми инвентарными и локаль" +
-                "ными номерами";
+    "ными номерами";
             // 
             // DgvDoubl
             // 
-            this.DgvDoubl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.DgvDoubl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DgvDoubl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvDoubl.Location = new System.Drawing.Point(11, 126);
             this.DgvDoubl.Name = "DgvDoubl";
@@ -870,8 +870,8 @@
             // 
             // idProj
             // 
-            this.idProj.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.idProj.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.idProj.BackColor = System.Drawing.Color.WhiteSmoke;
             this.idProj.Enabled = false;
             this.idProj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -928,9 +928,9 @@
             // 
             // DgvRazn
             // 
-            this.DgvRazn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.DgvRazn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DgvRazn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvRazn.Location = new System.Drawing.Point(15, 131);
             this.DgvRazn.Name = "DgvRazn";
@@ -1019,9 +1019,9 @@
             // 
             // DgvRep
             // 
-            this.DgvRep.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.DgvRep.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DgvRep.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvRep.Location = new System.Drawing.Point(3, 56);
             this.DgvRep.Name = "DgvRep";

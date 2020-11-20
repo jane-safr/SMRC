@@ -51,6 +51,7 @@ namespace SMRC.Forms
             ReportViewer1.ZoomMode = ZoomMode.Percent;
             ReportViewer1.ZoomPercent = 100;
             this.ReportViewer1.RefreshReport();
+            this.ReportViewer1.RefreshReport();
         }
         private void rep()
         {
@@ -82,11 +83,11 @@ namespace SMRC.Forms
                 if (nbut1 == 2001 | nbut1 == 170 | nbut1 == 2020) my.headStr = my.headStr = "Наименование,Номер сметы, Номер договора,Объект,Заказчик,Участок,Прораб,ИстФин,Вып.тек.,Вып91,Зарплата,КомпЗП,Механизмы,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Инв.проект,,,,,,Код стройки,Портфель,,,,,,,,,,,,,блок";
                 if (nbut1 == 80 | nbut1 == 85) my.headStr = "Шифр,ПО,Предприятие,Наименование,Заказчик,Тип договора";
                 if (nbut1 == 81) my.headStr = "Шифр,Предприятие,Номер сметы,Код уникальный родителя,Код уникальный дочерний";
-                if (poMes)
-                    my.headStr = "Портфель,Предприятие";
-                else
+                //if (poMes)
+                //    my.headStr = "Портфель,Предприятие";
+                //else
                 {
-                    if (nbut1 == 180 | nbut1 == 195) my.headStr = "Портфель,Предприятие,Наименование,Период КС2,ССР,Оплата КС2,ПО,,,,,,,,,,,,,,,,,,,,,,,ОСР,,Лок.номер,,,,,,,,,блоки,,,,,,,,,,,,,,,,,,,Тип,,Цвет ост.";
+                    if (nbut1 == 180 | nbut1 == 195) my.headStr = "Портфель,Предприятие,Наименование,Период КС2,ССР,Оплата КС2,ПО,,,,,,,,,,,,,,,,,,Субподряд,,,,,ОСР,,Лок.номер,,,,,,,,,блоки,,,,,,,,,,,,,,,,,,,Тип,,Цвет ост.";
                     if (nbut1 == 171 | nbut1 == 190)
                         my.headStr = "Предприятие,ССР,Номер сметы,,,,Комплекс,,,,Договор,,,,,,,,,,,,,Портфель,Участок,,,,Исполнитель,,,,,,,,ОСР,,,блоки";
                     if (nbut1 == 191)
@@ -118,20 +119,20 @@ namespace SMRC.Forms
                 }
             }
             else
-            { s = my.FilterSel(nbut1, null, my.sconn, szap1); }
+            { s = my.FilterSel(nbut1, null, my.sconnReadOnly, szap1); }
               //  s = "exec SOstSmetLimit 32,'01.07.2017 0:00:00',0,1,1,0";
-            SqlDataAdapter sda = new SqlDataAdapter(s, my.sconn);
+            SqlDataAdapter sda = new SqlDataAdapter(s, my.sconnReadOnly);
             sda.SelectCommand.CommandTimeout = 3000000;
             if (sda != null)
             {
                 Cursor.Current = Cursors.WaitCursor;
                 DataSet DS = new DataSet();
                 DataTable dt = new DataTable();
-                    if ((nbut1 == 171 || nbut1 == 172 || nbut1 == 180 | nbut1 == 190 | nbut1 == 191 | nbut1 == 195) && poMes)
-                    { DataSet DS1 = new DataSet(); sda.Fill(DS1); dt = DS1.Tables[3]; dv.Table = DS1.Tables[3]; }
-                    else
+                    //if ((nbut1 == 171 || nbut1 == 172 || nbut1 == 180 | nbut1 == 190 | nbut1 == 191 | nbut1 == 195) && poMes)
+                    //{ DataSet DS1 = new DataSet(); sda.Fill(DS1); dt = DS1.Tables[3]; dv.Table = DS1.Tables[3]; }
+                    //else
                     { sda.Fill(DS); dv.Table = DS.Tables[0]; }
-                    if ((nbut1 == 180 | nbut1 == 195) & DS.Tables.Count>1) { dvSub.Table = DS.Tables[1]; }
+                    if ((nbut1 == 180 | nbut1 == 195) & DS.Tables.Count>1 & !poMes) { dvSub.Table = DS.Tables[1]; }
                 
                 //dv.Table = DS.Tables[0];
                 ucFilter1.UCFilt(dv, ReportViewer1, UCFilter.UCFilter.VidObj.ReportViewer, my.headStr);
@@ -204,7 +205,7 @@ namespace SMRC.Forms
                          pPeriod = new ReportParameter("pPeriod", my.UperName);
                         ReportParameter pPred = new ReportParameter("pPred", my.UpredName);
                         ReportViewer1.LocalReport.SetParameters(new ReportParameter[] { pPeriod, pPred });
-                        SqlDataAdapter sda = new SqlDataAdapter(szap1.Replace("2005", "2006"), my.sconn);
+                        SqlDataAdapter sda = new SqlDataAdapter(szap1.Replace("2005", "2006"), my.sconnReadOnly);
                         DataSet DS = new DataSet();
                         sda.Fill(DS);
                         dvSub.Table = DS.Tables[0];
@@ -218,7 +219,7 @@ namespace SMRC.Forms
                         pPeriod = new ReportParameter("pPeriod", my.UperName);
                         ReportParameter pPred = new ReportParameter("pPred", my.UpredName);
                         ReportViewer1.LocalReport.SetParameters(new ReportParameter[] { pPeriod, pPred });
-                        //SqlDataAdapter sda = new SqlDataAdapter(szap1.Replace("2005", "2006"), my.sconn);
+                        //SqlDataAdapter sda = new SqlDataAdapter(szap1.Replace("2005", "2006"), my.sconnReadOnly);
                         //DataSet DS = new DataSet();
                         //sda.Fill(DS);
                         //dvSub.Table = DS.Tables[0];
@@ -232,7 +233,7 @@ namespace SMRC.Forms
                         pPeriod = new ReportParameter("pPeriod", my.UperName);
                         ReportParameter pPred = new ReportParameter("pPred", my.UpredName);
                         ReportViewer1.LocalReport.SetParameters(new ReportParameter[] { pPeriod, pPred });
-                        SqlDataAdapter sda = new SqlDataAdapter(szap1.Replace("2007", "2008"), my.sconn);
+                        SqlDataAdapter sda = new SqlDataAdapter(szap1.Replace("2007", "2008"), my.sconnReadOnly);
                         DataSet DS = new DataSet();
                         sda.Fill(DS);
                         dvSub.Table = DS.Tables[0];
@@ -377,21 +378,44 @@ namespace SMRC.Forms
                     {
                         if (poMes)
                         {
-                            RDSnm = "DataSetSvodPoMes";// as in .rdcl
-                            ReportViewer1.LocalReport.ReportPath = RepPath + "rSvodPoMes.rdlc";
+                            //RDSnm = "DataSetSvodPoMes";// as in .rdcl
+                            //ReportViewer1.LocalReport.ReportPath = RepPath + "rSvodPoMes.rdlc";
+                            RDSnm = "DataSetSvKS2KS3";// as in .rdcl
+                            ReportViewer1.LocalReport.ReportPath = RepPath + "rSvodnKS2KS3PoMes.rdlc";
                         }
                         else
                         {
                         RDSnm = "DataSetSvKS2KS3";// as in .rdcl
                         ReportViewer1.LocalReport.ReportPath = RepPath + "rSvodnKS2KS3.rdlc";
                         }
+                        //if (nbut1 == 180 | nbut1 == 195)
+                        //{
+                            ReportParameter snds = new ReportParameter("nds", nds.ToString());
+                        ReportViewer1.LocalReport.SetParameters(new ReportParameter[] { snds });
+                        pPeriod = new ReportParameter("pPeriod", my.UperName);
+                        ReportViewer1.LocalReport.SetParameters(new ReportParameter[] { pPeriod });
+                        //  report.SetParameters(new ReportParameter[] { snds });
+                        //}
                         break;
                     }
                 case 195:
+
                     {
+                        if (poMes)
+                        {
+                                RDSnm = "DataSetSvKS2KS3";// as in .rdcl
+                            ReportViewer1.LocalReport.ReportPath = RepPath + "rSvodnKS2KS3PoMes.rdlc";
+                        }
+                        else
+                        {
 
                             RDSnm = "DataSetSvKS2KS3";// as in .rdcl
                             ReportViewer1.LocalReport.ReportPath = RepPath + "rSvodnKS2KS3Short.rdlc";
+                        }
+                        ReportParameter snds = new ReportParameter("nds", nds.ToString());
+                        ReportViewer1.LocalReport.SetParameters(new ReportParameter[] { snds });
+                        pPeriod = new ReportParameter("pPeriod", my.UperName);
+                        ReportViewer1.LocalReport.SetParameters(new ReportParameter[] { pPeriod });
                         break;
                     }
                 case 190:
@@ -498,7 +522,7 @@ namespace SMRC.Forms
                         RDSnm = "smrDataSet_vPlanSmA0Rep";
                         ReportViewer1.LocalReport.ReportPath = RepPath + "rPlanSmA0.rdlc";
                         ReportViewer1.LocalReport.SetParameters(new ReportParameter[] { pPeriod });
-                        //SqlDataAdapter sda = new SqlDataAdapter(szap1.Replace("2001", "2004").Replace("R_SmetnoeRazl", "R_Svodn"), my.sconn);
+                        //SqlDataAdapter sda = new SqlDataAdapter(szap1.Replace("2001", "2004").Replace("R_SmetnoeRazl", "R_Svodn"), my.sconnReadOnly);
                         //DataSet DS = new DataSet();
                         //sda.Fill(DS);
                         //dvSub.Table = DS.Tables[0];
@@ -511,7 +535,7 @@ namespace SMRC.Forms
                         RDSnm = "WorkSm_WorkSm";
                         //ReportViewer1.LocalReport.ReportPath = RepPath + "Report2.rdlc";
                         ReportViewer1.LocalReport.ReportPath = RepPath + "rSmetnoeRazNew.rdlc";
-                        SqlDataAdapter sda = new SqlDataAdapter(szap1.Replace("2002", "2004").Replace("2001", "2004").Replace("R_SmetnoeRaz","R_Svodn").Replace("'" + my.Upred + "'", "'" + my.identpr + "'"), my.sconn);
+                        SqlDataAdapter sda = new SqlDataAdapter(szap1.Replace("2002", "2004").Replace("2001", "2004").Replace("R_SmetnoeRaz","R_Svodn").Replace("'" + my.Upred + "'", "'" + my.identpr + "'"), my.sconnReadOnly);
                         sda.SelectCommand.CommandTimeout = 3000000;
                         DataSet DS = new DataSet();
                         sda.Fill(DS);
@@ -547,7 +571,7 @@ namespace SMRC.Forms
                     {
                         RDSnm = "smrDataSetSv_WorkSv";
                         ReportViewer1.LocalReport.ReportPath = RepPath + "rSvodnijNew.rdlc";
-                        SqlDataAdapter sda = new SqlDataAdapter(szap1.Replace("2002","2003"), my.sconn);
+                        SqlDataAdapter sda = new SqlDataAdapter(szap1.Replace("2002","2003"), my.sconnReadOnly);
                         sda.SelectCommand.CommandTimeout = 3000000;
                         DataSet DS = new DataSet();
                         sda.Fill(DS);
@@ -619,7 +643,7 @@ namespace SMRC.Forms
                         if (nbut1 > 2)
                         {
                             if (nbut1 == 16 || nbut1 == 18) { p8 = new ReportParameter("pIsp1", (NMIsp)); ReportViewer1.LocalReport.SetParameters(new ReportParameter[] { p8 }); };
-                            String s = my.FilterSel(110, null, my.sconn, "  AND  dbo.Forma2.IdF2 IN     (SELECT     Stroka AS IdF2     FROM          dbo.IzStr('" + my.Szap + "') AS IzStr_1) ");
+                            String s = my.FilterSel(110, null, my.sconnReadOnly, "  AND  dbo.Forma2.IdF2 IN     (SELECT     Stroka AS IdF2     FROM          dbo.IzStr('" + my.Szap + "') AS IzStr_1) ");
                             s = my.Tbl2Str(s);
                             if (nbut1 == 19) { p6 = new ReportParameter("pF3Predjav", (s)); ReportViewer1.LocalReport.SetParameters(new ReportParameter[] { p6 }); };
                             ReportViewer1.LocalReport.SetParameters(new ReportParameter[] { p4, p5, p3, p7 });
@@ -686,7 +710,7 @@ namespace SMRC.Forms
 
                 case 20:
                     {
-                        SqlDataAdapter sda = new SqlDataAdapter("select * from vobor where idf2 = " + e.Parameters[0].Values[0].ToString(), my.sconn);
+                        SqlDataAdapter sda = new SqlDataAdapter("select * from vobor where idf2 = " + e.Parameters[0].Values[0].ToString(), my.sconnReadOnly);
                         DataSet DS = new DataSet();
                         sda.Fill(DS);
                         e.DataSources.Add(new ReportDataSource("smrDataSetObor_vObor", DS.Tables[0]));
@@ -694,7 +718,7 @@ namespace SMRC.Forms
                     }
                 case 181:
                     {
-                        SqlDataAdapter sda = new SqlDataAdapter("exec Sprav.dbo.sChain 0, " + e.Parameters[0].Values[0].ToString() + ", " + my.SzapN, my.sconn);
+                        SqlDataAdapter sda = new SqlDataAdapter("exec Sprav.dbo.sChain 0, " + e.Parameters[0].Values[0].ToString() + ", " + my.SzapN, my.sconnReadOnly);
                         DataSet DS = new DataSet();
                         sda.Fill(DS);
                         e.DataSources.Add(new ReportDataSource("DSChain", DS.Tables[0]));
@@ -867,7 +891,7 @@ namespace SMRC.Forms
                     report.SetParameters(new ReportParameter[] { ssub });
                 }
                 ReportViewer1.LocalReport.DataSources.Add(new ReportDataSource(RDSnm, dv));
-                if (nbut1 == 180 | nbut1 == 195) { ReportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSetSootvKs3",dvSub));}
+                if (!poMes && (nbut1 == 180 | nbut1 == 195)) { ReportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSetSootvKs3",dvSub));}
                 ReportViewer1.RefreshReport();
                 return;
             }
@@ -1281,7 +1305,7 @@ namespace SMRC.Forms
         }
         private void DC1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (my.IsNumeric(DC1.SelectedValue))
+            if (my.IsNumeric(DC1.SelectedValue) && ! poMes)
             {
                 ShowRepMy();
                 Supp(ReportViewer1.LocalReport, nbut1, (int)DC1.SelectedValue);

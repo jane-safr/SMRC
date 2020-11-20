@@ -405,6 +405,10 @@ namespace SMRC {
             
             private global::System.Data.DataColumn columnColorOst;
             
+            private global::System.Data.DataColumn columnOplataMinusReal;
+            
+            private global::System.Data.DataColumn columnType2;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public mySmrDataTable() {
@@ -944,6 +948,22 @@ namespace SMRC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn OplataMinusRealColumn {
+                get {
+                    return this.columnOplataMinusReal;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Type2Column {
+                get {
+                    return this.columnType2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1042,7 +1062,9 @@ namespace SMRC {
                         double VremZd, 
                         string NomPoruch, 
                         double SumKor, 
-                        string ColorOst) {
+                        string ColorOst, 
+                        double OplataMinusReal, 
+                        string Type2) {
                 mySmrRow rowmySmrRow = ((mySmrRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ShifrInvPrOld,
@@ -1107,7 +1129,9 @@ namespace SMRC {
                         VremZd,
                         NomPoruch,
                         SumKor,
-                        ColorOst};
+                        ColorOst,
+                        OplataMinusReal,
+                        Type2};
                 rowmySmrRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowmySmrRow);
                 return rowmySmrRow;
@@ -1193,6 +1217,8 @@ namespace SMRC {
                 this.columnNomPoruch = base.Columns["NomPoruch"];
                 this.columnSumKor = base.Columns["SumKor"];
                 this.columnColorOst = base.Columns["ColorOst"];
+                this.columnOplataMinusReal = base.Columns["OplataMinusReal"];
+                this.columnType2 = base.Columns["Type2"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1324,6 +1350,10 @@ namespace SMRC {
                 base.Columns.Add(this.columnSumKor);
                 this.columnColorOst = new global::System.Data.DataColumn("ColorOst", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnColorOst);
+                this.columnOplataMinusReal = new global::System.Data.DataColumn("OplataMinusReal", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOplataMinusReal);
+                this.columnType2 = new global::System.Data.DataColumn("Type2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnType2);
                 this.columnShifrInvPrOld.MaxLength = 250;
                 this.columnshNMEntpr.MaxLength = 250;
                 this.columnNaim1.MaxLength = 8000;
@@ -1361,6 +1391,8 @@ namespace SMRC {
                 this.columnIspolnitel.MaxLength = 150;
                 this.columnNomPoruch.MaxLength = 150;
                 this.columnColorOst.MaxLength = 10;
+                this.columnOplataMinusReal.AllowDBNull = false;
+                this.columnType2.MaxLength = 1000;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2456,6 +2488,33 @@ namespace SMRC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double OplataMinusReal {
+                get {
+                    return ((double)(this[this.tablemySmr.OplataMinusRealColumn]));
+                }
+                set {
+                    this[this.tablemySmr.OplataMinusRealColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Type2 {
+                get {
+                    try {
+                        return ((string)(this[this.tablemySmr.Type2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Type2\' in table \'mySmr\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablemySmr.Type2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsShifrInvPrOldNull() {
                 return this.IsNull(this.tablemySmr.ShifrInvPrOldColumn);
             }
@@ -3077,6 +3136,18 @@ namespace SMRC {
             public void SetColorOstNull() {
                 this[this.tablemySmr.ColorOstColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsType2Null() {
+                return this.IsNull(this.tablemySmr.Type2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetType2Null() {
+                this[this.tablemySmr.Type2Column] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -3298,10 +3369,12 @@ namespace SMRC.smrDataSetKS2KS3TableAdapters {
             tableMapping.ColumnMappings.Add("NomPoruch", "NomPoruch");
             tableMapping.ColumnMappings.Add("SumKor", "SumKor");
             tableMapping.ColumnMappings.Add("ColorOst", "ColorOst");
+            tableMapping.ColumnMappings.Add("OplataMinusReal", "OplataMinusReal");
+            tableMapping.ColumnMappings.Add("Type2", "Type2");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[mySmr] ([ShifrInvPr], [shNMEntpr], [Naim1], [PerF2], [Shifr], [Oplata], [PO], [Summa], [SummaSNDS], [OplataSNDS], [ShifrInvPrNew], [OplataSS], [SummaSS], [Vip91], [IdSm], [IdF2], [Vip91Upr], [OplataUpr], [OplataSSUpr], [ShifrInvPrOld], [osn], [CodProg], [SummaSubSob], [SummaSub], [Sub], [OplataVP], [SummaSubPod], [SumBrak], [SumBrakPO], [NMOSR], [Vip91f3], [Nomer], [Ndoc], [KodUnicF2], [KodUnicF3], [PerF3], [DogF3], [LastLogin], [SummaVP], [RegNomerF3], [Naim], [bl], [OplataPlus], [OplataMinus], [Ispolnitel], [DavMat], [Komandir], [Peresch], [ZimUdorUpr], [OplataProc], [OplataNotUchet], [OplataNotPer], [SummaNotPer], [OplataNotPeriod], [OplataOst], [OborTek], [VremZd], [NomPoruch], [SumKor], [ColorOst]) VALUES (@ShifrInvPr, @shNMEntpr, @Naim1, @PerF2, @Shifr, @Oplata, @PO, @Summa, @SummaSNDS, @OplataSNDS, @ShifrInvPrNew, @OplataSS, @SummaSS, @Vip91, @IdSm, @IdF2, @Vip91Upr, @OplataUpr, @OplataSSUpr, @ShifrInvPrOld, @osn, @CodProg, @SummaSubSob, @SummaSub, @Sub, @OplataVP, @SummaSubPod, @SumBrak, @SumBrakPO, @NMOSR, @Vip91f3, @Nomer, @Ndoc, @KodUnicF2, @KodUnicF3, @PerF3, @DogF3, @LastLogin, @SummaVP, @RegNomerF3, @Naim, @bl, @OplataPlus, @OplataMinus, @Ispolnitel, @DavMat, @Komandir, @Peresch, @ZimUdorUpr, @OplataProc, @OplataNotUchet, @OplataNotPer, @SummaNotPer, @OplataNotPeriod, @OplataOst, @OborTek, @VremZd, @NomPoruch, @SumKor, @ColorOst)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[mySmr] ([ShifrInvPr], [shNMEntpr], [Naim1], [PerF2], [Shifr], [Oplata], [PO], [Summa], [SummaSNDS], [OplataSNDS], [ShifrInvPrNew], [OplataSS], [SummaSS], [Vip91], [IdSm], [IdF2], [Vip91Upr], [OplataUpr], [OplataSSUpr], [ShifrInvPrOld], [osn], [CodProg], [SummaSubSob], [SummaSub], [Sub], [OplataVP], [SummaSubPod], [SumBrak], [SumBrakPO], [NMOSR], [Vip91f3], [Nomer], [Ndoc], [KodUnicF2], [KodUnicF3], [PerF3], [DogF3], [LastLogin], [SummaVP], [RegNomerF3], [Naim], [bl], [OplataPlus], [OplataMinus], [Ispolnitel], [DavMat], [Komandir], [Peresch], [ZimUdorUpr], [OplataProc], [OplataNotUchet], [OplataNotPer], [SummaNotPer], [OplataNotPeriod], [OplataOst], [OborTek], [VremZd], [NomPoruch], [SumKor], [ColorOst], [OplataMinusReal], [Type2]) VALUES (@ShifrInvPr, @shNMEntpr, @Naim1, @PerF2, @Shifr, @Oplata, @PO, @Summa, @SummaSNDS, @OplataSNDS, @ShifrInvPrNew, @OplataSS, @SummaSS, @Vip91, @IdSm, @IdF2, @Vip91Upr, @OplataUpr, @OplataSSUpr, @ShifrInvPrOld, @osn, @CodProg, @SummaSubSob, @SummaSub, @Sub, @OplataVP, @SummaSubPod, @SumBrak, @SumBrakPO, @NMOSR, @Vip91f3, @Nomer, @Ndoc, @KodUnicF2, @KodUnicF3, @PerF3, @DogF3, @LastLogin, @SummaVP, @RegNomerF3, @Naim, @bl, @OplataPlus, @OplataMinus, @Ispolnitel, @DavMat, @Komandir, @Peresch, @ZimUdorUpr, @OplataProc, @OplataNotUchet, @OplataNotPer, @SummaNotPer, @OplataNotPeriod, @OplataOst, @OborTek, @VremZd, @NomPoruch, @SumKor, @ColorOst, @OplataMinusReal, @Type2)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShifrInvPr", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ShifrInvPr", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@shNMEntpr", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "shNMEntpr", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3363,6 +3436,8 @@ namespace SMRC.smrDataSetKS2KS3TableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NomPoruch", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NomPoruch", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SumKor", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SumKor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ColorOst", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ColorOst", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OplataMinusReal", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OplataMinusReal", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Type2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Type2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

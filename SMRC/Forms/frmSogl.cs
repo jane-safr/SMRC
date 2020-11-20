@@ -14,7 +14,7 @@ namespace SMRC.Forms
     public partial class frmSogl : Form
     {
         clsSearchInfo m_searchInfo = new clsSearchInfo();
-        int cntCol;
+        int cntCol; int ColumnHeadersHeight;
         public frmSogl()
         {
             InitializeComponent();
@@ -22,10 +22,10 @@ namespace SMRC.Forms
 
         private void frmSogl_Load(object sender, EventArgs e)
         {
-
+            ColumnHeadersHeight = DgvSoglF3.ColumnHeadersHeight;
             my.FillDC(NomerKS3Sub, 81, " and Period = ''" + my.Uper + "'' and IdEntpr = " + my.identpr );
             DgvSoglF3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            DgvSoglF3.ColumnHeadersHeight = DgvSoglF3.ColumnHeadersHeight * 2;
+            DgvSoglF3.ColumnHeadersHeight = ColumnHeadersHeight * 2;
             DgvSoglF3.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.BottomCenter;
 
             DgvSoglF3.CellPainting += new DataGridViewCellPaintingEventHandler(dgvPlannedProfile_CellPainting);
@@ -35,41 +35,48 @@ namespace SMRC.Forms
 
         }
 
-
+       // string NomerKS3SubOld = "";
         private void NomerKS3Sub_SelectedValueChanged(object sender, EventArgs e)
         {
-            if (NomerKS3Sub.SelectedValue == null) return;
-            if (NomerKS3Sub.SelectedValue.ToString()!="")
-            {
-                my.FillDC(KodUnic, 82, " and Period = ''" + my.Uper + "'' and IdEntpr = " + my.identpr + " and NomerKS3Sub = ''" + NomerKS3Sub.SelectedValue + "''");
-                my.FillDC(idDog, 16, " and iddog = ''" + my.ExeScalar(my.FilterSel(719, null, my.sconn, " and NomerKS3Sub = '" + NomerKS3Sub.SelectedValue + "'")) + "''");
-                my.FillDC(idIstFin, 18, " and idistfin = ''" + my.ExeScalar(my.FilterSel(720, null, my.sconn, " and NomerKS3Sub = '" + NomerKS3Sub.SelectedValue + "'")) + "''");
-                //  lDog.Text = my.ExeScalar(my.FilterSel(719,null, my.sconn, " and NomerKS3Sub = '" + NomerKS3Sub.SelectedValue + "'"));
-                my.MySpisok(231, " and Period = '" + my.Uper + "' and IdEntpr = " + my.identpr + " and NomerKS3Sub = '" + NomerKS3Sub.SelectedValue + "'", null, DgvSoglSumRazl);
+            //if (NomerKS3Sub.SelectedValue == null || NomerKS3Sub.SelectedValue.ToString() == "System.Data.DataRowView") return;
+            //if (NomerKS3Sub.SelectedValue.ToString()!="" )
+            //{
+            //    //NomerKS3SubOld = NomerKS3Sub.SelectedValue.ToString();
+            //    my.FillDC(KodUnic, 82, " and Period = ''" + my.Uper + "'' and IdEntpr = " + my.identpr + " and NomerKS3Sub = ''" + NomerKS3Sub.SelectedValue + "''");
+            //    my.FillDC(idDog, 16, " and iddog = ''" + my.ExeScalar(my.FilterSel(719, null, my.sconn, " and NomerKS3Sub = '" + NomerKS3Sub.SelectedValue + "'")) + "''");
+            //    my.FillDC(idIstFin, 18, " and idistfin = ''" + my.ExeScalar(my.FilterSel(720, null, my.sconn, " and NomerKS3Sub = '" + NomerKS3Sub.SelectedValue + "'")) + "''");
+            //    //  lDog.Text = my.ExeScalar(my.FilterSel(719,null, my.sconn, " and NomerKS3Sub = '" + NomerKS3Sub.SelectedValue + "'"));
               
-                vSoglSumRazl();
+            //   // vSoglSumRazl();
                 
 
-            }
+            //}
         }
 
 
 
         private void vSoglSumRazl()
         {
-            my.MySpisok(233, " and Period = '" + my.Uper + "' and IdEntpr = " + my.identpr + " and NomerKS3Sub = '" + NomerKS3Sub.SelectedValue + "'", null, DgvSoglF3);
-            lCount.Text = "Всего: " + (int)DgvSoglF3.Rows.Count;
+            if (NomerKS3Sub.SelectedValue.ToString() != "")
+            {
+                my.MySpisok(231, " and Period = '" + my.Uper + "' and IdEntpr = " + my.identpr + " and NomerKS3Sub = '" + NomerKS3Sub.SelectedValue + "'", null, DgvSoglSumRazl);
+
+                my.MySpisok(233, " and Period = '" + my.Uper + "' and IdEntpr = " + my.identpr + " and NomerKS3Sub = '" + NomerKS3Sub.SelectedValue + "'", null, DgvSoglF3);
+                lCount.Text = "Всего: " + (int)DgvSoglF3.Rows.Count;
+
+
+            }
 
             // throw new NotImplementedException();
         }
 
         private void KodUnic_SelectedValueChanged(object sender, EventArgs e)
         {
-           if (KodUnic.SelectedValue == null) return;
-            if (my.IsNumeric(KodUnic.SelectedValue.ToString()))
-            {
-               my.MySpisok(232, " and Period = '" + my.Uper + "' and IdEntpr = " + my.identpr + " and idF3 = '" + KodUnic.SelectedValue + "'", null, DgvSoglSumRazlUchet);
-            }
+           //if (KodUnic.SelectedValue == null) return;
+           // if (my.IsNumeric(KodUnic.SelectedValue.ToString()))
+           // {
+           //    my.MySpisok(232, " and Period = '" + my.Uper + "' and IdEntpr = " + my.identpr + " and idF3 = '" + KodUnic.SelectedValue + "'", null, DgvSoglSumRazlUchet);
+           // }
         }
 
 
@@ -248,15 +255,16 @@ namespace SMRC.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DgvSoglF3.ColumnHeadersHeight = DgvSoglF3.ColumnHeadersHeight / 2;
-            KodUnic.DataSource = null;
-            NomerKS3Sub.DataSource = null;
+           // DgvSoglF3.ColumnHeadersHeight = DgvSoglF3.ColumnHeadersHeight / 2;
+            //KodUnic.DataSource = null;
+            //NomerKS3Sub.DataSource = null;
             DgvSoglF3.DataSource = null;
             DgvSoglSumRazl.DataSource = null;
             DgvSoglSumRazlUchet.DataSource = null;
-            idIstFin.DataSource = null;
-            idDog.DataSource = null;
-            frmSogl_Load(null, null);
+            //idIstFin.DataSource = null;
+            //idDog.DataSource = null;
+          //  frmSogl_Load(null, null);
+            vSoglSumRazl();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -268,6 +276,51 @@ namespace SMRC.Forms
             m_searchInfo.lookIn = null;
             my.search(DgvSoglF3, m_searchInfo);
             DgvSoglF3.CurrentRow.Selected = true;
+        }
+
+        private void KodUnic_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (KodUnic.SelectedValue == null) return;
+            if (my.IsNumeric(KodUnic.SelectedValue.ToString()))
+            {
+                my.MySpisok(232, " and Period = '" + my.Uper + "' and IdEntpr = " + my.identpr + " and idF3 = '" + KodUnic.SelectedValue + "'", null, DgvSoglSumRazlUchet);
+            }
+        }
+
+        private void NomerKS3Sub_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (NomerKS3Sub.SelectedValue == null || NomerKS3Sub.SelectedValue.ToString() == "System.Data.DataRowView" || NomerKS3Sub.SelectedValue.ToString() == "") return;
+            int iddog =0; int idistfin=0;
+            Cursor.Current = Cursors.WaitCursor;
+            String strsql = "select distinct idistfin, iddog from dbo.vSoglF3  where NomerKS3Sub ='" + NomerKS3Sub.SelectedValue + "'";
+            my.cn.Open();
+            my.sc.CommandText = strsql;
+            SqlDataReader DRd = my.sc.ExecuteReader();
+            DRd.Read();
+            
+            if (DRd["iddog"] != DBNull.Value)
+            {
+                iddog = (int)DRd["iddog"];
+                idistfin = (int)DRd["idistfin"];
+            }
+
+            DRd.Close();
+            DRd.Dispose();
+            my.cn.Close();
+
+            //   if (NomerKS3Sub.SelectedValue.ToString() != "")
+            //    {
+            //NomerKS3SubOld = NomerKS3Sub.SelectedValue.ToString();
+            my.FillDC(KodUnic, 82, " and Period = ''" + my.Uper + "'' and IdEntpr = " + my.identpr + " and NomerKS3Sub = ''" + NomerKS3Sub.SelectedValue + "''");
+                my.FillDC(idDog, 16, " and iddog = " + iddog.ToString());
+                my.FillDC(idIstFin, 18, " and idistfin = " + idistfin);
+            //  lDog.Text = my.ExeScalar(my.FilterSel(719,null, my.sconn, " and NomerKS3Sub = '" + NomerKS3Sub.SelectedValue + "'"));
+
+            // vSoglSumRazl();
+            Cursor.Current = Cursors.Default;
+
+            //  }
+
         }
     }
 }

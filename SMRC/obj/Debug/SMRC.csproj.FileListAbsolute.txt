@@ -106,3 +106,6 @@ C:\NetProject\SMRC\SMRC\obj\Debug\SMRC.Forms.frmDiagram.resources
 C:\NetProject\SMRC\SMRC\obj\Debug\SMRC.Forms.frmReasons.resources
 C:\NetProject\SMRC\SMRC\obj\Debug\SMRC.Forms.frmVibList.resources
 C:\NetProject\SMRC\SMRC\obj\Debug\SMRC.Forms.frmSogl.resources
+C:\NetProject\SMRC\SMRC\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\NetProject\SMRC\SMRC\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\NetProject\SMRC\SMRC\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll

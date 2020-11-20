@@ -13,10 +13,10 @@ static class my
     public static string Login; public static string headStr; public static string widthStr; public static string cap = "";
     public static string UpredName; public static SMRC.Forms.frmLoad MDIForm; 
     public static DateTime Uper; public static string UperName; public static bool Dostup;
-    public static SqlConnection cn; public static SqlCommand sc; public static Form Pform; public static SqlConnection cnjane;
+    public static SqlConnection cn; public static SqlCommand sc; public static Form Pform; public static SqlConnection cnjane; public static SqlConnection cnReadOnly;
     public static int Id_us; public static string Id_UsName;  public static byte Id_gr; 
     public static int Vid; public static int identpr;
-    public static string sconn; public static string sconnjane;
+    public static string sconn; public static string sconnjane; public static string sconnReadOnly;
     public static string[] MyStr = new string[5];
 
 

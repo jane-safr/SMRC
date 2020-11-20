@@ -30,8 +30,8 @@ namespace SMRC.Forms
                 //try
                 //{
 
-                    // SqlDataAdapter sda = new SqlDataAdapter("select top 2 * from WorkObor ", my.sconn);
-                    SqlDataAdapter sda = new SqlDataAdapter("select  * from WorkObor where idf3 in (" + IdF3 + ") and '" + e.Parameters[0].Values[0].ToString() + "' like  '%' + object + '%'", my.sconn);
+                    // SqlDataAdapter sda = new SqlDataAdapter("select top 2 * from WorkObor ", my.sconnReadOnly);
+                    SqlDataAdapter sda = new SqlDataAdapter("select  * from WorkObor where idf3 in (" + IdF3 + ") and '" + e.Parameters[0].Values[0].ToString() + "' like  '%' + object + '%'", my.sconnReadOnly);
                     DataSet DS = new DataSet();
                     sda.Fill(DS);
                     e.DataSources.Add(new ReportDataSource("DSWork", DS.Tables[0]));
@@ -83,7 +83,7 @@ namespace SMRC.Forms
             reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DSF3Ras", ds.Tables[0]));
 
             s = "select * from v_F3Dog Where idF3=" + IdF3.ToString();
-            sda = new SqlDataAdapter(s, my.sconn);
+            sda = new SqlDataAdapter(s, my.sconnReadOnly);
             DataSet ds1 = new DataSet();
             sda.Fill(ds1);
             reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSetF3Dog", ds1.Tables[0]));

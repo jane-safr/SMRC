@@ -359,6 +359,8 @@ namespace SMRC {
             
             private global::System.Data.DataColumn columnbl;
             
+            private global::System.Data.DataColumn columnSummaZak;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public WorkNZPDataTable() {
@@ -714,6 +716,14 @@ namespace SMRC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SummaZakColumn {
+                get {
+                    return this.columnSummaZak;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -789,7 +799,8 @@ namespace SMRC {
                         string PodpisanKS6, 
                         string PrichinaNZPKS2, 
                         string Naim, 
-                        string bl) {
+                        string bl, 
+                        double SummaZak) {
                 WorkNZPRow rowWorkNZPRow = ((WorkNZPRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         shNMEntpr,
@@ -831,7 +842,8 @@ namespace SMRC {
                         PodpisanKS6,
                         PrichinaNZPKS2,
                         Naim,
-                        bl};
+                        bl,
+                        SummaZak};
                 rowWorkNZPRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowWorkNZPRow);
                 return rowWorkNZPRow;
@@ -894,6 +906,7 @@ namespace SMRC {
                 this.columnPrichinaNZPKS2 = base.Columns["PrichinaNZPKS2"];
                 this.columnNaim = base.Columns["Naim"];
                 this.columnbl = base.Columns["bl"];
+                this.columnSummaZak = base.Columns["SummaZak"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -979,6 +992,8 @@ namespace SMRC {
                 base.Columns.Add(this.columnNaim);
                 this.columnbl = new global::System.Data.DataColumn("bl", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnbl);
+                this.columnSummaZak = new global::System.Data.DataColumn("SummaZak", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSummaZak);
                 this.columnshNMEntpr.MaxLength = 50;
                 this.columnName.MaxLength = 6;
                 this.columnNomerSm.MaxLength = 303;
@@ -1743,6 +1758,22 @@ namespace SMRC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double SummaZak {
+                get {
+                    try {
+                        return ((double)(this[this.tableWorkNZP.SummaZakColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'SummaZak\' in table \'WorkNZP\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableWorkNZP.SummaZakColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsshNMEntprNull() {
                 return this.IsNull(this.tableWorkNZP.shNMEntprColumn);
             }
@@ -2088,6 +2119,18 @@ namespace SMRC {
             public void SetblNull() {
                 this[this.tableWorkNZP.blColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSummaZakNull() {
+                return this.IsNull(this.tableWorkNZP.SummaZakColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSummaZakNull() {
+                this[this.tableWorkNZP.SummaZakColumn] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -2289,6 +2332,7 @@ namespace SMRC.smrDataSetNZPTableAdapters {
             tableMapping.ColumnMappings.Add("PrichinaNZPKS2", "PrichinaNZPKS2");
             tableMapping.ColumnMappings.Add("Naim", "Naim");
             tableMapping.ColumnMappings.Add("bl", "bl");
+            tableMapping.ColumnMappings.Add("SummaZak", "SummaZak");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -2306,7 +2350,7 @@ namespace SMRC.smrDataSetNZPTableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        shNMEntpr, Name, NomerSm, Vip91, VipTek, Summa, NMComplex, IdSm, Osn, NMSmeti, DogF2, nzpred91, nzpred, YearF2, Vip91d2, VipTekd2, YearZakr, nzpred91sng, nzpredsng, nztek91, nztek, KodStr, Codir4, 
-                         KodDog, Department, DateStartNZP, PrichinaNZP, Ispolnitel, SmetaD, StatusZak, idComplex, Prim, Nomer, Otv, ZimUdor91, OSR, PodpisanKS6, PrichinaNZPKS2, Naim, bl
+                         KodDog, Department, DateStartNZP, PrichinaNZP, Ispolnitel, SmetaD, StatusZak, idComplex, Prim, Nomer, Otv, ZimUdor91, OSR, PodpisanKS6, PrichinaNZPKS2, Naim, bl, SummaZak
 FROM            WorkNZP";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }

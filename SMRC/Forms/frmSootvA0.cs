@@ -477,7 +477,7 @@ namespace SMRC.Forms
 
         }
 
-       
+
 
         //private void button13_Click(object sender, EventArgs e)
         //{
@@ -521,31 +521,31 @@ namespace SMRC.Forms
         //    {
         //        dgnNext.Children.AddNode(0, Microsoft.Office.Core.MsoDiagramNodeType.msoDiagramNode);
         //    }
-//    Microsoft.Office.Interop.Excel.Application app = new
-//Microsoft.Office.Interop.Excel.Application();
-//    app.Visible = false;
-//    Microsoft.Office.Interop.Excel.Workbooks wbs = app.Workbooks;
-//    Microsoft.Office.Interop.Excel.Workbook wb = wbs.Add(Type.Missing);
+        //    Microsoft.Office.Interop.Excel.Application app = new
+        //Microsoft.Office.Interop.Excel.Application();
+        //    app.Visible = false;
+        //    Microsoft.Office.Interop.Excel.Workbooks wbs = app.Workbooks;
+        //    Microsoft.Office.Interop.Excel.Workbook wb = wbs.Add(Type.Missing);
 
-//    Microsoft.Office.Interop.Excel.Range range = app.get_Range("A1", "C6");
-//    range.Value2 = new
-//object[,] { { 1, 1, 1 }, { 2, 2, 2 }, { 3, 3, 3 }, { 4, 4, 4 }, { 5, 5, 5 }, { 6, 6, 6 } };
-//    Microsoft.Office.Interop.Excel.Worksheet ws = app.ActiveSheet as Microsoft.Office.Interop.Excel.Worksheet;
+        //    Microsoft.Office.Interop.Excel.Range range = app.get_Range("A1", "C6");
+        //    range.Value2 = new
+        //object[,] { { 1, 1, 1 }, { 2, 2, 2 }, { 3, 3, 3 }, { 4, 4, 4 }, { 5, 5, 5 }, { 6, 6, 6 } };
+        //    Microsoft.Office.Interop.Excel.Worksheet ws = app.ActiveSheet as Microsoft.Office.Interop.Excel.Worksheet;
 
-//    Microsoft.Office.Interop.Excel.Shape shape =
-//ws.Shapes.AddChart(Microsoft.Office.Interop.Excel.XlChartType.xl3DColumnClustered, Type.Missing,
-//Type.Missing, Type.Missing, Type.Missing) as Microsoft.Office.Interop.Excel.Shape;
-//    shape.Chart.SetSourceData(range, Type.Missing);
-//    shape.Chart.ChartArea.Copy();
+        //    Microsoft.Office.Interop.Excel.Shape shape =
+        //ws.Shapes.AddChart(Microsoft.Office.Interop.Excel.XlChartType.xl3DColumnClustered, Type.Missing,
+        //Type.Missing, Type.Missing, Type.Missing) as Microsoft.Office.Interop.Excel.Shape;
+        //    shape.Chart.SetSourceData(range, Type.Missing);
+        //    shape.Chart.ChartArea.Copy();
 
-//    object missing = Type.Missing;
-//    object FALSE = false;
-//    object dataType = Word.WdPasteDataType.wdPasteOLEObject;
-//    object palcement = Word.WdOLEPlacement.wdInLine;
+        //    object missing = Type.Missing;
+        //    object FALSE = false;
+        //    object dataType = Word.WdPasteDataType.wdPasteOLEObject;
+        //    object palcement = Word.WdOLEPlacement.wdInLine;
 
-//    this.Application.Selection.PasteSpecial(ref missing, ref FALSE,
-//ref palcement, ref FALSE,
-//        ref dataType, ref missing, ref missing);
+        //    this.Application.Selection.PasteSpecial(ref missing, ref FALSE,
+        //ref palcement, ref FALSE,
+        //        ref dataType, ref missing, ref missing);
 
 
         //}

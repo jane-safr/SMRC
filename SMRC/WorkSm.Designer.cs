@@ -373,6 +373,8 @@ namespace SMRC {
             
             private global::System.Data.DataColumn columnOborTek;
             
+            private global::System.Data.DataColumn columnVremZd;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public WorkSmDataTable() {
@@ -784,6 +786,14 @@ namespace SMRC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn VremZdColumn {
+                get {
+                    return this.columnVremZd;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -866,7 +876,8 @@ namespace SMRC {
                         int ZProch, 
                         string Codir4, 
                         string KodDog, 
-                        double OborTek) {
+                        double OborTek, 
+                        double VremZd) {
                 WorkSmRow rowWorkSmRow = ((WorkSmRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Naim,
@@ -915,7 +926,8 @@ namespace SMRC {
                         ZProch,
                         Codir4,
                         KodDog,
-                        OborTek};
+                        OborTek,
+                        VremZd};
                 rowWorkSmRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowWorkSmRow);
                 return rowWorkSmRow;
@@ -985,6 +997,7 @@ namespace SMRC {
                 this.columnCodir4 = base.Columns["Codir4"];
                 this.columnKodDog = base.Columns["KodDog"];
                 this.columnOborTek = base.Columns["OborTek"];
+                this.columnVremZd = base.Columns["VremZd"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1084,6 +1097,8 @@ namespace SMRC {
                 base.Columns.Add(this.columnKodDog);
                 this.columnOborTek = new global::System.Data.DataColumn("OborTek", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOborTek);
+                this.columnVremZd = new global::System.Data.DataColumn("VremZd", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVremZd);
                 this.columnNaim.MaxLength = 625;
                 this.columnNomSm.MaxLength = 303;
                 this.columnRegNomer.MaxLength = 100;
@@ -1895,6 +1910,22 @@ namespace SMRC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double VremZd {
+                get {
+                    try {
+                        return ((double)(this[this.tableWorkSm.VremZdColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'VremZd\' in table \'WorkSm\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableWorkSm.VremZdColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsNaimNull() {
                 return this.IsNull(this.tableWorkSm.NaimColumn);
             }
@@ -2156,6 +2187,18 @@ namespace SMRC {
             public void SetOborTekNull() {
                 this[this.tableWorkSm.OborTekColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsVremZdNull() {
+                return this.IsNull(this.tableWorkSm.VremZdColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetVremZdNull() {
+                this[this.tableWorkSm.VremZdColumn] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -2336,10 +2379,11 @@ namespace SMRC.WorkSmTableAdapters {
             tableMapping.ColumnMappings.Add("Codir4", "Codir4");
             tableMapping.ColumnMappings.Add("KodDog", "KodDog");
             tableMapping.ColumnMappings.Add("OborTek", "OborTek");
+            tableMapping.ColumnMappings.Add("VremZd", "VremZd");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[WorkSmetnoe] ([Naim], [NomSm], [RegNomer], [Object], [Zak], [Department], [Prorab], [IstFin], [VT], [V91], [Zarp], [KompZp], [Meh], [KompMeh], [Mat], [KompMat], [Nakl], [Planov], [Dr], [Oplata], [VozvratMat], [DavMat], [TR], [ZimUdor], [ProchRashSum], [BezDim], [idf2], [idObj], [IdSm], [Shifr], [KodUnic], [periodf2], [periodf3], [Type3], [ZpMeh], [ShifrP], [PerevRab], [KomRash], [NeprRash], [ShifrInvPr], [ZVahMetod], [ZPerebaz], [ZProch], [ProchRash], [Codir4], [KodDog], [OborTek]) VALUES (@Naim, @NomSm, @RegNomer, @Object, @Zak, @Department, @Prorab, @IstFin, @VT, @V91, @Zarp, @KompZp, @Meh, @KompMeh, @Mat, @KompMat, @Nakl, @Planov, @Dr, @Oplata, @VozvratMat, @DavMat, @TR, @ZimUdor, @ProchRashSum, @BezDim, @idf2, @idObj, @IdSm, @Shifr, @KodUnic, @periodf2, @periodf3, @Type3, @ZpMeh, @ShifrP, @PerevRab, @KomRash, @NeprRash, @ShifrInvPr, @ZVahMetod, @ZPerebaz, @ZProch, @ProchRash, @Codir4, @KodDog, @OborTek)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[WorkSmetnoe] ([Naim], [NomSm], [RegNomer], [Object], [Zak], [Department], [Prorab], [IstFin], [VT], [V91], [Zarp], [KompZp], [Meh], [KompMeh], [Mat], [KompMat], [Nakl], [Planov], [Dr], [Oplata], [VozvratMat], [DavMat], [TR], [ZimUdor], [ProchRashSum], [BezDim], [idf2], [idObj], [IdSm], [Shifr], [KodUnic], [periodf2], [periodf3], [Type3], [ZpMeh], [ShifrP], [PerevRab], [KomRash], [NeprRash], [ShifrInvPr], [ZVahMetod], [ZPerebaz], [ZProch], [ProchRash], [Codir4], [KodDog], [OborTek], [VremZd]) VALUES (@Naim, @NomSm, @RegNomer, @Object, @Zak, @Department, @Prorab, @IstFin, @VT, @V91, @Zarp, @KompZp, @Meh, @KompMeh, @Mat, @KompMat, @Nakl, @Planov, @Dr, @Oplata, @VozvratMat, @DavMat, @TR, @ZimUdor, @ProchRashSum, @BezDim, @idf2, @idObj, @IdSm, @Shifr, @KodUnic, @periodf2, @periodf3, @Type3, @ZpMeh, @ShifrP, @PerevRab, @KomRash, @NeprRash, @ShifrInvPr, @ZVahMetod, @ZPerebaz, @ZProch, @ProchRash, @Codir4, @KodDog, @OborTek, @VremZd)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Naim", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Naim", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NomSm", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NomSm", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2388,6 +2432,7 @@ namespace SMRC.WorkSmTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Codir4", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Codir4", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@KodDog", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "KodDog", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OborTek", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OborTek", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VremZd", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VremZd", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2404,7 +2449,7 @@ namespace SMRC.WorkSmTableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        Naim, NomSm, RegNomer, Object, Zak, Department, Prorab, IstFin, VT, V91, Zarp, KompZp, Meh, KompMeh, Mat, KompMat, Nakl, Planov, Dr, Oplata, VozvratMat, DavMat, TR, ZimUdor, ProchRashSum, BezDim, 
-                         idf2, idObj, IdSm, Shifr, KodUnic, periodf2, periodf3, Type3, ZpMeh, ShifrP, PerevRab, KomRash, NeprRash, ShifrInvPr, ZVahMetod, ZPerebaz, ZProch, ProchRash, Codir4, KodDog,OborTek
+                         idf2, idObj, IdSm, Shifr, KodUnic, periodf2, periodf3, Type3, ZpMeh, ShifrP, PerevRab, KomRash, NeprRash, ShifrInvPr, ZVahMetod, ZPerebaz, ZProch, ProchRash, Codir4, KodDog,OborTek,VremZd
 FROM            dbo.WorkSmetnoe";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }

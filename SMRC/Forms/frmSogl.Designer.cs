@@ -39,29 +39,29 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnCreate = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.lCount = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.button1 = new System.Windows.Forms.Button();
-            this.DgvSoglF3 = new SMRC.DGVt(this.components);
             this.DgvSoglSumRazl = new SMRC.DGVt(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             this.DgvSoglSumRazlUchet = new SMRC.DGVt(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.TextBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.lCount = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnCreate = new System.Windows.Forms.Button();
+            this.DgvSoglF3 = new SMRC.DGVt(this.components);
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvSoglF3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvSoglSumRazl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvSoglSumRazlUchet)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvSoglF3)).BeginInit();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -75,24 +75,25 @@
             // KodUnic
             // 
             this.KodUnic.FormattingEnabled = true;
-            this.KodUnic.Location = new System.Drawing.Point(437, 6);
+            this.KodUnic.Location = new System.Drawing.Point(573, 9);
             this.KodUnic.Name = "KodUnic";
             this.KodUnic.Size = new System.Drawing.Size(139, 21);
             this.KodUnic.TabIndex = 44;
-            this.KodUnic.SelectedValueChanged += new System.EventHandler(this.KodUnic_SelectedValueChanged);
+            this.KodUnic.SelectedIndexChanged += new System.EventHandler(this.KodUnic_SelectedIndexChanged);
             // 
             // NomerKS3Sub
             // 
             this.NomerKS3Sub.FormattingEnabled = true;
             this.NomerKS3Sub.Location = new System.Drawing.Point(147, 6);
             this.NomerKS3Sub.Name = "NomerKS3Sub";
-            this.NomerKS3Sub.Size = new System.Drawing.Size(139, 21);
+            this.NomerKS3Sub.Size = new System.Drawing.Size(285, 21);
             this.NomerKS3Sub.TabIndex = 46;
+            this.NomerKS3Sub.SelectedIndexChanged += new System.EventHandler(this.NomerKS3Sub_SelectedIndexChanged);
             this.NomerKS3Sub.SelectedValueChanged += new System.EventHandler(this.NomerKS3Sub_SelectedValueChanged);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(302, 9);
+            this.label2.Location = new System.Drawing.Point(438, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 20);
             this.label2.TabIndex = 45;
@@ -103,7 +104,7 @@
             this.idDog.FormattingEnabled = true;
             this.idDog.Location = new System.Drawing.Point(147, 38);
             this.idDog.Name = "idDog";
-            this.idDog.Size = new System.Drawing.Size(139, 21);
+            this.idDog.Size = new System.Drawing.Size(285, 21);
             this.idDog.TabIndex = 50;
             // 
             // label5
@@ -117,14 +118,14 @@
             // idIstFin
             // 
             this.idIstFin.FormattingEnabled = true;
-            this.idIstFin.Location = new System.Drawing.Point(437, 35);
+            this.idIstFin.Location = new System.Drawing.Point(573, 38);
             this.idIstFin.Name = "idIstFin";
             this.idIstFin.Size = new System.Drawing.Size(139, 21);
             this.idIstFin.TabIndex = 52;
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(302, 38);
+            this.label6.Location = new System.Drawing.Point(438, 41);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(129, 20);
             this.label6.TabIndex = 51;
@@ -136,7 +137,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(828, 485);
+            this.tabPage1.Size = new System.Drawing.Size(1079, 491);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Нет соответствий.";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -156,18 +157,20 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.DgvSoglSumRazlUchet);
             this.splitContainer1.Panel2.Controls.Add(this.label4);
-            this.splitContainer1.Size = new System.Drawing.Size(822, 479);
-            this.splitContainer1.SplitterDistance = 369;
+            this.splitContainer1.Size = new System.Drawing.Size(1073, 485);
+            this.splitContainer1.SplitterDistance = 480;
             this.splitContainer1.TabIndex = 51;
             // 
-            // label4
+            // DgvSoglSumRazl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(219, 13);
-            this.label4.TabIndex = 50;
-            this.label4.Text = "Нет соответствия в согласованных актах";
+            this.DgvSoglSumRazl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DgvSoglSumRazl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvSoglSumRazl.Location = new System.Drawing.Point(0, 27);
+            this.DgvSoglSumRazl.Name = "DgvSoglSumRazl";
+            this.DgvSoglSumRazl.Size = new System.Drawing.Size(480, 458);
+            this.DgvSoglSumRazl.TabIndex = 47;
             // 
             // label3
             // 
@@ -177,6 +180,26 @@
             this.label3.Size = new System.Drawing.Size(140, 13);
             this.label3.TabIndex = 49;
             this.label3.Text = "Нет соответствия в КСУП";
+            // 
+            // DgvSoglSumRazlUchet
+            // 
+            this.DgvSoglSumRazlUchet.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DgvSoglSumRazlUchet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvSoglSumRazlUchet.Location = new System.Drawing.Point(0, 27);
+            this.DgvSoglSumRazlUchet.Name = "DgvSoglSumRazlUchet";
+            this.DgvSoglSumRazlUchet.Size = new System.Drawing.Size(509, 458);
+            this.DgvSoglSumRazlUchet.TabIndex = 48;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(219, 13);
+            this.label4.TabIndex = 50;
+            this.label4.Text = "Нет соответствия в согласованных актах";
             // 
             // tabPage2
             // 
@@ -189,99 +212,10 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(903, 491);
+            this.tabPage2.Size = new System.Drawing.Size(1079, 491);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Найденные соответствия.";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // btnCreate
-            // 
-            this.btnCreate.Location = new System.Drawing.Point(456, 10);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(297, 27);
-            this.btnCreate.TabIndex = 54;
-            this.btnCreate.Text = "Создать новую КС3 и добавить отсутствующие акты";
-            this.btnCreate.UseVisualStyleBackColor = true;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(111, 10);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(339, 27);
-            this.btnAdd.TabIndex = 55;
-            this.btnAdd.Text = "Добавить/изменить соответствующие акты в выбранную КС3";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // lCount
-            // 
-            this.lCount.AutoSize = true;
-            this.lCount.Location = new System.Drawing.Point(9, 17);
-            this.lCount.Name = "lCount";
-            this.lCount.Size = new System.Drawing.Size(40, 13);
-            this.lCount.TabIndex = 56;
-            this.lCount.Text = "Всего:";
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(-1, 64);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(911, 517);
-            this.tabControl1.TabIndex = 48;
-            // 
-            // button1
-            // 
-            this.button1.Image = global::SMRC.Properties.Resources.REFRESH;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(646, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 27);
-            this.button1.TabIndex = 53;
-            this.button1.Text = "Обновить";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // DgvSoglF3
-            // 
-            this.DgvSoglF3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DgvSoglF3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvSoglF3.Location = new System.Drawing.Point(3, 51);
-            this.DgvSoglF3.Name = "DgvSoglF3";
-            this.DgvSoglF3.Size = new System.Drawing.Size(897, 437);
-            this.DgvSoglF3.TabIndex = 53;
-            this.DgvSoglF3.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.DgvSoglF3_RowPrePaint);
-            // 
-            // DgvSoglSumRazl
-            // 
-            this.DgvSoglSumRazl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DgvSoglSumRazl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvSoglSumRazl.Location = new System.Drawing.Point(0, 27);
-            this.DgvSoglSumRazl.Name = "DgvSoglSumRazl";
-            this.DgvSoglSumRazl.Size = new System.Drawing.Size(369, 452);
-            this.DgvSoglSumRazl.TabIndex = 47;
-            // 
-            // DgvSoglSumRazlUchet
-            // 
-            this.DgvSoglSumRazlUchet.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DgvSoglSumRazlUchet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvSoglSumRazlUchet.Location = new System.Drawing.Point(0, 27);
-            this.DgvSoglSumRazlUchet.Name = "DgvSoglSumRazlUchet";
-            this.DgvSoglSumRazlUchet.Size = new System.Drawing.Size(449, 452);
-            this.DgvSoglSumRazlUchet.TabIndex = 48;
             // 
             // TextBox1
             // 
@@ -301,11 +235,78 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // lCount
+            // 
+            this.lCount.AutoSize = true;
+            this.lCount.Location = new System.Drawing.Point(9, 17);
+            this.lCount.Name = "lCount";
+            this.lCount.Size = new System.Drawing.Size(40, 13);
+            this.lCount.TabIndex = 56;
+            this.lCount.Text = "Всего:";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(111, 10);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(339, 27);
+            this.btnAdd.TabIndex = 55;
+            this.btnAdd.Text = "Добавить/изменить соответствующие акты в выбранную КС3";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnCreate
+            // 
+            this.btnCreate.Location = new System.Drawing.Point(456, 10);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(297, 27);
+            this.btnCreate.TabIndex = 54;
+            this.btnCreate.Text = "Создать новую КС3 и добавить отсутствующие акты";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
+            // DgvSoglF3
+            // 
+            this.DgvSoglF3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DgvSoglF3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvSoglF3.Location = new System.Drawing.Point(3, 51);
+            this.DgvSoglF3.Name = "DgvSoglF3";
+            this.DgvSoglF3.Size = new System.Drawing.Size(1000, 437);
+            this.DgvSoglF3.TabIndex = 53;
+            this.DgvSoglF3.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.DgvSoglF3_RowPrePaint);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(-1, 64);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1087, 517);
+            this.tabControl1.TabIndex = 48;
+            // 
+            // button1
+            // 
+            this.button1.Image = global::SMRC.Properties.Resources.REFRESH;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(782, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 27);
+            this.button1.TabIndex = 53;
+            this.button1.Text = "Обновить";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmSogl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(906, 576);
+            this.ClientSize = new System.Drawing.Size(999, 576);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.idIstFin);
             this.Controls.Add(this.label6);
@@ -326,12 +327,12 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvSoglF3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvSoglSumRazl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvSoglSumRazlUchet)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvSoglF3)).EndInit();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
